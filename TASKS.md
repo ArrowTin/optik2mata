@@ -9,7 +9,7 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 | T01 | Scaffold folder + `tokens.css`, `base.css`, `config.js`, font, logo & favicon | T00 | docs/02, 04; Prompt 1 | DONE |
 | T02 | `components.css` + `styleguide.html` (tombol, navbar, kartu, badge, accordion, footer, WA mengambang) | T01 | docs/02; Prompt 2 | DONE |
 | T03 | `whatsapp.js` + `data.js` + `products.json` (12 produk **Contoh**) | T01 | docs/03 E, 05; Prompt 4 | DONE |
-| T04 | Beranda bagian atas: header, hero, strip info, layanan, cara belanja | T02 | docs/03 A; Prompt 3 | TODO |
+| T04 | Beranda bagian atas: header, hero, strip info, layanan, cara belanja | T02 | docs/03 A; Prompt 3 | DONE |
 | T05 | Beranda bagian bawah: katalog pilihan, keunggulan, proses, galeri, testimoni, FAQ, lokasi, CTA, footer | T03, T04 | docs/03 A; Prompt 3 | TODO |
 | T06 | `katalog.html`: cari, filter, urut, query string, empty state | T03, T02 | docs/03 B; Prompt 5 | TODO |
 | T07 | `produk.html`: galeri, spesifikasi, tombol WA, produk serupa, id tidak valid | T06 | docs/03 C; Prompt 5 | TODO |
@@ -52,3 +52,4 @@ _(kosong — agent menambahkan di sini)_
 | T01 | 2026-11-15 | `33447ac` | Scaffold awal, token visual, konfigurasi, dan aset brand. |
 | T02 | 2026-11-15 | `5ffb695` | Komponen dan styleguide mengikuti design system. |
 | T03 | 2026-11-15 | `678534a` | Modul WhatsApp, pemuatan data, dan 12 produk contoh. |
+| T04 | 2026-11-15 | menunggu hash | Header, hero, informasi cepat, layanan, dan cara belanja. |

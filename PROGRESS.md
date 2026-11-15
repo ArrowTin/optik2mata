@@ -4,11 +4,19 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T03
+- Terakhir selesai: T04
 - Terblokir: —
 - Pertanyaan terbuka untuk pengguna: —
 
 ## Log
+
+### [2026-11-15 23:38] T04 — Beranda bagian atas (DONE)
+- **Hasil:** membangun header, hero, strip informasi, kartu layanan, dan cara belanja; menambahkan `main.js` dan `pages.css` untuk data CONFIG, tautan kontak, serta toggle fitur.
+- **Verifikasi:** satu `<h1>`, anchor internal valid, kontak dan Maps tidak di-hard-code di HTML, pengikatan CONFIG diuji dengan mock DOM; struktur responsif satu kolom mobile dan grid pada breakpoint tablet/desktop. Chrome headless mengabaikan ukuran viewport yang diminta (DOM melaporkan 500px), jadi screenshot 360/768/1280px belum dapat dipastikan.
+- **Commit:** hash akan dicatat setelah commit task.
+- **Catatan/Keputusan:** layanan pemeriksaan mata dan servis tetap tersembunyi sesuai `config.features`; pesan antar hanya mengarahkan pelanggan untuk menanyakan jangkauan dan ongkir.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T05
 
 ### [2026-11-15 22:59] T03 — WhatsApp & data produk (DONE)
 - **Hasil:** menambahkan `whatsapp.js`, `data.js`, 12 produk contoh, dan SVG placeholder foto. Menambahkan pengecualian untuk file root Graphify yang berisi jalur lokal.

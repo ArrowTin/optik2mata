@@ -4,6 +4,7 @@ export const CONFIG = {
     shortName: "2Mata",
     tagline: "",
     address: "Jl. Bengkayang–Sanggau Ledo, Sebalo, Kec. Bengkayang, Kab. Bengkayang, Kalimantan Barat 79212",
+    addressShort: "Jl. Bengkayang–Sanggau Ledo, Sebalo",
     plusCode: "RFMR+V2 Sebalo",
     phoneDisplay: "0813-8951-4572",
     phoneIntl: "6281389514572",
@@ -17,6 +18,7 @@ export const CONFIG = {
     showPrices: false,
     showDelivery: true,
     showEyeExam: false,
+    showRepair: false,
     hideSoldOut: false
   },
   data: {

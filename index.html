@@ -3,20 +3,151 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Optik 2Mata Bengkayang</title>
+    <title>Profil &amp; Katalog Kacamata</title>
     <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/tokens.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
   </head>
-  <body>
-    <main class="page-scaffold">
-      <div class="container">
-        <h1 class="page-scaffold__title">Optik 2Mata Bengkayang</h1>
-        <p class="page-scaffold__description">Kerangka awal situs sedang disiapkan.</p>
+  <body class="has-floating-wa">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <img class="brand__logo" src="assets/img/brand/logo.svg" alt="">
+          <span class="brand__text">
+            <span class="brand__name" data-business="shortName">2Mata</span>
+            <span class="brand__caption">Optik Bengkayang</span>
+          </span>
+        </a>
+        <details class="nav-menu">
+          <summary class="nav-menu__toggle" aria-label="Buka menu navigasi">
+            <span class="nav-menu__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>Menu</span>
+          </summary>
+          <nav class="nav-menu__panel" aria-label="Navigasi utama">
+            <a class="nav-menu__link" href="#layanan">Layanan</a>
+            <a class="nav-menu__link" href="katalog.html">Katalog</a>
+            <a class="nav-menu__link" href="#cara-belanja">Cara belanja</a>
+            <a class="btn btn-wa js-wa-link" href="#cara-belanja">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.5 9.5c.6 2 2 3.4 4 4"></path></svg>
+              Chat WhatsApp
+            </a>
+          </nav>
+        </details>
       </div>
+    </header>
+
+    <main id="konten">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__layout">
+          <div class="hero__content">
+            <p class="eyebrow" data-business="name">Nama optik</p>
+            <h1 class="hero__title" id="hero-title">Kacamata &amp; lensa untuk keseharian Anda</h1>
+            <p class="hero__description">Temukan koleksi kacamata, frame, dan lensa. Tanyakan produk melalui WhatsApp atau kunjungi toko.</p>
+            <div class="hero__actions">
+              <a class="btn btn-wa js-wa-link" href="#cara-belanja">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.5 9.5c.6 2 2 3.4 4 4"></path></svg>
+                Chat WhatsApp
+              </a>
+              <a class="btn btn-primary" href="katalog.html">Lihat Katalog</a>
+            </div>
+            <ul class="hero__trust" aria-label="Informasi toko">
+              <li><span class="hero__trust-star" aria-hidden="true">★</span><span data-business="ratingText">Rating Google</span></li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-business="plusCode">Area toko</span></li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span data-business="hours">Jam buka</span></li>
+            </ul>
+          </div>
+          <div class="hero__visual">
+            <div class="lens-rings hero__rings" aria-hidden="true"></div>
+            <img class="hero__image" src="assets/img/produk/foto-segera-hadir.svg" alt="Foto produk segera hadir" width="800" height="600" fetchpriority="high">
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Informasi cepat toko">
+        <div class="container info-strip">
+          <div class="info-strip__item">
+            <span class="info-strip__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+            <span><strong>Buka setiap hari</strong><br><span data-business="hours">Jam buka</span></span>
+          </div>
+          <div class="info-strip__item">
+            <span class="info-strip__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
+            <a class="quick-info__link" data-business-map href="#cara-belanja" rel="noopener"><strong>Alamat toko</strong><br><span data-business="addressShort">Alamat toko</span></a>
+          </div>
+          <div class="info-strip__item">
+            <span class="info-strip__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 4h14v16H5z"></path><path d="m8 8 8 8m0-8-8 8"></path></svg></span>
+            <a class="quick-info__link" data-business-phone-link href="#cara-belanja"><strong>Telepon / WhatsApp</strong><br><span data-business="phoneDisplay">Nomor toko</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" id="layanan" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Untuk kebutuhan penglihatan Anda</p>
+            <h2 class="section-heading__title" id="services-title">Layanan Optik 2Mata</h2>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="7" cy="12" r="4"></circle><circle cx="17" cy="12" r="4"></circle><path d="M11 12h2"></path></svg></span>
+              <h3 class="service-card__title">Kacamata &amp; frame</h3>
+              <p class="service-card__description">Lihat pilihan produk dan tanyakan ketersediaannya kepada kami.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg></span>
+              <h3 class="service-card__title">Lensa</h3>
+              <p class="service-card__description">Hubungi toko untuk bertanya tentang pilihan lensa.</p>
+            </article>
+            <article class="service-card" data-feature="showEyeExam" hidden>
+              <span class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path><circle cx="12" cy="12" r="2.5"></circle></svg></span>
+              <h3 class="service-card__title">Pemeriksaan mata</h3>
+              <p class="service-card__description">Tanyakan ketersediaan dan jadwal pemeriksaan melalui WhatsApp.</p>
+            </article>
+            <article class="service-card" data-feature="showRepair" hidden>
+              <span class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="m14 7 3 3M5 19l8.5-8.5M14 4a5 5 0 0 0 6 6l-3 3-6-6 3-3Z"></path></svg></span>
+              <h3 class="service-card__title">Servis &amp; penyesuaian</h3>
+              <p class="service-card__description">Hubungi toko untuk memastikan layanan yang tersedia.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section page-section--soft" id="cara-belanja" aria-labelledby="shopping-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Pilih cara yang nyaman</p>
+            <h2 class="section-heading__title" id="shopping-title">Cara berbelanja</h2>
+          </div>
+          <div class="service-grid shopping-grid">
+            <article class="service-card">
+              <span class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M3 10h18l-2 10H5L3 10Z"></path><path d="M7 10V6a5 5 0 0 1 10 0v4"></path></svg></span>
+              <h3 class="service-card__title">Belanja di toko</h3>
+              <p class="service-card__description">Kunjungi toko untuk melihat pilihan yang tersedia.</p>
+              <a class="btn btn-outline" data-business-map href="#cara-belanja" rel="noopener">Lihat lokasi</a>
+            </article>
+            <article class="service-card">
+              <span class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M3 4h18v16H3z"></path><path d="m7 12 3 3 7-7"></path></svg></span>
+              <h3 class="service-card__title">Ambil di toko</h3>
+              <p class="service-card__description">Tanyakan produk dan konfirmasi kesiapan pengambilan melalui WhatsApp.</p>
+              <a class="btn btn-outline js-wa-link" href="#cara-belanja">Tanya melalui WhatsApp</a>
+            </article>
+            <article class="service-card" data-feature="showDelivery">
+              <span class="service-card__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M3 6h11v12H3zM14 10h4l3 3v5h-7z"></path><circle cx="7.5" cy="18" r="1.5"></circle><circle cx="18" cy="18" r="1.5"></circle></svg></span>
+              <h3 class="service-card__title">Pesan antar</h3>
+              <p class="service-card__description">Tanyakan jangkauan dan ongkir melalui WhatsApp.</p>
+              <a class="btn btn-outline js-wa-delivery" href="#cara-belanja">Tanya pesan antar</a>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <a class="btn btn-wa btn-wa-floating js-wa-link" href="#cara-belanja">Chat WhatsApp</a>
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
