@@ -4,11 +4,19 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T01
+- Terakhir selesai: T02
 - Terblokir: —
 - Pertanyaan terbuka untuk pengguna: pilihan pengelolaan artefak `graphify-out/`
 
 ## Log
+
+### [2026-11-15 22:37] T02 — Komponen & styleguide (DONE)
+- **Hasil:** menambahkan `components.css` dan `styleguide.html` berisi tombol, navbar native `<details>`, kartu layanan/produk, badge, strip info, FAQ accordion, footer, tombol WhatsApp mengambang, pembatas, dan motif dua lingkaran.
+- **Verifikasi:** HTML memiliki satu `<h1>`, semua anchor dan aset lokal terhubung, tanpa inline style; komponen memakai token, tombol dan kontrol memiliki tinggi sentuh minimum 48px, fokus keyboard dan reduced motion tersedia. Pemeriksaan browser visual terkendala kegagalan GPU headless.
+- **Commit:** hash akan dicatat setelah commit task.
+- **Catatan/Keputusan:** grid produk 2 kolom mobile, 3 tablet, 4 desktop. Contoh tombol hanya demonstrasi dan belum menavigasi ke WhatsApp sampai T03.
+- **Pertanyaan terbuka:** artefak Graphify code-only tetap lokal dan tidak disertakan dalam commit; keputusan aturan simpan/abaikan belum diterima.
+- **Berikutnya:** T03
 
 ### [2026-11-15 22:27] T01 — Scaffold & tokens (DONE)
 - **Hasil:** membuat `index.html`, token dan base CSS, `CONFIG`, font Google, logo, dan favicon.

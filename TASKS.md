@@ -7,7 +7,7 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 |---|---|---|---|---|
 | T00 | Setup repo git, remote, `.gitignore`, struktur awal & salin docs | — | AGENTS §6, docs/04 | DONE |
 | T01 | Scaffold folder + `tokens.css`, `base.css`, `config.js`, font, logo & favicon | T00 | docs/02, 04; Prompt 1 | DONE |
-| T02 | `components.css` + `styleguide.html` (tombol, navbar, kartu, badge, accordion, footer, WA mengambang) | T01 | docs/02; Prompt 2 | TODO |
+| T02 | `components.css` + `styleguide.html` (tombol, navbar, kartu, badge, accordion, footer, WA mengambang) | T01 | docs/02; Prompt 2 | DONE |
 | T03 | `whatsapp.js` + `data.js` + `products.json` (12 produk **Contoh**) | T01 | docs/03 E, 05; Prompt 4 | TODO |
 | T04 | Beranda bagian atas: header, hero, strip info, layanan, cara belanja | T02 | docs/03 A; Prompt 3 | TODO |
 | T05 | Beranda bagian bawah: katalog pilihan, keunggulan, proses, galeri, testimoni, FAQ, lokasi, CTA, footer | T03, T04 | docs/03 A; Prompt 3 | TODO |
@@ -50,3 +50,4 @@ _(kosong — agent menambahkan di sini)_
 |---|---|---|---|
 | T00 | 2026-11-15 | `371ec0e`, `15882c7` | Setup lokal dan catatan progres dipush ke `origin/main`. |
 | T01 | 2026-11-15 | `33447ac` | Scaffold awal, token visual, konfigurasi, dan aset brand. |
+| T02 | 2026-11-15 | menunggu hash | Komponen dan styleguide mengikuti design system. |

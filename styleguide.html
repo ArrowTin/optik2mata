@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panduan Komponen — Optik 2Mata Bengkayang</title>
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+  </head>
+  <body class="has-floating-wa">
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html" aria-label="Optik 2Mata Bengkayang, beranda">
+          <img class="brand__logo" src="assets/img/brand/logo.svg" alt="">
+          <span class="brand__text">
+            <span class="brand__name">2Mata</span>
+            <span class="brand__caption">Optik Bengkayang</span>
+          </span>
+        </a>
+        <details class="nav-menu">
+          <summary class="nav-menu__toggle">
+            <span class="nav-menu__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>Menu</span>
+          </summary>
+          <nav class="nav-menu__panel" aria-label="Navigasi utama">
+            <a class="nav-menu__link" href="#layanan">Layanan</a>
+            <a class="nav-menu__link" href="#koleksi">Koleksi</a>
+            <a class="nav-menu__link" href="#bantuan">Bantuan</a>
+            <button class="btn btn-wa" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.5 9.5c.6 2 2 3.4 4 4"></path></svg>Chat WhatsApp</button>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main class="container styleguide-main">
+      <div class="styleguide-intro">
+        <h1 class="styleguide-title">Panduan Komponen</h1>
+        <p class="styleguide-note">Contoh visual komponen sesuai design system Dua Lingkaran. Tombol pada halaman ini hanya demonstrasi tampilan.</p>
+      </div>
+
+      <section class="styleguide-section" aria-labelledby="buttons-title">
+        <h2 class="styleguide-section__title" id="buttons-title">Tombol</h2>
+        <div class="styleguide-row">
+          <button class="btn btn-wa" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.5 9.5c.6 2 2 3.4 4 4"></path></svg>Chat WhatsApp</button>
+          <a class="btn btn-primary" href="#koleksi">Lihat Katalog</a>
+          <a class="btn btn-outline" href="#bantuan">Lihat Rute</a>
+          <a class="btn btn-ghost" href="#layanan">Pelajari layanan</a>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"><span class="section-divider__dots"><span></span><span></span></span></div>
+
+      <section class="styleguide-section" aria-labelledby="motif-title">
+        <h2 class="styleguide-section__title" id="motif-title">Motif Dua Lingkaran</h2>
+        <div class="lens-rings" aria-hidden="true"></div>
+      </section>
+
+      <section class="styleguide-section" id="layanan" aria-labelledby="services-title">
+        <h2 class="styleguide-section__title" id="services-title">Kartu Layanan</h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+            </span>
+            <h3 class="service-card__title">Kacamata &amp; Frame</h3>
+            <p class="service-card__description">Contoh tampilan ringkas untuk informasi layanan toko.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><circle cx="7" cy="12" r="4"></circle><circle cx="17" cy="12" r="4"></circle><path d="M11 12h2"></path></svg>
+            </span>
+            <h3 class="service-card__title">Lensa</h3>
+            <p class="service-card__description">Contoh tampilan ringkas untuk informasi layanan toko.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="styleguide-section" id="koleksi" aria-labelledby="products-title">
+        <h2 class="styleguide-section__title" id="products-title">Kartu Produk &amp; Badge</h2>
+        <div class="styleguide-row">
+          <span class="badge">Contoh</span>
+          <span class="badge badge--accent">Baru</span>
+          <span class="badge badge--soldout">Habis</span>
+        </div>
+        <div class="product-grid styleguide-product-grid">
+          <article class="product-card">
+            <div class="product-card__media" role="img" aria-label="Foto segera hadir untuk contoh produk">
+              <span class="badge badge--accent product-card__badge">Contoh</span>
+              <span>Foto segera hadir</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Unisex · Contoh</p>
+              <h3 class="product-card__title">Contoh Frame Klasik</h3>
+              <p class="product-card__price">Tanya harga</p>
+              <button class="btn btn-wa" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.5 9.5c.6 2 2 3.4 4 4"></path></svg>Tanya produk ini</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media" role="img" aria-label="Foto segera hadir untuk contoh produk">
+              <span>Foto segera hadir</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Anak · Contoh</p>
+              <h3 class="product-card__title">Contoh Frame Anak</h3>
+              <p class="product-card__price">Tanya harga</p>
+              <button class="btn btn-outline" type="button">Lihat detail</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="styleguide-section" aria-labelledby="info-title">
+        <h2 class="styleguide-section__title" id="info-title">Strip Informasi</h2>
+        <div class="info-strip">
+          <div class="info-strip__item"><span class="info-strip__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><span>Contoh informasi jam buka</span></div>
+          <div class="info-strip__item"><span class="info-strip__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span><span>Contoh informasi lokasi</span></div>
+          <div class="info-strip__item"><span class="info-strip__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 4h14v16H5z"></path><path d="m8 8 8 8m0-8-8 8"></path></svg></span><span>Contoh informasi kontak</span></div>
+        </div>
+      </section>
+
+      <section class="styleguide-section" id="bantuan" aria-labelledby="accordion-title">
+        <h2 class="styleguide-section__title" id="accordion-title">Accordion</h2>
+        <details class="accordion" open>
+          <summary class="accordion__summary">Contoh pertanyaan yang sering diajukan</summary>
+          <div class="accordion__content"><p class="product-card__description">Jawaban akan diisi setelah informasi toko dikonfirmasi.</p></div>
+        </details>
+        <details class="accordion">
+          <summary class="accordion__summary">Contoh pertanyaan lainnya</summary>
+          <div class="accordion__content"><p class="product-card__description">Komponen memakai elemen details native.</p></div>
+        </details>
+      </section>
+
+      <section class="styleguide-section" aria-labelledby="floating-title">
+        <h2 class="styleguide-section__title" id="floating-title">Tombol WhatsApp Mengambang</h2>
+        <p class="styleguide-note">Pada layar kecil, contoh tombol tampil di kanan bawah. Coba ubah lebar layar.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <h2 class="site-footer__title">Optik 2Mata Bengkayang</h2>
+          <p class="site-footer__text">Contoh tata letak footer untuk informasi dan tautan usaha.</p>
+        </div>
+        <div>
+          <h2 class="site-footer__title">Navigasi</h2>
+          <nav class="site-footer__links" aria-label="Navigasi footer">
+            <a href="index.html">Beranda</a>
+            <a href="#koleksi">Koleksi</a>
+            <a href="#bantuan">Bantuan</a>
+          </nav>
+        </div>
+        <div>
+          <h2 class="site-footer__title">Kontak</h2>
+          <p class="site-footer__text">Informasi kontak dikelola dari konfigurasi usaha.</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="btn btn-wa btn-wa-floating" type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.5 9.5c.6 2 2 3.4 4 4"></path></svg>Chat WhatsApp</button>
+  </body>
+</html>
