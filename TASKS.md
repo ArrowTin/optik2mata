@@ -52,4 +52,4 @@ _(kosong — agent menambahkan di sini)_
 | T01 | 2026-11-15 | `33447ac` | Scaffold awal, token visual, konfigurasi, dan aset brand. |
 | T02 | 2026-11-15 | `5ffb695` | Komponen dan styleguide mengikuti design system. |
 | T03 | 2026-11-15 | `678534a` | Modul WhatsApp, pemuatan data, dan 12 produk contoh. |
-| T04 | 2026-11-15 | menunggu hash | Header, hero, informasi cepat, layanan, dan cara belanja. |
+| T04 | 2026-11-15 | `411e8a4` | Header, hero, informasi cepat, layanan, dan cara belanja. |
