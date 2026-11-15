@@ -8,3 +8,4 @@ node_modules/
 .idea/
 .codex
 # graphify-out/  ← aktifkan bila artefak graph tidak masuk repositori (tanyakan pengguna)
+/graphify-out/.graphify_root

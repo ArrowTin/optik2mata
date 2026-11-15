@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title">
+  <title id="title">Foto segera hadir</title>
+  <rect width="800" height="600" fill="currentColor" fill-opacity="0.08" />
+  <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="350" cy="260" r="72" />
+    <circle cx="480" cy="260" r="72" />
+    <path d="M422 260h-14M212 260h-34m422 0h22" />
+  </g>
+  <text x="400" y="440" fill="currentColor" font-family="system-ui, sans-serif" font-size="32" text-anchor="middle">Foto segera hadir</text>
+</svg>

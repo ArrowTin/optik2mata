@@ -1,0 +1,26 @@
+{
+  "assets/js/config.js": {
+    "mtime": 1794755882.2644782,
+    "seen": 1794756320.3667555,
+    "ast_hash": "3c79ea5739cbed9389915d17631f999e",
+    "semantic_hash": "3c79ea5739cbed9389915d17631f999e"
+  },
+  "assets/js/data.js": {
+    "mtime": 1794758125.2465415,
+    "seen": 1794758286.5507195,
+    "ast_hash": "57288285b8f3592c99782aebe1e4afb2",
+    "semantic_hash": "57288285b8f3592c99782aebe1e4afb2"
+  },
+  "assets/js/whatsapp.js": {
+    "mtime": 1794758085.85247,
+    "seen": 1794758286.5507195,
+    "ast_hash": "608e8aea01a4b4376f1bcebe40d0ab1c",
+    "semantic_hash": "608e8aea01a4b4376f1bcebe40d0ab1c"
+  },
+  "data/products.json": {
+    "mtime": 1794758093.6807702,
+    "seen": 1794758286.5507195,
+    "ast_hash": "4ee9f8217825a4871371701607fac3ed",
+    "semantic_hash": "4ee9f8217825a4871371701607fac3ed"
+  }
+}

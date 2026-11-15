@@ -1,0 +1,107 @@
+{
+  "communities": {
+    "0": [
+      "assets_js_config",
+      "assets_js_config_config",
+      "assets_js_whatsapp",
+      "assets_js_whatsapp_producturl",
+      "assets_js_whatsapp_wadelivery",
+      "assets_js_whatsapp_waeyeexam",
+      "assets_js_whatsapp_walink",
+      "assets_js_whatsapp_waproduct"
+    ],
+    "1": [
+      "assets_js_data",
+      "assets_js_data_clearproductscache",
+      "assets_js_data_data_error_message",
+      "assets_js_data_normalizephoto",
+      "assets_js_data_normalizeproduct",
+      "assets_js_data_parseboolean",
+      "assets_js_data_parselist",
+      "assets_js_data_readfield"
+    ],
+    "2": [
+      "assets_js_data_dataloaderror",
+      "assets_js_data_dataloaderror_constructor",
+      "assets_js_data_fetchrecords",
+      "assets_js_data_loadproducts",
+      "assets_js_data_parsecsv",
+      "assets_js_data_readcache",
+      "assets_js_data_writecache"
+    ]
+  },
+  "cohesion": {
+    "0": 0.39285714285714285,
+    "1": 0.39285714285714285,
+    "2": 0.2857142857142857
+  },
+  "gods": [
+    {
+      "id": "assets_js_data_normalizeproduct",
+      "label": "normalizeProduct()",
+      "degree": 6
+    },
+    {
+      "id": "assets_js_data_loadproducts",
+      "label": "loadProducts()",
+      "degree": 6
+    },
+    {
+      "id": "assets_js_whatsapp_walink",
+      "label": "waLink()",
+      "degree": 4
+    },
+    {
+      "id": "assets_js_config_config",
+      "label": "CONFIG",
+      "degree": 3
+    },
+    {
+      "id": "assets_js_data_dataloaderror",
+      "label": "DataLoadError",
+      "degree": 3
+    },
+    {
+      "id": "assets_js_data_fetchrecords",
+      "label": "fetchRecords()",
+      "degree": 3
+    },
+    {
+      "id": "assets_js_data_readfield",
+      "label": "readField()",
+      "degree": 2
+    },
+    {
+      "id": "assets_js_data_parseboolean",
+      "label": "parseBoolean()",
+      "degree": 2
+    },
+    {
+      "id": "assets_js_data_parselist",
+      "label": "parseList()",
+      "degree": 2
+    },
+    {
+      "id": "assets_js_data_normalizephoto",
+      "label": "normalizePhoto()",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "loadProducts()",
+      "target": "normalizeProduct()",
+      "source_files": [
+        "assets/js/data.js",
+        "assets/js/data.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 1 \u2192 community 2"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

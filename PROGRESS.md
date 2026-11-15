@@ -4,18 +4,26 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T02
+- Terakhir selesai: T03
 - Terblokir: —
-- Pertanyaan terbuka untuk pengguna: pilihan pengelolaan artefak `graphify-out/`
+- Pertanyaan terbuka untuk pengguna: —
 
 ## Log
+
+### [2026-11-15 22:59] T03 — WhatsApp & data produk (DONE)
+- **Hasil:** menambahkan `whatsapp.js`, `data.js`, 12 produk contoh, dan SVG placeholder foto. Menambahkan pengecualian untuk file root Graphify yang berisi jalur lokal.
+- **Verifikasi:** 12 produk JSON valid dan berlabel Contoh; pemuatan dan normalisasi data lulus; pesan WhatsApp memuat nama dan URL produk; parser CSV menangani koma dalam kutip; fetch gagal menghasilkan pesan fallback. Graphify code-only menghasilkan 23 node, 37 edge, dan 3 komunitas.
+- **Commit:** hash akan dicatat setelah commit task.
+- **Catatan/Keputusan:** harga dan testimoni contoh tidak ditayangkan; `showPrices` dan `showTestimonials` tetap nonaktif. Graphify melewati berkas CSS, JSON, dan `tokens.css` (ditandai sensitif); hasil AST yang tersedia disimpan dalam repo.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T04
 
 ### [2026-11-15 22:37] T02 — Komponen & styleguide (DONE)
 - **Hasil:** menambahkan `components.css` dan `styleguide.html` berisi tombol, navbar native `<details>`, kartu layanan/produk, badge, strip info, FAQ accordion, footer, tombol WhatsApp mengambang, pembatas, dan motif dua lingkaran.
 - **Verifikasi:** HTML memiliki satu `<h1>`, semua anchor dan aset lokal terhubung, tanpa inline style; komponen memakai token, tombol dan kontrol memiliki tinggi sentuh minimum 48px, fokus keyboard dan reduced motion tersedia. Pemeriksaan browser visual terkendala kegagalan GPU headless.
 - **Commit:** `5ffb695` — `feat(styleguide): tambah komponen UI [T02]`.
 - **Catatan/Keputusan:** grid produk 2 kolom mobile, 3 tablet, 4 desktop. Contoh tombol hanya demonstrasi dan belum menavigasi ke WhatsApp sampai T03.
-- **Pertanyaan terbuka:** artefak Graphify code-only tetap lokal dan tidak disertakan dalam commit; keputusan aturan simpan/abaikan belum diterima.
+- **Pertanyaan terbuka:** kemudian diselesaikan saat T03; hasil Graphify code-only disetujui untuk disimpan di repo.
 - **Berikutnya:** T03
 
 ### [2026-11-15 22:27] T01 — Scaffold & tokens (DONE)
