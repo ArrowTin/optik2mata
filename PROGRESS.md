@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-15 22:37] T02 — Komponen & styleguide (DONE)
 - **Hasil:** menambahkan `components.css` dan `styleguide.html` berisi tombol, navbar native `<details>`, kartu layanan/produk, badge, strip info, FAQ accordion, footer, tombol WhatsApp mengambang, pembatas, dan motif dua lingkaran.
 - **Verifikasi:** HTML memiliki satu `<h1>`, semua anchor dan aset lokal terhubung, tanpa inline style; komponen memakai token, tombol dan kontrol memiliki tinggi sentuh minimum 48px, fokus keyboard dan reduced motion tersedia. Pemeriksaan browser visual terkendala kegagalan GPU headless.
-- **Commit:** hash akan dicatat setelah commit task.
+- **Commit:** `5ffb695` — `feat(styleguide): tambah komponen UI [T02]`.
 - **Catatan/Keputusan:** grid produk 2 kolom mobile, 3 tablet, 4 desktop. Contoh tombol hanya demonstrasi dan belum menavigasi ke WhatsApp sampai T03.
 - **Pertanyaan terbuka:** artefak Graphify code-only tetap lokal dan tidak disertakan dalam commit; keputusan aturan simpan/abaikan belum diterima.
 - **Berikutnya:** T03
