@@ -1,57 +1,65 @@
 {
   "communities": {
     "0": [
-      "assets_js_config",
-      "assets_js_config_config",
-      "assets_js_main",
-      "assets_js_main_businesstext",
-      "assets_js_whatsapp",
-      "assets_js_whatsapp_producturl",
-      "assets_js_whatsapp_wadelivery",
-      "assets_js_whatsapp_waeyeexam",
-      "assets_js_whatsapp_walink",
-      "assets_js_whatsapp_waproduct"
-    ],
-    "1": [
       "assets_js_data",
       "assets_js_data_clearproductscache",
       "assets_js_data_data_error_message",
       "assets_js_data_fetchrecords",
       "assets_js_data_parsecsv"
     ],
-    "2": [
+    "1": [
       "assets_js_data_normalizephoto",
       "assets_js_data_normalizeproduct",
       "assets_js_data_parseboolean",
       "assets_js_data_parselist",
       "assets_js_data_readfield"
     ],
+    "2": [
+      "assets_js_main",
+      "assets_js_main_businesstext",
+      "assets_js_main_createproductcard",
+      "assets_js_main_renderfeaturedproducts",
+      "assets_js_whatsapp_producturl"
+    ],
     "3": [
+      "assets_js_whatsapp",
+      "assets_js_whatsapp_wadelivery",
+      "assets_js_whatsapp_waeyeexam",
+      "assets_js_whatsapp_walink",
+      "assets_js_whatsapp_waproduct"
+    ],
+    "4": [
       "assets_js_data_loadproducts",
       "assets_js_data_readcache",
       "assets_js_data_writecache"
     ],
-    "4": [
+    "5": [
+      "assets_js_config",
+      "assets_js_config_config"
+    ],
+    "6": [
       "assets_js_data_dataloaderror",
       "assets_js_data_dataloaderror_constructor"
     ]
   },
   "cohesion": {
-    "0": 0.37777777777777777,
-    "1": 0.5,
-    "2": 0.4,
-    "3": 0.6666666666666666,
-    "4": 1.0
+    "0": 0.5,
+    "1": 0.4,
+    "2": 0.6,
+    "3": 0.7,
+    "4": 0.6666666666666666,
+    "5": 1.0,
+    "6": 1.0
   },
   "gods": [
     {
-      "id": "assets_js_data_normalizeproduct",
-      "label": "normalizeProduct()",
-      "degree": 6
-    },
-    {
       "id": "assets_js_data_loadproducts",
       "label": "loadProducts()",
+      "degree": 8
+    },
+    {
+      "id": "assets_js_data_normalizeproduct",
+      "label": "normalizeProduct()",
       "degree": 6
     },
     {
@@ -60,13 +68,28 @@
       "degree": 5
     },
     {
+      "id": "assets_js_data_dataloaderror",
+      "label": "DataLoadError",
+      "degree": 4
+    },
+    {
+      "id": "assets_js_whatsapp_waproduct",
+      "label": "waProduct()",
+      "degree": 4
+    },
+    {
       "id": "assets_js_config_config",
       "label": "CONFIG",
       "degree": 4
     },
     {
-      "id": "assets_js_data_dataloaderror",
-      "label": "DataLoadError",
+      "id": "assets_js_main_createproductcard",
+      "label": "createProductCard()",
+      "degree": 4
+    },
+    {
+      "id": "assets_js_whatsapp_producturl",
+      "label": "productUrl()",
       "degree": 3
     },
     {
@@ -78,56 +101,41 @@
       "id": "assets_js_data_fetchrecords",
       "label": "fetchRecords()",
       "degree": 3
-    },
-    {
-      "id": "assets_js_whatsapp_waeyeexam",
-      "label": "waEyeExam()",
-      "degree": 2
-    },
-    {
-      "id": "assets_js_whatsapp_waproduct",
-      "label": "waProduct()",
-      "degree": 2
-    },
-    {
-      "id": "assets_js_data_normalizephoto",
-      "label": "normalizePhoto()",
-      "degree": 2
     }
   ],
   "surprises": [
     {
-      "source": "loadProducts()",
-      "target": "DataLoadError",
+      "source": "createProductCard()",
+      "target": "waProduct()",
       "source_files": [
-        "assets/js/data.js",
-        "assets/js/data.js"
+        "assets/js/main.js",
+        "assets/js/whatsapp.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
-      "note": "Bridges community 4 \u2192 community 3"
+      "why": "bridges separate communities"
     },
     {
-      "source": "loadProducts()",
-      "target": "normalizeProduct()",
+      "source": "renderFeaturedProducts()",
+      "target": "loadProducts()",
       "source_files": [
-        "assets/js/data.js",
+        "assets/js/main.js",
         "assets/js/data.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
-      "note": "Bridges community 2 \u2192 community 3"
+      "why": "bridges separate communities"
     },
     {
-      "source": "loadProducts()",
-      "target": "fetchRecords()",
+      "source": "createProductCard()",
+      "target": "productUrl()",
       "source_files": [
-        "assets/js/data.js",
-        "assets/js/data.js"
+        "assets/js/main.js",
+        "assets/js/whatsapp.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
-      "note": "Bridges community 1 \u2192 community 3"
+      "why": "cross-file semantic connection"
     }
   ],
   "tokens": {

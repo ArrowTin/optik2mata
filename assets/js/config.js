@@ -19,6 +19,8 @@ export const CONFIG = {
     showDelivery: true,
     showEyeExam: false,
     showRepair: false,
+    showTurnaroundInfo: false,
+    showPaymentInfo: false,
     hideSoldOut: false
   },
   data: {

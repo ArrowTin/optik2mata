@@ -70,7 +70,7 @@
     "deskripsi": "DATA CONTOH — ganti dengan produk dan spesifikasi asli.",
     "foto": ["foto-segera-hadir.svg"],
     "badge": "Contoh",
-    "unggulan": false,
+    "unggulan": true,
     "tersedia": true,
     "urutan": 50
   },

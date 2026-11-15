@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-labelledby="title">
+  <title id="title">Foto toko segera hadir</title>
+  <rect width="1400" height="788" fill="currentColor" fill-opacity="0.08" />
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="18">
+    <path d="M420 540V290h560v250M370 290l70-110h520l70 110M510 540V360h170v180M750 360h140v110H750z" />
+    <circle cx="590" cy="245" r="42" />
+    <circle cx="810" cy="245" r="42" />
+  </g>
+  <text x="700" y="680" fill="currentColor" font-family="system-ui, sans-serif" font-size="48" text-anchor="middle">Foto toko segera hadir</text>
+</svg>
