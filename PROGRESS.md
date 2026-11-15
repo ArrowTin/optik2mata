@@ -4,11 +4,19 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T04
+- Terakhir selesai: T05
 - Terblokir: —
 - Pertanyaan terbuka untuk pengguna: —
 
 ## Log
+
+### [2026-11-15 23:48] T05 — Beranda bagian bawah (DONE)
+- **Hasil:** menambahkan katalog unggulan dinamis, keunggulan, langkah belanja, placeholder galeri, ringkasan ulasan, FAQ bertoggle, peta/kontak, CTA, dan footer. Graphify code-only diperbarui.
+- **Verifikasi:** sintaks modul JS valid; `git diff --check` bersih; graph berisi 27 node, 54 edge, 7 komunitas. Fitur FAQ testimonial/pemeriksaan/pembayaran/waktu pengerjaan mengikuti `CONFIG`. Tampilan viewport tidak dapat dinilai akurat dari Chrome headless yang melaporkan ukuran keliru.
+- **Commit:** `30a9b8d` — `feat(beranda): lengkapi section bawah [T05]` (sudah dipush ke `origin/main`).
+- **Catatan/Keputusan:** harga dan kutipan testimoni tetap tersembunyi; seluruh foto galeri masih placeholder. Produk contoh ke-5 ditandai unggulan agar enam kartu tampil.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T06
 
 ### [2026-11-15 23:38] T04 — Beranda bagian atas (DONE)
 - **Hasil:** membangun header, hero, strip informasi, kartu layanan, dan cara belanja; menambahkan `main.js` dan `pages.css` untuk data CONFIG, tautan kontak, serta toggle fitur.
