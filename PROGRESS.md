@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-15 23:50] T06 — Katalog & filter (DONE)
 - **Hasil:** membuat `katalog.html` dengan cari nama/kode, filter kategori, urutan terbaru/harga, state di query string, kartu produk bersama, serta empty/error state dengan CTA WhatsApp.
 - **Verifikasi:** modul `catalog.js`, `product-card.js`, `main.js` lolos pemeriksaan sintaks; 12 rekaman JSON valid; satu H1 dan kontrol/state katalog terdeteksi; `git diff --check` bersih. Graphify code-only: 43 node, 84 edge, 8 komunitas.
-- **Commit:** menunggu hash commit implementasi.
+- **Commit:** `48dcb5f` — `feat(katalog): tambah cari dan filter [T06]` (sudah dipush ke `origin/main`).
 - **Catatan/Keputusan:** harga tetap disembunyikan sesuai `showPrices:false`; pengurutan harga tersedia berdasarkan data contoh yang tidak ditayangkan.
 - **Pertanyaan terbuka:** —
 - **Berikutnya:** T07

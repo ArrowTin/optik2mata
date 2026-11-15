@@ -54,4 +54,4 @@ _(kosong — agent menambahkan di sini)_
 | T03 | 2026-11-15 | `678534a` | Modul WhatsApp, pemuatan data, dan 12 produk contoh. |
 | T04 | 2026-11-15 | `411e8a4` | Header, hero, informasi cepat, layanan, dan cara belanja. |
 | T05 | 2026-11-15 | `30a9b8d` | Lengkapi section bawah beranda dan integrasi katalog unggulan. |
-| T06 | 2026-11-15 | — | Katalog dengan pencarian, kategori, urutan, URL berbagi, dan empty/error state. |
+| T06 | 2026-11-15 | `48dcb5f` | Katalog dengan pencarian, kategori, urutan, URL berbagi, dan empty/error state. |
