@@ -49,4 +49,4 @@ _(kosong — agent menambahkan di sini)_
 | ID | Tanggal | Commit | Catatan |
 |---|---|---|---|
 | T00 | 2026-11-15 | `371ec0e`, `15882c7` | Setup lokal dan catatan progres dipush ke `origin/main`. |
-| T01 | 2026-11-15 | menunggu hash | Scaffold awal, token visual, konfigurasi, dan aset brand. |
+| T01 | 2026-11-15 | `33447ac` | Scaffold awal, token visual, konfigurasi, dan aset brand. |
