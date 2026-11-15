@@ -5,7 +5,7 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
-| T00 | Setup repo git, remote, `.gitignore`, struktur awal & salin docs | — | AGENTS §6, docs/04 | BLOCKED |
+| T00 | Setup repo git, remote, `.gitignore`, struktur awal & salin docs | — | AGENTS §6, docs/04 | DONE |
 | T01 | Scaffold folder + `tokens.css`, `base.css`, `config.js`, font, logo & favicon | T00 | docs/02, 04; Prompt 1 | TODO |
 | T02 | `components.css` + `styleguide.html` (tombol, navbar, kartu, badge, accordion, footer, WA mengambang) | T01 | docs/02; Prompt 2 | TODO |
 | T03 | `whatsapp.js` + `data.js` + `products.json` (12 produk **Contoh**) | T01 | docs/03 E, 05; Prompt 4 | TODO |
@@ -48,4 +48,4 @@ _(kosong — agent menambahkan di sini)_
 ## Riwayat Penyelesaian
 | ID | Tanggal | Commit | Catatan |
 |---|---|---|---|
-| | | | |
+| T00 | 2026-11-15 | `371ec0e`, `15882c7` | Setup lokal dan catatan progres dipush ke `origin/main`. |
