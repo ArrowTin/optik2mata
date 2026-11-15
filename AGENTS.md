@@ -129,7 +129,9 @@ Jujur melaporkan kegagalan, tes yang dilewati, dan batasan. Jangan menulis "sele
 ## 8. Graphify Knowledge Graph
 
 ### Tujuan dan Prinsip
-Project ini menggunakan Graphify sebagai knowledge graph untuk membantu agent memahami struktur kode, simbol, dependensi, komunitas modul, god nodes, dan hubungan lintas-file. Graphify adalah alat bantu navigasi dan pemahaman; **source code serta dokumentasi project tetap menjadi sumber kebenaran utama.**
+Graphify digunakan hanya untuk memetakan kode secara lokal tanpa ekstraksi semantik dokumen. **Jalankan Graphify dengan `--code-only` saja; jangan gunakan backend atau API key LLM.**
+
+Untuk merangkum proyek atau mencari hubungan antarbagian proyek, baca `AGENTS.md` saja sebagai sumber konteks. Jangan memakai query/path/explain Graphify atau membaca dokumen lain untuk keperluan tersebut. Untuk pekerjaan implementasi, aturan membaca dokumentasi proyek pada Bagian 3 tetap berlaku.
 
 Lokasi keluaran Graphify:
 - `graphify-out/graph.json` — graph terstruktur.
@@ -138,40 +140,34 @@ Lokasi keluaran Graphify:
 - `graphify-out/` — artefak Graphify lain seperti visualisasi atau metadata.
 
 ### Aktivasi dan Pemicu
-- Jika pengguna mengetik `/graphify`, gunakan skill/instruksi Graphify yang terpasang sebelum melakukan pekerjaan lain.
-- Untuk tugas yang melibatkan pertanyaan tentang arsitektur, alur, dependensi, fungsi, class, modul, atau dampak perubahan kode, gunakan Graphify terlebih dahulu jika `graphify-out/graph.json` tersedia.
-- Jika graph belum tersedia, beri tahu pengguna dan tawarkan atau jalankan pembuatan graph sesuai ruang lingkup tugas. Untuk pemetaan kode tanpa ekstraksi semantik dokumen, gunakan `graphify . --code-only` bila sesuai.
+- Jika pengguna mengetik `/graphify`, ikuti sintaks skill Graphify yang terpasang dengan tetap mematuhi batas `--code-only` pada bagian ini.
+- Jika pengguna meminta Graphify, gunakan `graphify . --code-only` untuk membangun graph kode. Jangan menjalankan ekstraksi semantik dokumen atau meminta API key.
+- Jika kode belum tersedia atau Graphify tidak menemukan file kode, jelaskan bahwa belum ada kode yang dapat dipetakan dan tunda pembuatan graph sampai kode tersedia.
 - Jangan menganggap Graphify sudah terpasang hanya karena aturan ini ada. Periksa ketersediaan perintah/skill sebelum menggunakannya.
-- *Catatan proyek:* pada tahap awal (T01–T02) kode belum ada sehingga graph belum bermakna; buat graph pertama setelah beranda (T04) selesai, lalu perbarui seterusnya.
+- Untuk ringkasan dan pencarian hubungan proyek, gunakan `AGENTS.md` saja sebagaimana aturan preferensi di atas.
 
 ### Pemilihan Perintah
-- Pertanyaan codebase yang spesifik: `graphify query "<pertanyaan>"`.
-- Menelusuri hubungan dua komponen: `graphify path "<A>" "<B>"`.
-- Memahami satu konsep, fungsi, class, atau simbol: `graphify explain "<konsep>"`.
-- Navigasi umum: gunakan `graphify-out/wiki/index.md` jika file tersebut tersedia.
-- Tinjauan arsitektur luas: baca `graphify-out/GRAPH_REPORT.md`.
-- Gunakan hasil query/path/explain yang paling terarah sebelum membaca laporan besar atau melakukan pencarian teks mentah.
-- Sintaks perintah harus mengikuti `graphify --help` dan versi Graphify yang terpasang. Jangan mengarang subperintah atau opsi yang tidak didukung versi lokal.
+- Pembuatan graph kode: `graphify . --code-only`.
+- Jangan gunakan perintah Graphify yang melakukan query, path, explain, ekstraksi semantik, atau backend LLM untuk memahami proyek.
 
 ### Alur Sebelum Mengubah Kode
 1. Pastikan direktori kerja dan project yang sedang aktif benar.
 2. Periksa status Git dan perubahan lokal; jangan menimpa pekerjaan yang belum di-commit.
-3. Pastikan graph tersedia dan cukup mutakhir untuk area yang sedang dikerjakan.
-4. Jalankan query Graphify yang relevan untuk menemukan komponen dan relasinya.
-5. Baca source code asli dan dokumentasi terkait untuk memverifikasi temuan graph.
-6. Identifikasi file, fungsi, class, kontrak API, skema data, dan tes yang mungkin terdampak.
-7. Susun rencana singkat dalam Bahasa Indonesia sebelum perubahan yang berdampak.
-8. Lakukan perubahan sekecil mungkin sesuai task dan batas persetujuan pengguna.
-9. Jalankan tes, pemeriksaan statis, atau verifikasi yang relevan.
-10. Perbarui graph setelah perubahan kode.
+3. Jika Graphify digunakan, batasi ke mode `--code-only`; jika graph belum ada dan kode sudah tersedia, bangun dengan `graphify . --code-only`.
+4. Untuk ringkasan atau hubungan proyek, gunakan `AGENTS.md` saja. Untuk implementasi, periksa source code dan dokumentasi terkait sesuai Bagian 3.
+5. Identifikasi file, fungsi, class, kontrak API, skema data, dan tes yang mungkin terdampak.
+6. Susun rencana singkat dalam Bahasa Indonesia sebelum perubahan yang berdampak.
+7. Lakukan perubahan sekecil mungkin sesuai task dan batas persetujuan pengguna.
+8. Jalankan tes, pemeriksaan statis, atau verifikasi yang relevan.
+9. Setelah perubahan kode, perbarui graph hanya dengan proses Graphify code-only yang didukung versi terpasang.
 
 ### Sinkronisasi Graph
-- Setelah mengubah kode, jalankan `graphify update .` untuk memperbarui graph jika perintah tersebut didukung versi terpasang.
+- Setelah mengubah kode, perbarui graph tanpa ekstraksi semantik dokumen. Gunakan `graphify . --code-only` jika perlu membangun ulang; jangan jalankan backend LLM.
 - Pembaruan graph bersifat artefak turunan; bukan pengganti review source code atau tes.
 - Perubahan pada `graphify-out/` setelah hook atau incremental update dapat terjadi dan bukan alasan untuk melewati Graphify.
 - Jangan menghapus atau mengabaikan perubahan graph yang dibuat agent lain tanpa memeriksa status Git dan kepemilikannya.
 - Jika graph tampak stale, gagal diperbarui, atau bertentangan dengan source code, jelaskan keterbatasannya, verifikasi langsung pada source code, lalu bangun/perbarui graph sesuai dokumentasi versi terpasang.
-- Lewati Graphify hanya jika task membahas Graphify/graph yang salah atau stale, graph tidak tersedia dan tidak dapat dibuat, atau pengguna secara eksplisit meminta agar Graphify tidak digunakan.
+- Lewati pembuatan graph bila belum ada file kode yang dapat dipetakan. Jangan mencoba mode ekstraksi dokumen sebagai fallback.
 - Sertakan `graphify-out/` dalam commit task hanya bila pengguna menyetujui artefak graph masuk repositori; jika tidak, tambahkan ke `.gitignore` setelah bertanya.
 
 ### Keamanan dan Batasan
@@ -201,13 +197,11 @@ Lokasi keluaran Graphify:
 
 ## graphify
 
-This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+Gunakan Graphify hanya dengan `--code-only`; jangan gunakan API key atau backend LLM.
 
-When the user types `/graphify`, use the installed graphify skill or instructions before doing anything else.
+Untuk merangkum proyek atau mencari hubungan antarbagian, baca `AGENTS.md` saja.
 
-Rules:
-- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
-- Dirty graphify-out/ files are expected after hooks or incremental updates; dirty graph files are not a reason to skip graphify. Only skip graphify if the task is about stale or incorrect graph output, or the user explicitly says not to use it.
-- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+Aturan:
+- Bangun graph kode dengan `graphify . --code-only` setelah kode tersedia.
+- Jangan gunakan `graphify query`, `path`, atau `explain` untuk merangkum atau menelusuri hubungan proyek.
+- Jika belum ada kode yang dapat dipetakan, jelaskan kondisi itu dan jangan menjalankan ekstraksi dokumen.
