@@ -1,0 +1,53 @@
+:root {
+  /* Warna brand */
+  --color-ink: #12263A;
+  --color-primary: #0E7C86;
+  --color-primary-dk: #0A5C64;
+  --color-primary-lt: #E3F3F4;
+  --color-accent: #F2A541;
+  --color-wa: #25D366;
+  --color-wa-dk: #1DA851;
+
+  /* Warna netral */
+  --color-bg: #F7FAFA;
+  --color-surface: #FFFFFF;
+  --color-border: #DCE6E8;
+  --color-muted: #5B6B79;
+
+  /* Warna status */
+  --color-success: #1B8F5A;
+  --color-danger: #C0392B;
+
+  /* Tipografi */
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --fs-2xl: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  --lh-body: 1.6;
+  --lh-heading: 1.2;
+
+  /* Spasi dan ukuran layout */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 5rem;
+  --container: 1120px;
+  --container-padding-mobile: 1rem;
+  --container-padding-desktop: 2rem;
+
+  /* Bentuk dan bayangan */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 3px rgb(18 38 58 / 8%);
+  --shadow-md: 0 8px 24px rgb(18 38 58 / 10%);
+}

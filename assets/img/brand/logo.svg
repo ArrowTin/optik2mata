@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Optik 2Mata Bengkayang</title>
+  <desc id="desc">Dua lingkaran lensa di samping tulisan 2Mata dan Optik Bengkayang.</desc>
+  <g fill="none" stroke="currentColor" stroke-width="3">
+    <circle cx="39" cy="43" r="25" />
+    <circle cx="78" cy="43" r="25" />
+  </g>
+  <text x="119" y="49" fill="currentColor" font-family="var(--font-heading, system-ui, sans-serif)" font-size="35" font-weight="800">2Mata</text>
+  <text x="121" y="72" fill="currentColor" font-family="var(--font-body, system-ui, sans-serif)" font-size="13" font-weight="500" letter-spacing="1">OPTIK BENGKAYANG</text>
+</svg>
