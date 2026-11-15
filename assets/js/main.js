@@ -1,6 +1,7 @@
 import { CONFIG } from "./config.js";
 import { DataLoadError, loadProducts } from "./data.js";
-import { productUrl, waDelivery, waLink, waProduct } from "./whatsapp.js";
+import { waDelivery, waLink } from "./whatsapp.js";
+import { createProductCard } from "./product-card.js";
 
 const businessText = {
   name: CONFIG.business.name,
@@ -48,80 +49,6 @@ document.querySelectorAll(".js-wa-delivery").forEach((link) => {
 document.querySelectorAll("[data-feature]").forEach((element) => {
   element.hidden = !CONFIG.features[element.dataset.feature];
 });
-
-function createProductCard(product) {
-  const card = document.createElement("article");
-  card.className = "product-card";
-
-  const imageLink = document.createElement("a");
-  imageLink.className = "product-card__media";
-  imageLink.href = productUrl(product);
-  const image = document.createElement("img");
-  image.className = "product-card__image";
-  image.src = product.photos[0];
-  image.alt = `Foto ${product.name}`;
-  image.width = 800;
-  image.height = 600;
-  image.loading = "lazy";
-  imageLink.append(image);
-  card.append(imageLink);
-
-  const content = document.createElement("div");
-  content.className = "product-card__body";
-  const title = document.createElement("h3");
-  title.className = "product-card__title";
-  const titleLink = document.createElement("a");
-  titleLink.href = productUrl(product);
-  titleLink.textContent = product.name;
-  title.append(titleLink);
-  content.append(title);
-
-  if (product.badge) {
-    const badge = document.createElement("span");
-    badge.className = "badge product-card__badge";
-    badge.textContent = product.badge;
-    content.append(badge);
-  }
-  if (!product.available) {
-    const status = document.createElement("span");
-    status.className = "badge product-card__badge";
-    status.textContent = "Habis";
-    content.append(status);
-  }
-  if (CONFIG.features.showPrices && product.price !== null) {
-    const price = document.createElement("p");
-    price.className = "product-card__price";
-    price.textContent = product.priceLabel || new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(product.price);
-    content.append(price);
-  }
-  if (product.description) {
-    const description = document.createElement("p");
-    description.className = "product-card__description";
-    description.textContent = product.description;
-    content.append(description);
-  }
-
-  const category = document.createElement("p");
-  category.className = "product-card__category";
-  category.textContent = product.category;
-  content.append(category);
-
-  const actions = document.createElement("div");
-  actions.className = "product-card__actions";
-  const detail = document.createElement("a");
-  detail.className = "btn btn-outline";
-  detail.href = productUrl(product);
-  detail.textContent = "Lihat detail";
-  actions.append(detail);
-  const ask = document.createElement("a");
-  ask.className = "btn btn-wa";
-  ask.href = waProduct(product);
-  ask.textContent = "Tanya produk";
-  actions.append(ask);
-  content.append(actions);
-  card.append(content);
-  return card;
-}
 
 async function renderFeaturedProducts() {
   const grid = document.querySelector("[data-featured-products]");

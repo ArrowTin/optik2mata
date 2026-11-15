@@ -4,11 +4,19 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T05
+- Terakhir selesai: T06
 - Terblokir: —
 - Pertanyaan terbuka untuk pengguna: —
 
 ## Log
+
+### [2026-11-15 23:50] T06 — Katalog & filter (DONE)
+- **Hasil:** membuat `katalog.html` dengan cari nama/kode, filter kategori, urutan terbaru/harga, state di query string, kartu produk bersama, serta empty/error state dengan CTA WhatsApp.
+- **Verifikasi:** modul `catalog.js`, `product-card.js`, `main.js` lolos pemeriksaan sintaks; 12 rekaman JSON valid; satu H1 dan kontrol/state katalog terdeteksi; `git diff --check` bersih. Graphify code-only: 43 node, 84 edge, 8 komunitas.
+- **Commit:** menunggu hash commit implementasi.
+- **Catatan/Keputusan:** harga tetap disembunyikan sesuai `showPrices:false`; pengurutan harga tersedia berdasarkan data contoh yang tidak ditayangkan.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T07
 
 ### [2026-11-15 23:48] T05 — Beranda bagian bawah (DONE)
 - **Hasil:** menambahkan katalog unggulan dinamis, keunggulan, langkah belanja, placeholder galeri, ringkasan ulasan, FAQ bertoggle, peta/kontak, CTA, dan footer. Graphify code-only diperbarui.

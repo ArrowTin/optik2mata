@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lihat koleksi frame dan kacamata Optik 2Mata Bengkayang. Tanyakan ketersediaan produk melalui WhatsApp.">
+    <title>Katalog Kacamata | Optik 2Mata Bengkayang</title>
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+  </head>
+  <body class="has-floating-wa">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html"><img class="brand__logo" src="assets/img/brand/logo.svg" alt=""><span class="brand__text"><span class="brand__name" data-business="shortName">2Mata</span><span class="brand__caption">Optik Bengkayang</span></span></a>
+        <details class="nav-menu">
+          <summary class="nav-menu__toggle" aria-label="Buka menu navigasi"><span class="nav-menu__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span><span>Menu</span></summary>
+          <nav class="nav-menu__panel" aria-label="Navigasi utama">
+            <a class="nav-menu__link" href="index.html#layanan">Layanan</a><a class="nav-menu__link" href="katalog.html" aria-current="page">Katalog</a><a class="nav-menu__link" href="index.html#galeri">Galeri</a><a class="nav-menu__link" href="index.html#lokasi">Lokasi</a>
+            <a class="btn btn-wa js-wa-link" href="#konten">Chat WhatsApp</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main id="konten" class="page-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-business="name">Optik 2Mata Bengkayang</p>
+          <h1 class="section-heading__title">Koleksi Frame &amp; Kacamata</h1>
+          <p class="page-intro">Jelajahi pilihan yang tersedia. Hubungi kami untuk menanyakan detail dan ketersediaan produk.</p>
+        </div>
+        <form class="catalog-controls" data-catalog-controls role="search">
+          <label class="catalog-search" for="catalog-search">Cari nama atau kode produk
+            <input id="catalog-search" name="q" type="search" autocomplete="off" placeholder="Contoh: frame bulat">
+          </label>
+          <fieldset class="catalog-filter">
+            <legend>Filter kategori</legend>
+            <div class="catalog-filter__options">
+              <button class="filter-chip" type="button" data-category="" aria-pressed="true">Semua</button>
+              <button class="filter-chip" type="button" data-category="pria" aria-pressed="false">Pria</button>
+              <button class="filter-chip" type="button" data-category="wanita" aria-pressed="false">Wanita</button>
+              <button class="filter-chip" type="button" data-category="anak" aria-pressed="false">Anak</button>
+              <button class="filter-chip" type="button" data-category="unisex" aria-pressed="false">Unisex</button>
+              <button class="filter-chip" type="button" data-category="kacamata-hitam" aria-pressed="false">Kacamata hitam</button>
+            </div>
+          </fieldset>
+          <label class="catalog-sort" for="catalog-sort">Urutkan
+            <select id="catalog-sort" name="sort">
+              <option value="newest">Terbaru</option>
+              <option value="price-asc">Harga terendah</option>
+              <option value="price-desc">Harga tertinggi</option>
+            </select>
+          </label>
+        </form>
+        <p class="catalog-count" data-catalog-count aria-live="polite"></p>
+        <div class="product-grid" data-catalog-grid aria-live="polite"></div>
+        <div class="catalog-message" data-catalog-empty hidden>
+          <p>Belum ketemu? Tanya kami via WhatsApp, kami bantu cek pilihan yang sesuai.</p>
+          <a class="btn btn-wa js-wa-link" href="#konten">Tanya lewat WhatsApp</a>
+        </div>
+        <div class="catalog-message" data-catalog-error hidden>
+          <p>Katalog sedang tidak dapat dimuat. Silakan coba lagi atau hubungi kami.</p>
+          <a class="btn btn-wa js-wa-link" href="#konten">Tanya lewat WhatsApp</a>
+        </div>
+      </div>
+    </main>
+    <a class="btn btn-wa btn-wa-floating js-wa-link" href="#konten">Chat WhatsApp</a>
+    <script type="module" src="assets/js/catalog.js"></script>
+  </body>
+</html>

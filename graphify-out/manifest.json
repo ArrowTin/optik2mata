@@ -24,9 +24,21 @@
     "semantic_hash": "c70362748d81af9781733d528bb9ffe3"
   },
   "assets/js/main.js": {
-    "mtime": 1794761191.2977662,
-    "seen": 1794761223.2370987,
-    "ast_hash": "34200dec0e1d78414425a72c0c30cac3",
-    "semantic_hash": "34200dec0e1d78414425a72c0c30cac3"
+    "mtime": 1794761489.5244353,
+    "seen": 1794761560.0988102,
+    "ast_hash": "5addf64b54b9db5ad834aff4ce61ce1a",
+    "semantic_hash": "5addf64b54b9db5ad834aff4ce61ce1a"
+  },
+  "assets/js/catalog.js": {
+    "mtime": 1794761574.5702493,
+    "seen": 1794761599.6080704,
+    "ast_hash": "186a40545de6d7cc5c4975072ddde757",
+    "semantic_hash": "186a40545de6d7cc5c4975072ddde757"
+  },
+  "assets/js/product-card.js": {
+    "mtime": 1794761571.9825258,
+    "seen": 1794761599.611072,
+    "ast_hash": "8cb6dd86ddecc07c6b6c83a9204e834f",
+    "semantic_hash": "8cb6dd86ddecc07c6b6c83a9204e834f"
   }
 }
