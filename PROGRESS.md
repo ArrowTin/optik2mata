@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-17 00:14] T22 — QA akhir Fase 2 (BLOCKED)
 - **Hasil:** memperbarui README proyek dan panduan pemilik dengan enam toggle Fase 2. Graphify code-only dijalankan kembali.
 - **Verifikasi:** semua enam toggle ditemukan dan terhubung ke kontrol terkait; harness Node untuk toggle hitung/hover/header, reduced-motion, drag, marquee, mockup, dan observer lulus. `node --check` dan `git diff --check` lulus. Lima halaman memiliki satu H1 dan semua aset lokal ada; perkiraan aset lokal awal beranda 90.385 byte tanpa kompresi.
-- **Commit:** dicatat pada commit dokumentasi T22 setelah perubahan ini.
+- **Commit:** `37b7ae5` — `docs(qa): perbarui panduan Fase 2 [T22]` (panduan dan status QA; verifikasi browser belum selesai).
 - **Catatan/Keputusan:** Lighthouse tidak menghasilkan laporan. Chrome dan Edge headless berakhir dengan kegagalan proses GPU; Firefox headless tidak menghasilkan screenshot. Karena itu skor Lighthouse, konsol browser, dan tampilan nyata pada 360/1280px belum dapat diverifikasi. Task tidak ditandai DONE.
 - **Pertanyaan terbuka:** perlu sesi/browser yang berfungsi untuk menyelesaikan QA browser.
 - **Berikutnya:** T22 setelah browser QA dapat dilakukan.
