@@ -25,4 +25,10 @@
     opacity: 1;
     transform: none;
   }
+
+  .has-reveal .shopping-mockup:not([data-revealed="true"]) .shopping-mockup__message {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

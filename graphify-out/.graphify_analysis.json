@@ -1,24 +1,6 @@
 {
   "communities": {
     "0": [
-      "assets_js_data",
-      "assets_js_data_clearproductscache",
-      "assets_js_data_data_error_message",
-      "assets_js_data_dataloaderror",
-      "assets_js_data_dataloaderror_constructor",
-      "assets_js_data_fetchrecords",
-      "assets_js_data_loadproducts",
-      "assets_js_data_normalizephoto",
-      "assets_js_data_normalizeproduct",
-      "assets_js_data_parseboolean",
-      "assets_js_data_parsecsv",
-      "assets_js_data_parselist",
-      "assets_js_data_readcache",
-      "assets_js_data_readfield",
-      "assets_js_data_writecache",
-      "assets_js_main_renderfeaturedproducts"
-    ],
-    "1": [
       "assets_js_catalog",
       "assets_js_catalog_applyfilters",
       "assets_js_catalog_categorybuttons",
@@ -34,6 +16,23 @@
       "assets_js_catalog_state",
       "assets_js_catalog_updateaddress",
       "assets_js_catalog_validcategories"
+    ],
+    "1": [
+      "assets_js_data",
+      "assets_js_data_clearproductscache",
+      "assets_js_data_data_error_message",
+      "assets_js_data_dataloaderror",
+      "assets_js_data_dataloaderror_constructor",
+      "assets_js_data_fetchrecords",
+      "assets_js_data_loadproducts",
+      "assets_js_data_normalizephoto",
+      "assets_js_data_normalizeproduct",
+      "assets_js_data_parseboolean",
+      "assets_js_data_parsecsv",
+      "assets_js_data_parselist",
+      "assets_js_data_readcache",
+      "assets_js_data_readfield",
+      "assets_js_data_writecache"
     ],
     "2": [
       "assets_js_config",
@@ -62,33 +61,42 @@
       "assets_js_product_updateproductmetadata"
     ],
     "4": [
+      "assets_js_main_renderfeaturedproducts",
       "assets_js_motion",
+      "assets_js_motion_applymotionstagger",
       "assets_js_motion_getrevealobserver",
       "assets_js_motion_observereveals",
       "assets_js_motion_reducemotion",
-      "assets_js_motion_revealselector",
+      "assets_js_motion_revealselector"
+    ],
+    "5": [
+      "assets_js_carousel",
+      "assets_js_carousel_enablepointerdrag",
+      "assets_js_main",
+      "assets_js_main_businesstext",
+      "assets_js_main_featuredcarousel",
+      "assets_js_main_shoppingmockup"
+    ],
+    "6": [
       "assets_js_ui",
       "assets_js_ui_backtotop",
       "assets_js_ui_galleryimages",
       "assets_js_ui_showimage"
     ],
-    "5": [
-      "assets_js_carousel",
-      "assets_js_carousel_enablepointerdrag",
+    "7": [
       "assets_js_fonts",
-      "assets_js_fonts_loadfonts",
-      "assets_js_main",
-      "assets_js_main_businesstext",
-      "assets_js_main_featuredcarousel"
+      "assets_js_fonts_loadfonts"
     ]
   },
   "cohesion": {
-    "0": 0.20833333333333334,
-    "1": 0.14285714285714285,
+    "0": 0.14285714285714285,
+    "1": 0.22857142857142856,
     "2": 0.38181818181818183,
     "3": 0.2,
-    "4": 0.2777777777777778,
-    "5": 0.3333333333333333
+    "4": 0.38095238095238093,
+    "5": 0.4,
+    "6": 0.5,
+    "7": 1.0
   },
   "gods": [
     {
@@ -109,7 +117,7 @@
     {
       "id": "assets_js_motion_observereveals",
       "label": "observeReveals()",
-      "degree": 7
+      "degree": 8
     },
     {
       "id": "assets_js_config_config",
@@ -155,6 +163,17 @@
       "why": "inferred connection - not explicitly stated in source; bridges separate communities"
     },
     {
+      "source": "renderFeaturedProducts()",
+      "target": "loadProducts()",
+      "source_files": [
+        "assets/js/main.js",
+        "assets/js/data.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
       "source": "applyFilters()",
       "target": "observeReveals()",
       "source_files": [
@@ -177,22 +196,11 @@
       "why": "bridges separate communities"
     },
     {
-      "source": "renderFeaturedProducts()",
-      "target": "observeReveals()",
+      "source": "createProductCard()",
+      "target": "productUrl()",
       "source_files": [
-        "assets/js/main.js",
-        "assets/js/motion.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities"
-    },
-    {
-      "source": "renderFeaturedProducts()",
-      "target": "loadProducts()",
-      "source_files": [
-        "assets/js/main.js",
-        "assets/js/data.js"
+        "assets/js/product-card.js",
+        "assets/js/whatsapp.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",

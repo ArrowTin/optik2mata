@@ -2,7 +2,7 @@ import { CONFIG } from "./config.js";
 import { DataLoadError, loadProducts } from "./data.js";
 import { waDelivery, waLink } from "./whatsapp.js";
 import { createProductCard } from "./product-card.js";
-import { observeReveals } from "./motion.js";
+import { applyMotionStagger, observeReveals } from "./motion.js";
 import { enablePointerDrag } from "./carousel.js";
 import "./ui.js";
 import "./fonts.js";
@@ -57,6 +57,11 @@ document.querySelectorAll("[data-feature]").forEach((element) => {
 const featuredCarousel = document.querySelector("[data-featured-products]");
 if (featuredCarousel && CONFIG.features.enableFeaturedCarousel) {
   enablePointerDrag(featuredCarousel);
+}
+
+const shoppingMockup = document.querySelector("[data-shopping-mockup]");
+if (shoppingMockup && CONFIG.features.enableShoppingMockup) {
+  applyMotionStagger([...shoppingMockup.querySelectorAll(".shopping-mockup__message")]);
 }
 
 async function renderFeaturedProducts() {

@@ -7,7 +7,8 @@ const revealSelector = [
   ".review-summary",
   ".faq-list",
   ".location-layout",
-  ".closing-cta__inner"
+  ".closing-cta__inner",
+  ".shopping-mockup"
 ].join(", ");
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -35,14 +36,27 @@ export function observeReveals(root = document) {
   const elements = [];
   if (root instanceof Element && root.matches(revealSelector)) elements.push(root);
   elements.push(...root.querySelectorAll(revealSelector));
-  elements.forEach((element, index) => {
-    if (element.dataset.reveal !== undefined) return;
+  const newElements = elements.filter((element) => element.dataset.reveal === undefined);
+  applyMotionStagger(newElements);
+  newElements.forEach((element) => {
     element.dataset.reveal = "";
-    element.style.setProperty("--d", `calc(${index % 4} * var(--dur-fast))`);
     observer.observe(element);
   });
 
   if (elements.length > 0) document.documentElement.classList.add("has-reveal");
+}
+
+// Susun jeda dengan penjumlahan token agar tetap didukung browser lama.
+export function applyMotionStagger(elements) {
+  const delays = [
+    "0ms",
+    "var(--dur-fast)",
+    "calc(var(--dur-fast) + var(--dur-fast))",
+    "calc(var(--dur-fast) + var(--dur-fast) + var(--dur-fast))"
+  ];
+  elements.forEach((element, index) => {
+    element.style.setProperty("--d", delays[index % delays.length]);
+  });
 }
 
 observeReveals();
