@@ -20,7 +20,9 @@
       "assets_js_config_config",
       "assets_js_main",
       "assets_js_main_businesstext",
+      "assets_js_not_found",
       "assets_js_product_card",
+      "assets_js_product_card_createproductcard",
       "assets_js_whatsapp",
       "assets_js_whatsapp_producturl",
       "assets_js_whatsapp_wadelivery",
@@ -38,7 +40,9 @@
       "assets_js_product_showstate",
       "assets_js_product_statemessage",
       "assets_js_product_statepanel",
-      "assets_js_product_statetitle"
+      "assets_js_product_statetitle",
+      "assets_js_ui",
+      "assets_js_ui_backtotop"
     ],
     "3": [
       "assets_js_data",
@@ -55,13 +59,12 @@
       "assets_js_data_dataloaderror_constructor",
       "assets_js_data_loadproducts",
       "assets_js_data_readcache",
-      "assets_js_data_writecache"
+      "assets_js_data_writecache",
+      "assets_js_main_renderfeaturedproducts"
     ],
     "5": [
       "assets_js_catalog_applyfilters",
-      "assets_js_catalog_updateaddress",
-      "assets_js_main_renderfeaturedproducts",
-      "assets_js_product_card_createproductcard"
+      "assets_js_catalog_updateaddress"
     ],
     "6": [
       "assets_js_data_fetchrecords",
@@ -70,11 +73,11 @@
   },
   "cohesion": {
     "0": 0.15384615384615385,
-    "1": 0.41818181818181815,
-    "2": 0.2,
+    "1": 0.3717948717948718,
+    "2": 0.16666666666666666,
     "3": 0.39285714285714285,
-    "4": 0.4,
-    "5": 0.5,
+    "4": 0.3333333333333333,
+    "5": 1.0,
     "6": 1.0
   },
   "gods": [
@@ -84,14 +87,14 @@
       "degree": 10
     },
     {
-      "id": "assets_js_product_card_createproductcard",
-      "label": "createProductCard()",
+      "id": "assets_js_whatsapp_walink",
+      "label": "waLink()",
       "degree": 8
     },
     {
-      "id": "assets_js_whatsapp_walink",
-      "label": "waLink()",
-      "degree": 7
+      "id": "assets_js_product_card_createproductcard",
+      "label": "createProductCard()",
+      "degree": 8
     },
     {
       "id": "assets_js_config_config",
@@ -124,12 +127,34 @@
       "degree": 3
     },
     {
-      "id": "assets_js_catalog_applyfilters",
-      "label": "applyFilters()",
+      "id": "assets_js_data_fetchrecords",
+      "label": "fetchRecords()",
       "degree": 3
     }
   ],
   "surprises": [
+    {
+      "source": "renderFeaturedProducts()",
+      "target": "createProductCard()",
+      "source_files": [
+        "assets/js/main.js",
+        "assets/js/product-card.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "applyFilters()",
+      "target": "createProductCard()",
+      "source_files": [
+        "assets/js/catalog.js",
+        "assets/js/product-card.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
     {
       "source": "createProductCard()",
       "target": "productUrl()",
@@ -139,7 +164,7 @@
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
-      "why": "bridges separate communities"
+      "why": "cross-file semantic connection"
     },
     {
       "source": "createProductCard()",
@@ -150,7 +175,7 @@
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
-      "why": "bridges separate communities"
+      "why": "cross-file semantic connection"
     },
     {
       "source": "renderFeaturedProducts()",
@@ -158,28 +183,6 @@
       "source_files": [
         "assets/js/main.js",
         "assets/js/data.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities"
-    },
-    {
-      "source": "renderFeaturedProducts()",
-      "target": "createProductCard()",
-      "source_files": [
-        "assets/js/main.js",
-        "assets/js/product-card.js"
-      ],
-      "confidence": "INFERRED",
-      "relation": "indirect_call",
-      "why": "inferred connection - not explicitly stated in source"
-    },
-    {
-      "source": "applyFilters()",
-      "target": "createProductCard()",
-      "source_files": [
-        "assets/js/catalog.js",
-        "assets/js/product-card.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",

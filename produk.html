@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/pages.css">
   </head>
-  <body class="has-floating-wa">
+  <body id="top" class="has-floating-wa">
     <a class="skip-link" href="#konten">Lewati ke konten</a>
     <header class="site-header">
       <div class="container navbar">
@@ -47,6 +47,7 @@
         <section class="product-state" data-product-state aria-live="polite">
           <h2 class="section-heading__title" data-product-state-title>Memuat produk…</h2>
           <p data-product-state-message></p>
+          <a class="btn btn-outline" href="">Coba muat ulang</a>
           <a class="btn btn-outline" href="katalog.html">Kembali ke katalog</a>
           <a class="btn btn-wa js-wa-link" href="#konten">Tanya lewat WhatsApp</a>
         </section>
@@ -59,6 +60,7 @@
       </section>
     </main>
     <a class="btn btn-wa btn-wa-floating js-wa-link" href="#konten">Chat WhatsApp</a>
+    <a class="btn btn-outline back-to-top" data-back-to-top href="#top" hidden>Kembali ke atas</a>
     <script type="module" src="assets/js/product.js"></script>
   </body>
 </html>

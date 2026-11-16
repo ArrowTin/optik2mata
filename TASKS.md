@@ -13,7 +13,7 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 | T05 | Beranda bagian bawah: katalog pilihan, keunggulan, proses, galeri, testimoni, FAQ, lokasi, CTA, footer | T03, T04 | docs/03 A; Prompt 3 | DONE |
 | T06 | `katalog.html`: cari, filter, urut, query string, empty state | T03, T02 | docs/03 B; Prompt 5 | DONE |
 | T07 | `produk.html`: galeri, spesifikasi, tombol WA, produk serupa, id tidak valid | T06 | docs/03 C; Prompt 5 | DONE |
-| T08 | `404.html`, fallback error data, tombol kembali ke atas | T05 | docs/04 §6 | TODO |
+| T08 | `404.html`, fallback error data, tombol kembali ke atas | T05 | docs/04 §6 | DONE |
 | T09 | SEO: title/meta, canonical, OG, JSON-LD, robots, sitemap, webmanifest | T07 | docs/06; Prompt 6 | TODO |
 | T10 | Performa & aksesibilitas: optimasi gambar, lazy-loading, skip-link, audit Lighthouse + perbaikan | T09 | docs/06; Prompt 6 | TODO |
 | T11 | Polesan demo: reveal on scroll, hover, lightbox, animasi lingkaran hero (hormati reduced-motion) | T10 | docs/02 §8; Prompt 7 | TODO |
@@ -55,4 +55,5 @@ _(kosong — agent menambahkan di sini)_
 | T04 | 2026-11-15 | `411e8a4` | Header, hero, informasi cepat, layanan, dan cara belanja. |
 | T05 | 2026-11-15 | `30a9b8d` | Lengkapi section bawah beranda dan integrasi katalog unggulan. |
 | T06 | 2026-11-15 | `48dcb5f` | Katalog dengan pencarian, kategori, urutan, URL berbagi, dan empty/error state. |
-| T07 | 2026-11-15 | — | Detail produk dengan galeri, spesifikasi, WhatsApp, rekomendasi, dan state ID/error. |
+| T07 | 2026-11-16 | `bdd4caf` | Detail produk dengan galeri, spesifikasi, WhatsApp, rekomendasi, dan state ID/error.
+| T08 | 2026-11-16 | HASH_MENUNGGU | Halaman 404, fallback data dengan opsi muat ulang, dan tombol kembali ke atas. |

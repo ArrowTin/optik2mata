@@ -2,6 +2,7 @@ import { CONFIG } from "./config.js";
 import { DataLoadError, loadProducts } from "./data.js";
 import { waDelivery, waLink } from "./whatsapp.js";
 import { createProductCard } from "./product-card.js";
+import "./ui.js";
 
 const businessText = {
   name: CONFIG.business.name,

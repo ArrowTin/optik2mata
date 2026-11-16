@@ -215,6 +215,11 @@
 .product-state { display: grid; justify-items: start; gap: var(--space-3); }
 .product-state p { margin: 0; color: var(--color-muted); }
 .product-state .section-heading__title { font-size: var(--fs-xl); }
+.not-found { display: grid; justify-items: start; gap: var(--space-4); }
+.not-found .eyebrow { margin: var(--space-6) 0 0; }
+.not-found__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.back-to-top { position: fixed; z-index: 25; right: var(--space-4); bottom: var(--space-4); box-shadow: var(--shadow-md); }
+.has-floating-wa .back-to-top { bottom: calc(var(--space-8) + var(--space-4)); }
 
 .advantages-grid,
 .process-list,

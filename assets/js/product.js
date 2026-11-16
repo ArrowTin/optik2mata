@@ -2,6 +2,7 @@ import { CONFIG } from "./config.js";
 import { loadProducts } from "./data.js";
 import { createProductCard } from "./product-card.js";
 import { waLink, waProduct } from "./whatsapp.js";
+import "./ui.js";
 
 document.querySelectorAll(".js-wa-link").forEach((link) => {
   link.href = waLink(link.dataset.waMessage);
