@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T19 (IN PROGRESS)
-- Terakhir selesai: T18
+- Task aktif: T20 (TODO)
+- Terakhir selesai: T19
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
 - Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.
 
 ## Log
+
+### [2026-11-16 23:20] T19 — Mockup percakapan WhatsApp (DONE)
+- **Hasil:** menambahkan simulasi chat berlabel "Contoh" pada bagian Cara berbelanja. Pesan muncul berurutan ketika mockup terlihat; CTA memakai `.js-wa-link` dan `data-wa-message`, sehingga nomor/URL tetap dibuat `whatsapp.js`. Toggle `enableShoppingMockup` disediakan.
+- **Verifikasi:** sintaks JS dan `git diff --check` lulus; pemeriksaan markup memastikan label, toggle, CTA WhatsApp, selector observer bersama, jeda berbasis token, dan konten statis saat reduced-motion. Graphify code-only diperbarui. Uji visual browser tidak tersedia karena headless gagal merender.
+- **Commit:** `0bec419` — `feat(motion): tambah mockup chat berurutan [T19]`.
+- **Catatan/Keputusan:** konten percakapan adalah simulasi dan diberi label "Contoh".
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T20
 
 ### [2026-11-16 23:17] T18 — Carousel katalog pilihan (DONE)
 - **Hasil:** katalog pilihan beranda memakai scroll-snap, dapat diseret dengan mouse, sentuh tetap native, dan track dapat difokuskan agar bisa dijelajahi dengan keyboard. Toggle `CONFIG.features.enableFeaturedCarousel` mematikan track dengan aman.

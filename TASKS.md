@@ -34,7 +34,7 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 | T16 | Fondasi gerak: salin `docs/10-panduan-ui-animasi.md`, audit animasi T11, token gerak disetujui dan ditambahkan ke `tokens.css` + `docs/02` §8, buat `motion.css`/`motion.js` bersama (satu observer, stagger `--d`, reduced-motion global) | T14 | docs/10 §1, §4.0–4.1, §7; AGENTS §7 | DONE |
 | T17 | Marquee strip: chip layanan/keunggulan berjalan (tanpa merek `[?]`), jeda saat hover, salinan `aria-hidden` | T16 | docs/10 §4.2 | DONE |
 | T18 | Carousel "katalog pilihan" di beranda bisa diseret (scroll-snap + pointer; sentuh dan keyboard tetap native) | T16 | docs/10 §4.3; docs/03 A | DONE |
-| T19 | Mockup alur belanja beranimasi: simulasi chat WhatsApp berurutan pada "Cara belanja" (label "Contoh") | T16 | docs/10 §4.5; docs/03 A | IN PROGRESS |
+| T19 | Mockup alur belanja beranimasi: simulasi chat WhatsApp berurutan pada "Cara belanja" (label "Contoh") | T16 | docs/10 §4.5; docs/03 A | DONE |
 | T20 | Angka berhitung dari data terkonfirmasi di `config.js` (mis. rating Google Maps), format `id-ID` | T16 | docs/10 §4.4; docs/05 | TODO |
 | T21 | Hover kartu produk (`@media (hover: hover)`) dan status header saat scroll | T16 | docs/10 §4.6 | TODO |
 | T22 | QA akhir Fase 2: uji semua toggle, Lighthouse, reduced-motion, 360/1280px; perbarui graph, `README.md`, dan `docs/panduan-pemilik.md` | T17–T21 | docs/06, 08; AGENTS §8, §10 | TODO |
@@ -90,3 +90,4 @@ _(kosong — agent menambahkan di sini)_
 | T16 | 2026-11-16 | `a237a73` | Token gerak disetujui; fondasi reveal bersama dan reduced-motion ditambahkan. |
 | T17 | 2026-11-16 | `daaca7a` | Marquee chip layanan terkonfirmasi dengan toggle dan reduced-motion statis. |
 | T18 | 2026-11-16 | `2f902a6` | Carousel scroll-snap dengan drag mouse, sentuh, dan fokus keyboard. |
+| T19 | 2026-11-16 | `0bec419` | Mockup chat contoh tampil berurutan dan CTA memakai modul WhatsApp. |
