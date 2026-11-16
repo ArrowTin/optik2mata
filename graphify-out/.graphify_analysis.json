@@ -116,18 +116,18 @@
       "degree": 5
     },
     {
+      "id": "assets_js_data_fetchrecords",
+      "label": "fetchRecords()",
+      "degree": 3
+    },
+    {
       "id": "assets_js_main_renderfeaturedproducts",
       "label": "renderFeaturedProducts()",
       "degree": 3
     },
     {
-      "id": "assets_js_whatsapp_producturl",
-      "label": "productUrl()",
-      "degree": 3
-    },
-    {
-      "id": "assets_js_whatsapp_wadelivery",
-      "label": "waDelivery()",
+      "id": "assets_js_catalog_applyfilters",
+      "label": "applyFilters()",
       "degree": 3
     }
   ],
