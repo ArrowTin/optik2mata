@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-16 08:30] T10 — Performa & aksesibilitas (BLOCKED)
 - **Hasil:** memperbaiki skip-link/target fokus, dimensi gambar logo, tinggi chip filter 48px, dan pemuatan Google Fonts non-blocking.
 - **Verifikasi:** sintaks JS dan pemeriksaan statis lulus. Lighthouse mobile: Performance 82, Accessibility 100, Best Practices 100, SEO 100; transfer awal 149 KiB, LCP 1,8 dtk, TBT 680 ms. Screenshot viewport tidak tersedia karena Chrome standalone gagal GPU.
-- **Commit:** 04a6100 dan menunggu hash perbaikan font.
+- **Commit:** 04a6100, 9feb35e — perbaikan aksesibilitas dan font sudah dipush ke origin/main.
 - **Catatan/Keputusan:** pemuatan font non-blocking menurunkan render-blocking dari estimasi 870 ms menjadi 0 ms dan menaikkan Performance dari 68 ke 82. Target Performance minimal 90 belum terpenuhi. Cache/kompresi juga belum dapat dinilai pada server Python lokal.
 - **Pertanyaan terbuka:** lanjut optimasi untuk mencapai Performance 90 pada audit lokal, atau tunggu pengukuran ulang di hosting target?
 - **Berikutnya:** T10 setelah audit lulus; T11 menunggu T10.
