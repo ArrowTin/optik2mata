@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T22 (TODO)
+- Task aktif: T22 (BLOCKED)
 - Terakhir selesai: T21
-- Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
-- Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.
+- Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); T22 — Lighthouse dan uji viewport/reduced-motion browser tidak dapat dijalankan karena renderer Chrome/Edge/Firefox headless gagal di lingkungan ini.
+- Pertanyaan terbuka untuk pengguna: sediakan sesi/browser yang bisa merender situs untuk QA 360/1280px, reduced-motion, konsol, dan Lighthouse.
 
 ## Log
+
+### [2026-11-17 00:14] T22 — QA akhir Fase 2 (BLOCKED)
+- **Hasil:** memperbarui README proyek dan panduan pemilik dengan enam toggle Fase 2. Graphify code-only dijalankan kembali.
+- **Verifikasi:** semua enam toggle ditemukan dan terhubung ke kontrol terkait; harness Node untuk toggle hitung/hover/header, reduced-motion, drag, marquee, mockup, dan observer lulus. `node --check` dan `git diff --check` lulus. Lima halaman memiliki satu H1 dan semua aset lokal ada; perkiraan aset lokal awal beranda 90.385 byte tanpa kompresi.
+- **Commit:** dicatat pada commit dokumentasi T22 setelah perubahan ini.
+- **Catatan/Keputusan:** Lighthouse tidak menghasilkan laporan. Chrome dan Edge headless berakhir dengan kegagalan proses GPU; Firefox headless tidak menghasilkan screenshot. Karena itu skor Lighthouse, konsol browser, dan tampilan nyata pada 360/1280px belum dapat diverifikasi. Task tidak ditandai DONE.
+- **Pertanyaan terbuka:** perlu sesi/browser yang berfungsi untuk menyelesaikan QA browser.
+- **Berikutnya:** T22 setelah browser QA dapat dilakukan.
 
 ### [2026-11-16 23:38] T21 — Hover kartu dan status header (DONE)
 - **Hasil:** hover kartu produk hanya aktif pada perangkat `hover: hover`, dengan toggle `enableProductCardHover`. Header mendapat bayangan saat halaman discroll lewat pseudo-elemen absolut dan toggle `enableHeaderScrollState`, tanpa mengubah dimensi layout.

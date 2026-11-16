@@ -21,6 +21,8 @@ Gunakan foto milik toko atau foto yang izinnya sudah jelas. Ambil dengan latar p
 
 Perubahan nama, alamat, jam, nomor, tautan Maps, harga, layanan, atau toggle katalog dikerjakan melalui `assets/js/config.js`. Minta bantuan pengelola situs untuk perubahan ini. Informasi pemeriksaan mata, servis, pembayaran, jangkauan antar, dan testimoni hanya boleh ditampilkan setelah dikonfirmasi.
 
+Efek tambahan dapat dimatikan pengelola melalui toggle `enableServiceMarquee`, `enableFeaturedCarousel`, `enableShoppingMockup`, `enableRatingCountUp`, `enableProductCardHover`, dan `enableHeaderScrollState` pada `CONFIG.features`. Pengaturan `prefers-reduced-motion` perangkat otomatis membuat efek bergerak menjadi statis.
+
 ## Cara melihat pratinjau
 
 Pengelola dapat menjalankan server lokal dari folder situs dengan `python -m http.server 8000`, lalu membuka `http://localhost:8000`. Jangan membuka file HTML langsung karena katalog memerlukan server.
