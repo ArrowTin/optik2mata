@@ -31,7 +31,7 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
-| T16 | Fondasi gerak: salin `docs/10-panduan-ui-animasi.md`, audit animasi T11, usulkan token gerak (**butuh persetujuan**) lalu tambahkan ke `tokens.css` + `docs/02` §8, buat `motion.css`/`motion.js` bersama (satu observer, stagger `--d`, reduced-motion global) | T14 | docs/10 §1, §4.0–4.1, §7; AGENTS §7 | IN PROGRESS |
+| T16 | Fondasi gerak: salin `docs/10-panduan-ui-animasi.md`, audit animasi T11, token gerak disetujui dan ditambahkan ke `tokens.css` + `docs/02` §8, buat `motion.css`/`motion.js` bersama (satu observer, stagger `--d`, reduced-motion global) | T14 | docs/10 §1, §4.0–4.1, §7; AGENTS §7 | DONE |
 | T17 | Marquee strip: chip layanan/keunggulan berjalan (tanpa merek `[?]`), jeda saat hover, salinan `aria-hidden` | T16 | docs/10 §4.2 | TODO |
 | T18 | Carousel "katalog pilihan" di beranda bisa diseret (scroll-snap + pointer; sentuh dan keyboard tetap native) | T16 | docs/10 §4.3; docs/03 A | TODO |
 | T19 | Mockup alur belanja beranimasi: simulasi chat WhatsApp berurutan pada "Cara belanja" (label "Contoh") | T16 | docs/10 §4.5; docs/03 A | TODO |
@@ -87,3 +87,4 @@ _(kosong — agent menambahkan di sini)_
 | T12 | 2026-11-16 | `6171743` | Verifikasi data usaha dan toggle fitur yang sudah dipersonalisasi. |
 | T13 | 2026-11-16 | `0fe96bc` | README, panduan pemilik, dan daftar konfirmasi dibuat. |
 | T14 | 2026-11-16 | `c4bed57` | Graph code-only diperbarui dan QA statis/responsif lokal selesai. |
+| T16 | 2026-11-16 | `a237a73` | Token gerak disetujui; fondasi reveal bersama dan reduced-motion ditambahkan. |

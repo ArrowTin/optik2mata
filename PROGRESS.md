@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T15 (BLOCKED)
-- Terakhir selesai: T14
+- Task aktif: T17 (TODO)
+- Terakhir selesai: T16
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
 - Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.
 
 ## Log
+
+### [2026-11-16 21:14] T16 — Fondasi gerak (DONE)
+- **Hasil:** menambahkan token gerak yang disetujui, `motion.css`, dan `motion.js`; reveal T11 memakai satu observer bersama untuk elemen awal dan produk dinamis. Transisi lama yang mengubah bayangan/latar dirapikan agar gerak hanya memakai `transform` dan `opacity`.
+- **Verifikasi:** `node --check` untuk modul terkait, `git diff --check`, dan harness Node untuk observer tunggal, elemen dinamis, reveal sekali, serta `prefers-reduced-motion` lulus. Graphify code-only diperbarui. Lighthouse dan screenshot browser tidak selesai karena Chrome/Firefox headless gagal merender di lingkungan ini.
+- **Commit:** `a237a73` — `feat(motion): siapkan fondasi gerak bersama [T16]`.
+- **Catatan/Keputusan:** token `--ease-out`, `--dur-fast`, dan `--dur-base` disetujui pengguna. Pemeriksaan browser visual tetap menjadi batasan QA.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T17
 
 ### [2026-11-16 20:22] T15 — Deploy demo dan QR (BLOCKED)
 - **Hasil:** menambahkan workflow GitHub Actions yang mengemas hanya HTML, aset, dan data publik; mengarahkan metadata/sitemap ke URL demo sementara `https://arrowtin.github.io/optik2mata/`. Workflow dan perubahan URL dipush.
