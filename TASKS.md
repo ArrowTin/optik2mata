@@ -60,4 +60,4 @@ _(kosong — agent menambahkan di sini)_
 | T09 | 2026-11-16 | `49a57a5` | Metadata SEO, Open Graph, JSON-LD Optician, robots, sitemap, webmanifest, dan gambar OG SVG. |
 | T10 | 2026-11-16 | `f689386` | Pemuatan font saat browser senggang; Lighthouse lokal memenuhi target. |
 | T11 | 2026-11-16 | `3346165` | Reveal bertahap, lightbox galeri, dan animasi ornamen dengan reduced-motion. |
-| T12 | 2026-11-16 | `02ac040` | Verifikasi data usaha dan toggle fitur yang sudah dipersonalisasi. |
+| T12 | 2026-11-16 | `6171743` | Verifikasi data usaha dan toggle fitur yang sudah dipersonalisasi. |
