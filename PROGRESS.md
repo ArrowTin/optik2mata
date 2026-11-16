@@ -3,12 +3,21 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: —
+- Task aktif: T15 (BLOCKED)
 - Terakhir selesai: T14
-- Terblokir: —
-- Pertanyaan terbuka untuk pengguna: domain resmi untuk mengganti placeholder example.com sebelum deploy.
+- Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
+- Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.
 
 ## Log
+
+### [2026-11-16 20:22] T15 — Deploy demo dan QR (BLOCKED)
+- **Hasil:** menambahkan workflow GitHub Actions yang mengemas hanya HTML, aset, dan data publik; mengarahkan metadata/sitemap ke URL demo sementara `https://arrowtin.github.io/optik2mata/`. Workflow dan perubahan URL dipush.
+- **Verifikasi:** YAML workflow, sitemap, JSON, dan sintaks JS valid. URL Pages diperiksa dua kali dan tetap mengembalikan HTTP 404; metadata repo GitHub tanpa autentikasi juga mengembalikan 404. QR belum dibuat karena URL belum aktif.
+- **Commit:** `46ab9d7` — chore(deploy): siapkan demo GitHub Pages [T15] (sudah dipush ke `origin/main`).
+- **Catatan/Keputusan:** GitHub Pages perlu diaktifkan sebagai source GitHub Actions. Pages tersedia untuk repo publik pada GitHub Free, sedangkan repo privat memerlukan paket Pro/Team/Enterprise; status paket dan pengaturan repo ini tidak dapat dibaca dari akses yang tersedia. Visibilitas repo tidak diubah.
+- **Pertanyaan terbuka:** mohon aktifkan Pages di Settings → Pages → Source: GitHub Actions, atau sebutkan hosting lain yang ingin dipakai. Jika repo privat pada paket Free, pilih hosting lain atau konfirmasi secara eksplisit bila ingin membuat repo publik.
+- **Berikutnya:** setelah URL aktif, uji HTTPS/perangkat dan buat QR code.
+
 
 ### [2026-11-16 20:08] T14 — Graphify dan QA lokal (DONE)
 - **Hasil:** Graphify code-only diperbarui; graph berisi 61 node, 116 edge, 5 komunitas. QA memeriksa lima halaman HTML (masing-masing satu H1 dan aset lokal tersedia), 12 data contoh, sintaks semua modul, token warna, placeholder yang dilarang, dan tampilan mobile dari screenshot Lighthouse.
