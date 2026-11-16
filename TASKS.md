@@ -61,3 +61,4 @@ _(kosong — agent menambahkan di sini)_
 | T10 | 2026-11-16 | `f689386` | Pemuatan font saat browser senggang; Lighthouse lokal memenuhi target. |
 | T11 | 2026-11-16 | `3346165` | Reveal bertahap, lightbox galeri, dan animasi ornamen dengan reduced-motion. |
 | T12 | 2026-11-16 | `6171743` | Verifikasi data usaha dan toggle fitur yang sudah dipersonalisasi. |
+| T13 | 2026-11-16 | `0fe96bc` | README, panduan pemilik, dan daftar konfirmasi dibuat. |
