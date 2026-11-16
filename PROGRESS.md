@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T20 (IN PROGRESS)
-- Terakhir selesai: T19
+- Task aktif: T21 (TODO)
+- Terakhir selesai: T20
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
 - Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.
 
 ## Log
+
+### [2026-11-16 23:29] T20 — Angka rating (DONE)
+- **Hasil:** rating dan jumlah ulasan Google di hero dihitung dari `CONFIG.business.rating`, diformat `id-ID`, dan memakai toggle `enableRatingCountUp`. Placeholder tidak mengarang angka sebelum JavaScript berjalan; reduced-motion dan toggle mati menampilkan angka final secara statis.
+- **Verifikasi:** harness Node menguji nilai awal nol, format lokal, nilai akhir `4,3`/`9`, reduced-motion, dan toggle mati. Sintaks JS serta `git diff --check` lulus. Graphify code-only diperbarui. Headless browser visual tidak tersedia.
+- **Commit:** `6176a75` — `feat(motion): animasikan rating terkonfirmasi [T20]`.
+- **Catatan/Keputusan:** data rating `4,3` dari 9 ulasan sudah terkonfirmasi di konfigurasi usaha.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T21
 
 ### [2026-11-16 23:20] T19 — Mockup percakapan WhatsApp (DONE)
 - **Hasil:** menambahkan simulasi chat berlabel "Contoh" pada bagian Cara berbelanja. Pesan muncul berurutan ketika mockup terlihat; CTA memakai `.js-wa-link` dan `data-wa-message`, sehingga nomor/URL tetap dibuat `whatsapp.js`. Toggle `enableShoppingMockup` disediakan.
