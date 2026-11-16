@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Detail produk kacamata Optik 2Mata Bengkayang. Tanyakan ketersediaan melalui WhatsApp.">
+    <title>Detail Produk | Optik 2Mata Bengkayang</title>
+    <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+  </head>
+  <body class="has-floating-wa">
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html"><img class="brand__logo" src="assets/img/brand/logo.svg" alt=""><span class="brand__text"><span class="brand__name">2Mata</span><span class="brand__caption">Optik Bengkayang</span></span></a>
+        <details class="nav-menu">
+          <summary class="nav-menu__toggle" aria-label="Buka menu navigasi"><span class="nav-menu__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span><span>Menu</span></summary>
+          <nav class="nav-menu__panel" aria-label="Navigasi utama"><a class="nav-menu__link" href="index.html">Beranda</a><a class="nav-menu__link" href="katalog.html">Katalog</a><a class="nav-menu__link" href="index.html#lokasi">Lokasi</a><a class="btn btn-wa js-wa-link" href="#konten">Chat WhatsApp</a></nav>
+        </details>
+      </div>
+    </header>
+    <main id="konten" class="page-section">
+      <div class="container">
+        <p class="breadcrumb"><a href="katalog.html">Katalog</a><span aria-hidden="true"> / </span><span aria-current="page">Detail produk</span></p>
+        <div class="product-detail" data-product-detail hidden>
+          <div class="product-detail__gallery">
+            <img class="product-detail__image" data-product-main-image src="assets/img/produk/foto-segera-hadir.svg" alt="Foto produk" width="800" height="600">
+            <div class="product-detail__thumbnails" data-product-thumbnails aria-label="Foto produk"></div>
+          </div>
+          <section class="product-detail__content" aria-labelledby="product-title">
+            <p class="eyebrow" data-product-category></p>
+            <h1 class="section-heading__title" id="product-title" data-product-name></h1>
+            <p class="product-detail__badge" data-product-badge hidden></p>
+            <p class="product-card__price" data-product-price hidden></p>
+            <p class="product-detail__description" data-product-description></p>
+            <dl class="product-specs" data-product-specs></dl>
+            <p class="product-detail__note">Harga dan ketersediaan dapat berubah. Konfirmasi melalui WhatsApp.</p>
+            <div class="product-detail__actions">
+              <a class="btn btn-wa" data-product-wa href="#konten">Tanya produk ini via WhatsApp</a>
+              <a class="btn btn-outline" href="katalog.html">Kembali ke katalog</a>
+            </div>
+          </section>
+        </div>
+        <section class="product-state" data-product-state aria-live="polite">
+          <h2 class="section-heading__title" data-product-state-title>Memuat produk…</h2>
+          <p data-product-state-message></p>
+          <a class="btn btn-outline" href="katalog.html">Kembali ke katalog</a>
+          <a class="btn btn-wa js-wa-link" href="#konten">Tanya lewat WhatsApp</a>
+        </section>
+      </div>
+      <section class="page-section page-section--soft" data-related-section hidden aria-labelledby="related-title">
+        <div class="container">
+          <div class="section-heading"><p class="eyebrow">Pilihan lainnya</p><h2 class="section-heading__title" id="related-title">Produk serupa</h2></div>
+          <div class="product-grid" data-related-products></div>
+        </div>
+      </section>
+    </main>
+    <a class="btn btn-wa btn-wa-floating js-wa-link" href="#konten">Chat WhatsApp</a>
+    <script type="module" src="assets/js/product.js"></script>
+  </body>
+</html>

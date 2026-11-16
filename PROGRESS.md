@@ -4,11 +4,19 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T06
+- Terakhir selesai: T07
 - Terblokir: —
 - Pertanyaan terbuka untuk pengguna: —
 
 ## Log
+
+### [2026-11-15 23:53] T07 — Detail produk (DONE)
+- **Hasil:** membuat `produk.html` dan `product.js` untuk galeri foto, spesifikasi, harga mengikuti toggle, CTA WhatsApp berisi nama/kode/tautan, produk serupa, serta state ID tidak valid dan kegagalan data. Komponen kartu dipakai ulang.
+- **Verifikasi:** sintaks JS valid; struktur HTML punya satu H1 dan semua target dinamis tersedia; `git diff --check` bersih. Visual lintas viewport belum dapat dikonfirmasi dengan Chrome headless.
+- **Commit:** menunggu hash commit implementasi.
+- **Catatan/Keputusan:** informasi harga hanya muncul jika diaktifkan; semua foto menggunakan placeholder produk yang sudah ada.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T08
 
 ### [2026-11-15 23:50] T06 — Katalog & filter (DONE)
 - **Hasil:** membuat `katalog.html` dengan cari nama/kode, filter kategori, urutan terbaru/harga, state di query string, kartu produk bersama, serta empty/error state dengan CTA WhatsApp.

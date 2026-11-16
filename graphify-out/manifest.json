@@ -40,5 +40,11 @@
     "seen": 1794761599.611072,
     "ast_hash": "8cb6dd86ddecc07c6b6c83a9204e834f",
     "semantic_hash": "8cb6dd86ddecc07c6b6c83a9204e834f"
+  },
+  "assets/js/product.js": {
+    "mtime": 1794761751.8035846,
+    "seen": 1794761785.702411,
+    "ast_hash": "6729413a93da796520c8ec6213a3273e",
+    "semantic_hash": "6729413a93da796520c8ec6213a3273e"
   }
 }
