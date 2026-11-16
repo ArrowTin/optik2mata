@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-16 08:04] T08 — 404, fallback data & kembali ke atas (DONE)
 - **Hasil:** menambahkan halaman 404.html, opsi muat ulang pada state katalog gagal, dan tombol kembali ke atas pada beranda/katalog/detail. Tombol memakai tautan WhatsApp dari modul bersama.
 - **Verifikasi:** sintaks lima modul JS valid; semua halaman punya satu H1; halaman utama, katalog, dan detail memiliki state error ramah dengan muat ulang dan WhatsApp; git diff --check bersih. Graphify code-only menghasilkan 56 node, 108 edge, 7 komunitas. Pemeriksaan visual browser belum dilakukan.
-- **Commit:** menunggu hash commit implementasi.
+- **Commit:** d9c8070 — feat(navigasi): tambah halaman 404 dan tombol kembali [T08] (sudah dipush ke origin/main).
 - **Catatan/Keputusan:** tombol kembali ke atas tampil setelah scroll 480px; scroll halus mengikuti pengaturan reduced motion global.
 - **Pertanyaan terbuka:** —
 - **Berikutnya:** T09

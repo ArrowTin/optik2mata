@@ -56,4 +56,4 @@ _(kosong — agent menambahkan di sini)_
 | T05 | 2026-11-15 | `30a9b8d` | Lengkapi section bawah beranda dan integrasi katalog unggulan. |
 | T06 | 2026-11-15 | `48dcb5f` | Katalog dengan pencarian, kategori, urutan, URL berbagi, dan empty/error state. |
 | T07 | 2026-11-16 | `bdd4caf` | Detail produk dengan galeri, spesifikasi, WhatsApp, rekomendasi, dan state ID/error.
-| T08 | 2026-11-16 | HASH_MENUNGGU | Halaman 404, fallback data dengan opsi muat ulang, dan tombol kembali ke atas. |
+| T08 | 2026-11-16 | `d9c8070` | Halaman 404, fallback data dengan opsi muat ulang, dan tombol kembali ke atas. |
