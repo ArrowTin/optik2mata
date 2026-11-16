@@ -57,4 +57,4 @@ _(kosong — agent menambahkan di sini)_
 | T06 | 2026-11-15 | `48dcb5f` | Katalog dengan pencarian, kategori, urutan, URL berbagi, dan empty/error state. |
 | T07 | 2026-11-16 | `bdd4caf` | Detail produk dengan galeri, spesifikasi, WhatsApp, rekomendasi, dan state ID/error.
 | T08 | 2026-11-16 | `d9c8070` | Halaman 404, fallback data dengan opsi muat ulang, dan tombol kembali ke atas. |
-| T09 | 2026-11-16 | HASH_MENUNGGU | Metadata SEO, Open Graph, JSON-LD Optician, robots, sitemap, webmanifest, dan gambar OG SVG. |
+| T09 | 2026-11-16 | `49a57a5` | Metadata SEO, Open Graph, JSON-LD Optician, robots, sitemap, webmanifest, dan gambar OG SVG. |

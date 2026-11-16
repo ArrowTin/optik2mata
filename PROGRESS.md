@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-16 08:14] T09 — SEO teknis (DONE)
 - **Hasil:** menambahkan title/description, canonical, Open Graph, Twitter Card, JSON-LD Optician, robots.txt, sitemap.xml, site.webmanifest, dan gambar OG SVG. Metadata detail produk ikut diperbarui sesuai produk yang dimuat.
 - **Verifikasi:** JSON-LD dan webmanifest berhasil diparse; sitemap serta OG SVG valid XML; meta title/description/canonical/OG ditemukan pada halaman terkait; JS valid; git diff --check bersih. Graphify code-only: 57 node, 110 edge, 7 komunitas.
-- **Commit:** menunggu hash commit implementasi.
+- **Commit:** 49a57a5 — feat(seo): lengkapi metadata dan file indeks [T09] (sudah dipush ke origin/main).
 - **Catatan/Keputusan:** domain belum diberikan; URL memakai example.com sebagai placeholder dan harus diganti sebelum deploy. Tidak ada aggregateRating di schema.
 - **Pertanyaan terbuka:** domain resmi untuk mengganti placeholder.
 - **Berikutnya:** T10
