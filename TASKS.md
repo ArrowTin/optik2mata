@@ -19,7 +19,7 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 | T11 | Polesan demo: reveal on scroll, hover, lightbox, animasi lingkaran hero (hormati reduced-motion) | T10 | docs/02 §8; Prompt 7 | DONE |
 | T12 | Personalisasi data usaha asli + toggle `config.features` | T11 | docs/00; Prompt 8 | DONE |
 | T13 | `README.md` proyek + `docs/panduan-pemilik.md` + `daftar-konfirmasi.md` | T12 | docs/05, 08; Prompt 8 | DONE |
-| T14 | Graph Graphify pertama (bila Graphify terpasang) & QA final sesuai checklist | T13 | AGENTS §8; docs/08; Prompt 9 | TODO |
+| T14 | Graph Graphify pertama (bila Graphify terpasang) & QA final sesuai checklist | T13 | AGENTS §8; docs/08; Prompt 9 | DONE |
 | T15 | Deploy demo ke URL sementara + QR code | T14 | docs/08 §2 | TODO |
 
 ## Kriteria Lulus Ringkas per Task
@@ -62,3 +62,4 @@ _(kosong — agent menambahkan di sini)_
 | T11 | 2026-11-16 | `3346165` | Reveal bertahap, lightbox galeri, dan animasi ornamen dengan reduced-motion. |
 | T12 | 2026-11-16 | `6171743` | Verifikasi data usaha dan toggle fitur yang sudah dipersonalisasi. |
 | T13 | 2026-11-16 | `0fe96bc` | README, panduan pemilik, dan daftar konfirmasi dibuat. |
+| T14 | 2026-11-16 | `c4bed57` | Graph code-only diperbarui dan QA statis/responsif lokal selesai. |
