@@ -91,6 +91,21 @@
   color: var(--color-accent);
 }
 
+.hero__count {
+  display: inline-block;
+  color: var(--color-ink);
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+
+.hero__count--rating {
+  min-width: 3ch;
+}
+
+.hero__count--reviews {
+  min-width: 1ch;
+}
+
 .hero__visual {
   position: relative;
   display: grid;

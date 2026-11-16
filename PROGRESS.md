@@ -3,7 +3,7 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T20 (TODO)
+- Task aktif: T20 (IN PROGRESS)
 - Terakhir selesai: T19
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
 - Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.

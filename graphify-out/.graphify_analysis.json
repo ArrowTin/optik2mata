@@ -1,6 +1,24 @@
 {
   "communities": {
     "0": [
+      "assets_js_main_renderfeaturedproducts",
+      "assets_js_motion",
+      "assets_js_motion_animatecounter",
+      "assets_js_motion_animatecounter_update",
+      "assets_js_motion_applymotionstagger",
+      "assets_js_motion_countertarget",
+      "assets_js_motion_formatcounter",
+      "assets_js_motion_getrevealobserver",
+      "assets_js_motion_observereveals",
+      "assets_js_motion_preparecounters",
+      "assets_js_motion_reducemotion",
+      "assets_js_motion_revealselector",
+      "assets_js_ui",
+      "assets_js_ui_backtotop",
+      "assets_js_ui_galleryimages",
+      "assets_js_ui_showimage"
+    ],
+    "1": [
       "assets_js_catalog",
       "assets_js_catalog_applyfilters",
       "assets_js_catalog_categorybuttons",
@@ -17,7 +35,7 @@
       "assets_js_catalog_updateaddress",
       "assets_js_catalog_validcategories"
     ],
-    "1": [
+    "2": [
       "assets_js_data",
       "assets_js_data_clearproductscache",
       "assets_js_data_data_error_message",
@@ -34,7 +52,7 @@
       "assets_js_data_readfield",
       "assets_js_data_writecache"
     ],
-    "2": [
+    "3": [
       "assets_js_config",
       "assets_js_config_config",
       "assets_js_not_found",
@@ -47,7 +65,7 @@
       "assets_js_whatsapp_walink",
       "assets_js_whatsapp_waproduct"
     ],
-    "3": [
+    "4": [
       "assets_js_product",
       "assets_js_product_addspec",
       "assets_js_product_detail",
@@ -60,49 +78,35 @@
       "assets_js_product_statetitle",
       "assets_js_product_updateproductmetadata"
     ],
-    "4": [
-      "assets_js_main_renderfeaturedproducts",
-      "assets_js_motion",
-      "assets_js_motion_applymotionstagger",
-      "assets_js_motion_getrevealobserver",
-      "assets_js_motion_observereveals",
-      "assets_js_motion_reducemotion",
-      "assets_js_motion_revealselector"
-    ],
     "5": [
       "assets_js_carousel",
       "assets_js_carousel_enablepointerdrag",
+      "assets_js_fonts",
+      "assets_js_fonts_loadfonts",
       "assets_js_main",
       "assets_js_main_businesstext",
       "assets_js_main_featuredcarousel",
       "assets_js_main_shoppingmockup"
-    ],
-    "6": [
-      "assets_js_ui",
-      "assets_js_ui_backtotop",
-      "assets_js_ui_galleryimages",
-      "assets_js_ui_showimage"
-    ],
-    "7": [
-      "assets_js_fonts",
-      "assets_js_fonts_loadfonts"
     ]
   },
   "cohesion": {
-    "0": 0.14285714285714285,
-    "1": 0.22857142857142856,
-    "2": 0.38181818181818183,
-    "3": 0.2,
-    "4": 0.38095238095238093,
-    "5": 0.4,
-    "6": 0.5,
-    "7": 1.0
+    "0": 0.18333333333333332,
+    "1": 0.14285714285714285,
+    "2": 0.22857142857142856,
+    "3": 0.38181818181818183,
+    "4": 0.2,
+    "5": 0.2857142857142857
   },
   "gods": [
     {
       "id": "assets_js_data_loadproducts",
       "label": "loadProducts()",
       "degree": 10
+    },
+    {
+      "id": "assets_js_motion_observereveals",
+      "label": "observeReveals()",
+      "degree": 8
     },
     {
       "id": "assets_js_product_card_createproductcard",
@@ -115,14 +119,9 @@
       "degree": 8
     },
     {
-      "id": "assets_js_motion_observereveals",
-      "label": "observeReveals()",
-      "degree": 8
-    },
-    {
       "id": "assets_js_config_config",
       "label": "CONFIG",
-      "degree": 7
+      "degree": 8
     },
     {
       "id": "assets_js_data_normalizeproduct",
@@ -140,13 +139,13 @@
       "degree": 5
     },
     {
-      "id": "assets_js_catalog_applyfilters",
-      "label": "applyFilters()",
+      "id": "assets_js_main_renderfeaturedproducts",
+      "label": "renderFeaturedProducts()",
       "degree": 4
     },
     {
-      "id": "assets_js_main_renderfeaturedproducts",
-      "label": "renderFeaturedProducts()",
+      "id": "assets_js_catalog_applyfilters",
+      "label": "applyFilters()",
       "degree": 4
     }
   ],
@@ -196,11 +195,11 @@
       "why": "bridges separate communities"
     },
     {
-      "source": "createProductCard()",
-      "target": "productUrl()",
+      "source": "renderFeaturedProducts()",
+      "target": "observeReveals()",
       "source_files": [
-        "assets/js/product-card.js",
-        "assets/js/whatsapp.js"
+        "assets/js/main.js",
+        "assets/js/motion.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
