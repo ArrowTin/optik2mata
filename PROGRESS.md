@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T17 (TODO)
-- Terakhir selesai: T16
+- Task aktif: T18 (TODO)
+- Terakhir selesai: T17
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
 - Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.
 
 ## Log
+
+### [2026-11-16 23:05] T17 — Marquee layanan (DONE)
+- **Hasil:** menambahkan strip chip berjalan dari layanan terkonfirmasi (kacamata/frame, lensa, belanja/ambil di toko, dan pesan antar). Duplikasi loop diberi `aria-hidden`, jeda tersedia saat hover, dan fitur dapat dimatikan lewat `CONFIG.features.enableServiceMarquee`.
+- **Verifikasi:** sintaks JS dan `git diff --check` lulus; struktur grup asli dan duplikat sama, chip pesan antar mengikuti toggle layanan, dan aturan reduced-motion mematikan animasi serta membungkus chip menjadi statis. Graphify code-only diperbarui. Uji visual browser tidak tersedia karena kegagalan render headless.
+- **Commit:** `daaca7a` — `feat(motion): tambah marquee layanan [T17]`.
+- **Catatan/Keputusan:** teks hanya memakai layanan yang sudah terkonfirmasi; tidak menambahkan merek atau klaim baru.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T18
 
 ### [2026-11-16 21:14] T16 — Fondasi gerak (DONE)
 - **Hasil:** menambahkan token gerak yang disetujui, `motion.css`, dan `motion.js`; reveal T11 memakai satu observer bersama untuk elemen awal dan produk dinamis. Transisi lama yang mengubah bayangan/latar dirapikan agar gerak hanya memakai `transform` dan `opacity`.
