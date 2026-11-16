@@ -4,11 +4,20 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T11
+- Terakhir selesai: T12
 - Terblokir: —
 - Pertanyaan terbuka untuk pengguna: domain resmi untuk mengganti placeholder example.com sebelum deploy.
 
 ## Log
+
+### [2026-11-16 18:17] T12 — Personalisasi data usaha (DONE)
+- **Hasil:** memeriksa konfigurasi usaha dan toggle fitur yang sudah dipasang. Data nama, alamat, Plus Code, jam, telepon, Maps, dan rating cocok dengan fakta terkonfirmasi di `docs/00-README.md`; tagline kosong, harga/testimoni/pemeriksaan mata tersembunyi, dan pesan antar mengikuti layanan Maps.
+- **Verifikasi:** `CONFIG.business` dibaca melalui Node; sintaks `config.js` dan `main.js` valid; pencarian tidak menemukan `[?]` atau Lorem Ipsum pada halaman publik; `git diff --check` bersih.
+- **Commit:** `02ac040` — docs(progres): catat personalisasi T12 (belum dipush).
+- **Catatan/Keputusan:** tidak ada perubahan kode diperlukan karena personalisasi dan toggle sudah sesuai; domain dan akun sosial tetap kosong sampai dikonfirmasi.
+- **Pertanyaan terbuka:** domain resmi untuk mengganti placeholder `example.com` sebelum deploy.
+- **Berikutnya:** T13
+
 
 ### [2026-11-16 18:13] T11 — Polesan demo (DONE)
 - **Hasil:** menambahkan reveal bertahap dengan `IntersectionObserver`, lightbox galeri yang mendukung tombol navigasi, Escape, dan klik latar, serta animasi lembut pada ornamen hero. Efek tambahan nonaktif saat `prefers-reduced-motion`; hover kartu yang sudah ada tetap digunakan.
