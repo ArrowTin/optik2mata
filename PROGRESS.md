@@ -4,11 +4,20 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T12
+- Terakhir selesai: T13
 - Terblokir: —
 - Pertanyaan terbuka untuk pengguna: domain resmi untuk mengganti placeholder example.com sebelum deploy.
 
 ## Log
+
+### [2026-11-16 18:21] T13 — Dokumentasi proyek dan pemilik (DONE)
+- **Hasil:** menambahkan `README.md`, panduan tambah/ubah produk satu halaman, dan `daftar-konfirmasi.md` yang memisahkan data tercatat dari jawaban pemilik yang masih dibutuhkan.
+- **Verifikasi:** semua file dan tautan lokal utama tersedia; `data/products.json` valid; panduan pemilik 16 baris; pencarian tidak menemukan `[?]` atau Lorem Ipsum pada halaman publik; `git diff --check` bersih.
+- **Commit:** dicatat setelah commit lokal.
+- **Catatan/Keputusan:** panduan menegaskan katalog sekarang memakai contoh dan harga/spesifikasi tidak boleh diperlakukan sebagai data asli. Domain resmi masih menunggu keputusan.
+- **Pertanyaan terbuka:** domain resmi untuk mengganti placeholder `example.com` sebelum deploy.
+- **Berikutnya:** T14
+
 
 ### [2026-11-16 18:17] T12 — Personalisasi data usaha (DONE)
 - **Hasil:** memeriksa konfigurasi usaha dan toggle fitur yang sudah dipasang. Data nama, alamat, Plus Code, jam, telepon, Maps, dan rating cocok dengan fakta terkonfirmasi di `docs/00-README.md`; tagline kosong, harga/testimoni/pemeriksaan mata tersembunyi, dan pesan antar mengikuti layanan Maps.
