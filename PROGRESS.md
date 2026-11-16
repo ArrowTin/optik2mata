@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-16 08:30] T10 — Performa & aksesibilitas (BLOCKED)
 - **Hasil:** menambahkan skip-link dan target fokus pada 404/styleguide/halaman utama; memastikan gambar logo punya dimensi; menaikkan tinggi chip filter menjadi 48px. Gambar produk/katalog sudah memiliki dimensi dan lazy-loading; peta memakai lazy-loading.
 - **Verifikasi:** sintaks JS valid; pemeriksaan statis memastikan skip-link, target gambar, dan target sentuh. git diff --check bersih. Lighthouse tidak tersedia. Chrome headless gagal pada GPU (GPU process isn’t usable), sehingga screenshot/viewport tidak terverifikasi.
-- **Commit:** menunggu hash commit perbaikan parsial.
+- **Commit:** 04a6100 — fix(a11y): lengkapi akses keyboard [T10] (sudah dipush ke origin/main).
 - **Catatan/Keputusan:** T10 mensyaratkan skor Lighthouse mobile; task belum dapat ditandai selesai tanpa audit tersebut.
 - **Pertanyaan terbuka:** bolehkah saya menjalankan npx lighthouse tanpa menambahkan dependensi ke proyek?
 - **Berikutnya:** T10 setelah audit lulus; T11 menunggu T10.
