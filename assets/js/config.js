@@ -22,7 +22,8 @@ export const CONFIG = {
     showRepair: false,
     showTurnaroundInfo: false,
     showPaymentInfo: false,
-    hideSoldOut: false
+    hideSoldOut: false,
+    enableServiceMarquee: true
   },
   data: {
     source: "json",

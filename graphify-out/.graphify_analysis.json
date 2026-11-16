@@ -101,13 +101,13 @@
       "degree": 8
     },
     {
-      "id": "assets_js_config_config",
-      "label": "CONFIG",
+      "id": "assets_js_motion_observereveals",
+      "label": "observeReveals()",
       "degree": 7
     },
     {
-      "id": "assets_js_motion_observereveals",
-      "label": "observeReveals()",
+      "id": "assets_js_config_config",
+      "label": "CONFIG",
       "degree": 7
     },
     {
@@ -126,13 +126,13 @@
       "degree": 5
     },
     {
-      "id": "assets_js_catalog_applyfilters",
-      "label": "applyFilters()",
+      "id": "assets_js_main_renderfeaturedproducts",
+      "label": "renderFeaturedProducts()",
       "degree": 4
     },
     {
-      "id": "assets_js_main_renderfeaturedproducts",
-      "label": "renderFeaturedProducts()",
+      "id": "assets_js_catalog_applyfilters",
+      "label": "applyFilters()",
       "degree": 4
     }
   ],
@@ -149,33 +149,33 @@
       "why": "inferred connection - not explicitly stated in source; bridges separate communities"
     },
     {
-      "source": "applyFilters()",
-      "target": "createProductCard()",
-      "source_files": [
-        "assets/js/catalog.js",
-        "assets/js/product-card.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities"
-    },
-    {
-      "source": "applyFilters()",
-      "target": "observeReveals()",
-      "source_files": [
-        "assets/js/catalog.js",
-        "assets/js/motion.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities"
-    },
-    {
       "source": "renderFeaturedProducts()",
       "target": "observeReveals()",
       "source_files": [
         "assets/js/main.js",
         "assets/js/motion.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "applyFilters()",
+      "target": "observeReveals()",
+      "source_files": [
+        "assets/js/catalog.js",
+        "assets/js/motion.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "applyFilters()",
+      "target": "createProductCard()",
+      "source_files": [
+        "assets/js/catalog.js",
+        "assets/js/product-card.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",

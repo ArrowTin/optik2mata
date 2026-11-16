@@ -185,6 +185,69 @@
   color: var(--color-ink);
 }
 
+.service-marquee {
+  overflow: hidden;
+  padding-block: var(--space-4);
+  border-block: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.service-marquee__viewport {
+  overflow: hidden;
+}
+
+.service-marquee__track {
+  --marquee-duration: calc(
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) +
+    var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base) + var(--dur-base)
+  );
+  display: flex;
+  width: max-content;
+  animation: service-marquee-scroll var(--marquee-duration) var(--ease-out) infinite;
+}
+
+.service-marquee__group {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0 var(--space-3) 0 0;
+  list-style: none;
+}
+
+.service-marquee__chip {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  padding-inline: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-primary-lt);
+  color: var(--color-primary-dk);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@keyframes service-marquee-scroll {
+  to { transform: translateX(-50%); }
+}
+
+@media (hover: hover) {
+  .service-marquee:hover .service-marquee__track {
+    animation-play-state: paused;
+  }
+}
+
 .info-strip__icon,
 .service-card__icon {
   display: grid;
@@ -578,6 +641,27 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .service-marquee__viewport {
+    overflow: visible;
+  }
+
+  .service-marquee__track {
+    width: auto;
+    flex-wrap: wrap;
+    animation: none;
+    transform: none;
+  }
+
+  .service-marquee__group {
+    width: 100%;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+  }
+
+  .service-marquee__group[aria-hidden="true"] {
+    display: none;
+  }
+
   .btn,
   .service-card,
   .product-card {

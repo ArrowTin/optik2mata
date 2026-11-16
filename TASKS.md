@@ -32,7 +32,7 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
 | T16 | Fondasi gerak: salin `docs/10-panduan-ui-animasi.md`, audit animasi T11, token gerak disetujui dan ditambahkan ke `tokens.css` + `docs/02` §8, buat `motion.css`/`motion.js` bersama (satu observer, stagger `--d`, reduced-motion global) | T14 | docs/10 §1, §4.0–4.1, §7; AGENTS §7 | DONE |
-| T17 | Marquee strip: chip layanan/keunggulan berjalan (tanpa merek `[?]`), jeda saat hover, salinan `aria-hidden` | T16 | docs/10 §4.2 | TODO |
+| T17 | Marquee strip: chip layanan/keunggulan berjalan (tanpa merek `[?]`), jeda saat hover, salinan `aria-hidden` | T16 | docs/10 §4.2 | IN PROGRESS |
 | T18 | Carousel "katalog pilihan" di beranda bisa diseret (scroll-snap + pointer; sentuh dan keyboard tetap native) | T16 | docs/10 §4.3; docs/03 A | TODO |
 | T19 | Mockup alur belanja beranimasi: simulasi chat WhatsApp berurutan pada "Cara belanja" (label "Contoh") | T16 | docs/10 §4.5; docs/03 A | TODO |
 | T20 | Angka berhitung dari data terkonfirmasi di `config.js` (mis. rating Google Maps), format `id-ID` | T16 | docs/10 §4.4; docs/05 | TODO |
