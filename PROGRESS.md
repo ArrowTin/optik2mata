@@ -22,9 +22,9 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-16 20:08] T14 — Graphify dan QA lokal (DONE)
 - **Hasil:** Graphify code-only diperbarui; graph berisi 61 node, 116 edge, 5 komunitas. QA memeriksa lima halaman HTML (masing-masing satu H1 dan aset lokal tersedia), 12 data contoh, sintaks semua modul, token warna, placeholder yang dilarang, dan tampilan mobile dari screenshot Lighthouse.
 - **Verifikasi:** pemeriksaan statis dan `git diff --check` lulus. Lighthouse A11y 100 dan Best Practices 100 pada halaman yang diaudit; tidak ada error konsol. SEO 100 pada beranda/katalog/detail; halaman 404 mendapat 66 karena sengaja `noindex`. Transfer awal di bawah 1 MB. Skor Performance berubah antar-run (67–98; salah satu run beranda 94) saat audit lokal, jadi hasil ini tidak mewakili satu skor hosting yang stabil.
-- **Commit:** `c4bed57` — chore(graph): perbarui peta kode QA [T14] (menunggu push bersama catatan ini).
+- **Commit:** `c4bed57` — chore(graph): perbarui peta kode QA [T14] (sudah dipush ke `origin/main` bersama catatan QA).
 - **Catatan/Keputusan:** screenshot Lighthouse pada lebar mobile menunjukkan layout beranda/katalog tanpa overflow yang terlihat. Uji HTTPS dan perangkat fisik akan dilakukan setelah URL demo aktif di T15; Chrome screenshot langsung gagal karena batasan GPU headless.
-- **Pertanyaan terbuka:** pilihan hosting/domain; URL GitHub Pages belum dikonfigurasi dan `example.com` masih placeholder.
+- **Pertanyaan terbuka:** pilihan hosting/domain; URL sementara GitHub Pages belum aktif; URL domain resmi belum dipilih.
 - **Berikutnya:** T15
 
 
