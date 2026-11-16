@@ -4,11 +4,20 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T10
+- Terakhir selesai: T11
 - Terblokir: —
 - Pertanyaan terbuka untuk pengguna: domain resmi untuk mengganti placeholder example.com sebelum deploy.
 
 ## Log
+
+### [2026-11-16 18:13] T11 — Polesan demo (DONE)
+- **Hasil:** menambahkan reveal bertahap dengan `IntersectionObserver`, lightbox galeri yang mendukung tombol navigasi, Escape, dan klik latar, serta animasi lembut pada ornamen hero. Efek tambahan nonaktif saat `prefers-reduced-motion`; hover kartu yang sudah ada tetap digunakan.
+- **Verifikasi:** `node --check assets/js/ui.js` dan pemeriksaan `git diff --check` lulus. Lighthouse mobile: Performance 94, Accessibility 100, SEO 100, Best Practices 96; LCP 1,8 dtk, TBT 260 ms, transfer awal 74 KiB. CSS memuat aturan reduced-motion untuk reveal dan ornamen. Screenshot Chrome tidak tersedia karena proses GPU headless gagal; satu audit mencatat koneksi localhost terputus saat memuat `fonts.js`.
+- **Commit:** `3346165` — feat(demo): tambah reveal dan lightbox [T11] (sudah dipush ke `origin/main`).
+- **Catatan/Keputusan:** lightbox memakai elemen `<dialog>` bawaan tanpa dependensi tambahan. Graphify code-only diperbarui.
+- **Pertanyaan terbuka:** domain resmi untuk mengganti placeholder `example.com` sebelum deploy.
+- **Berikutnya:** T12
+
 
 ### [2026-11-16 18:08] T10 — Performa & aksesibilitas (DONE)
 - **Hasil:** pemuatan Google Fonts ditunda sampai browser senggang untuk mengurangi kerja saat render awal (`assets/js/fonts.js`). Graphify code-only diperbarui.

@@ -16,7 +16,7 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 | T08 | `404.html`, fallback error data, tombol kembali ke atas | T05 | docs/04 §6 | DONE |
 | T09 | SEO: title/meta, canonical, OG, JSON-LD, robots, sitemap, webmanifest | T07 | docs/06; Prompt 6 | DONE |
 | T10 | Performa & aksesibilitas: optimasi gambar, lazy-loading, skip-link, audit Lighthouse + perbaikan | T09 | docs/06; Prompt 6 | DONE |
-| T11 | Polesan demo: reveal on scroll, hover, lightbox, animasi lingkaran hero (hormati reduced-motion) | T10 | docs/02 §8; Prompt 7 | TODO |
+| T11 | Polesan demo: reveal on scroll, hover, lightbox, animasi lingkaran hero (hormati reduced-motion) | T10 | docs/02 §8; Prompt 7 | DONE |
 | T12 | Personalisasi data usaha asli + toggle `config.features` | T11 | docs/00; Prompt 8 | TODO |
 | T13 | `README.md` proyek + `docs/panduan-pemilik.md` + `daftar-konfirmasi.md` | T12 | docs/05, 08; Prompt 8 | TODO |
 | T14 | Graph Graphify pertama (bila Graphify terpasang) & QA final sesuai checklist | T13 | AGENTS §8; docs/08; Prompt 9 | TODO |
@@ -59,3 +59,4 @@ _(kosong — agent menambahkan di sini)_
 | T08 | 2026-11-16 | `d9c8070` | Halaman 404, fallback data dengan opsi muat ulang, dan tombol kembali ke atas. |
 | T09 | 2026-11-16 | `49a57a5` | Metadata SEO, Open Graph, JSON-LD Optician, robots, sitemap, webmanifest, dan gambar OG SVG. |
 | T10 | 2026-11-16 | `f689386` | Pemuatan font saat browser senggang; Lighthouse lokal memenuhi target. |
+| T11 | 2026-11-16 | `3346165` | Reveal bertahap, lightbox galeri, dan animasi ornamen dengan reduced-motion. |
