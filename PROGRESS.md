@@ -4,11 +4,20 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
 - Task aktif: —
-- Terakhir selesai: T09
-- Terblokir: T10 — skor Performance 82, target minimal 90.
-- Pertanyaan terbuka untuk pengguna: pilihan optimasi lanjutan atau audit ulang setelah hosting ditentukan.
+- Terakhir selesai: T10
+- Terblokir: —
+- Pertanyaan terbuka untuk pengguna: domain resmi untuk mengganti placeholder example.com sebelum deploy.
 
 ## Log
+
+### [2026-11-16 18:08] T10 — Performa & aksesibilitas (DONE)
+- **Hasil:** pemuatan Google Fonts ditunda sampai browser senggang untuk mengurangi kerja saat render awal (`assets/js/fonts.js`). Graphify code-only diperbarui.
+- **Verifikasi:** `node --check assets/js/fonts.js` dan `git diff --check` lulus. Lighthouse mobile pada server lokal yang tetap aktif: Performance 90, Accessibility 100, Best Practices 100, SEO 100; FCP 1,8 dtk, LCP 1,8 dtk, TBT 360 ms, CLS 0,001, transfer awal 149 KiB.
+- **Commit:** `f689386` — perf(fonts): tunda pemuatan sampai browser senggang [T10] (sudah dipush ke `origin/main`).
+- **Catatan/Keputusan:** audit pertama dengan server latar yang berhenti menghasilkan koneksi gagal dan skor yang tidak stabil; hasil di atas diambil setelah server audit dijalankan persisten. Kompresi teks dan HTTPS belum dapat dinilai pada server Python lokal.
+- **Pertanyaan terbuka:** domain resmi tetap diperlukan sebelum deploy.
+- **Berikutnya:** T11
+
 
 ### [2026-11-16 08:30] T10 — Performa & aksesibilitas (BLOCKED)
 - **Hasil:** memperbaiki skip-link/target fokus, dimensi gambar logo, tinggi chip filter 48px, dan pemuatan Google Fonts non-blocking.
