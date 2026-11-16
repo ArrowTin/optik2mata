@@ -1,6 +1,22 @@
 {
   "communities": {
     "0": [
+      "assets_js_config",
+      "assets_js_config_config",
+      "assets_js_main",
+      "assets_js_main_businesstext",
+      "assets_js_main_renderfeaturedproducts",
+      "assets_js_not_found",
+      "assets_js_product_card",
+      "assets_js_product_card_createproductcard",
+      "assets_js_whatsapp",
+      "assets_js_whatsapp_producturl",
+      "assets_js_whatsapp_wadelivery",
+      "assets_js_whatsapp_waeyeexam",
+      "assets_js_whatsapp_walink",
+      "assets_js_whatsapp_waproduct"
+    ],
+    "1": [
       "assets_js_catalog",
       "assets_js_catalog_categorybuttons",
       "assets_js_catalog_count",
@@ -15,21 +31,6 @@
       "assets_js_catalog_state",
       "assets_js_catalog_validcategories"
     ],
-    "1": [
-      "assets_js_config",
-      "assets_js_config_config",
-      "assets_js_main",
-      "assets_js_main_businesstext",
-      "assets_js_not_found",
-      "assets_js_product_card",
-      "assets_js_product_card_createproductcard",
-      "assets_js_whatsapp",
-      "assets_js_whatsapp_producturl",
-      "assets_js_whatsapp_wadelivery",
-      "assets_js_whatsapp_waeyeexam",
-      "assets_js_whatsapp_walink",
-      "assets_js_whatsapp_waproduct"
-    ],
     "2": [
       "assets_js_product",
       "assets_js_product_addspec",
@@ -37,13 +38,9 @@
       "assets_js_product_params",
       "assets_js_product_productid",
       "assets_js_product_setmainphoto",
-      "assets_js_product_showstate",
       "assets_js_product_statemessage",
       "assets_js_product_statepanel",
-      "assets_js_product_statetitle",
-      "assets_js_product_updateproductmetadata",
-      "assets_js_ui",
-      "assets_js_ui_backtotop"
+      "assets_js_product_statetitle"
     ],
     "3": [
       "assets_js_data",
@@ -60,8 +57,7 @@
       "assets_js_data_dataloaderror_constructor",
       "assets_js_data_loadproducts",
       "assets_js_data_readcache",
-      "assets_js_data_writecache",
-      "assets_js_main_renderfeaturedproducts"
+      "assets_js_data_writecache"
     ],
     "5": [
       "assets_js_catalog_applyfilters",
@@ -70,16 +66,31 @@
     "6": [
       "assets_js_data_fetchrecords",
       "assets_js_data_parsecsv"
+    ],
+    "7": [
+      "assets_js_fonts",
+      "assets_js_fonts_fontstylesheet"
+    ],
+    "8": [
+      "assets_js_product_showstate",
+      "assets_js_product_updateproductmetadata"
+    ],
+    "9": [
+      "assets_js_ui",
+      "assets_js_ui_backtotop"
     ]
   },
   "cohesion": {
-    "0": 0.15384615384615385,
-    "1": 0.3717948717948718,
-    "2": 0.16666666666666666,
+    "0": 0.34065934065934067,
+    "1": 0.15384615384615385,
+    "2": 0.2222222222222222,
     "3": 0.39285714285714285,
-    "4": 0.3333333333333333,
+    "4": 0.4,
     "5": 1.0,
-    "6": 1.0
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0
   },
   "gods": [
     {
@@ -128,12 +139,23 @@
       "degree": 3
     },
     {
-      "id": "assets_js_main_renderfeaturedproducts",
-      "label": "renderFeaturedProducts()",
+      "id": "assets_js_data_fetchrecords",
+      "label": "fetchRecords()",
       "degree": 3
     }
   ],
   "surprises": [
+    {
+      "source": "applyFilters()",
+      "target": "createProductCard()",
+      "source_files": [
+        "assets/js/catalog.js",
+        "assets/js/product-card.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
     {
       "source": "renderFeaturedProducts()",
       "target": "createProductCard()",
@@ -143,14 +165,14 @@
       ],
       "confidence": "INFERRED",
       "relation": "indirect_call",
-      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+      "why": "inferred connection - not explicitly stated in source"
     },
     {
-      "source": "applyFilters()",
-      "target": "createProductCard()",
+      "source": "renderFeaturedProducts()",
+      "target": "loadProducts()",
       "source_files": [
-        "assets/js/catalog.js",
-        "assets/js/product-card.js"
+        "assets/js/main.js",
+        "assets/js/data.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
@@ -173,17 +195,6 @@
       "source_files": [
         "assets/js/product-card.js",
         "assets/js/whatsapp.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "cross-file semantic connection"
-    },
-    {
-      "source": "renderFeaturedProducts()",
-      "target": "loadProducts()",
-      "source_files": [
-        "assets/js/main.js",
-        "assets/js/data.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",

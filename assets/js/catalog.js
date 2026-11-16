@@ -3,6 +3,7 @@ import { DataLoadError, loadProducts } from "./data.js";
 import { createProductCard } from "./product-card.js";
 import { waLink } from "./whatsapp.js";
 import "./ui.js";
+import "./fonts.js";
 
 for (const [key, value] of Object.entries({
   name: CONFIG.business.name,

@@ -24,16 +24,16 @@
     "semantic_hash": "c70362748d81af9781733d528bb9ffe3"
   },
   "assets/js/main.js": {
-    "mtime": 1794791462.3221662,
-    "seen": 1794791609.5649152,
-    "ast_hash": "847ceed5453cbbc0b22036a7aa19662d",
-    "semantic_hash": "847ceed5453cbbc0b22036a7aa19662d"
+    "mtime": 1794818587.1750085,
+    "seen": 1794818827.926605,
+    "ast_hash": "081135c66e49509253d3736477d1629a",
+    "semantic_hash": "081135c66e49509253d3736477d1629a"
   },
   "assets/js/catalog.js": {
-    "mtime": 1794790880.2529433,
-    "seen": 1794791044.727681,
-    "ast_hash": "8e27944019fb07531313bff00db90cff",
-    "semantic_hash": "8e27944019fb07531313bff00db90cff"
+    "mtime": 1794818802.0202882,
+    "seen": 1794818827.924591,
+    "ast_hash": "f9ac0fadfcc5f44a6edee3164ef23e00",
+    "semantic_hash": "f9ac0fadfcc5f44a6edee3164ef23e00"
   },
   "assets/js/product-card.js": {
     "mtime": 1794761571.9825258,
@@ -42,10 +42,10 @@
     "semantic_hash": "8cb6dd86ddecc07c6b6c83a9204e834f"
   },
   "assets/js/product.js": {
-    "mtime": 1794791510.060418,
-    "seen": 1794791609.5679085,
-    "ast_hash": "f5a05f694abe86b209f3a5a93876749e",
-    "semantic_hash": "f5a05f694abe86b209f3a5a93876749e"
+    "mtime": 1794818803.727923,
+    "seen": 1794818827.927579,
+    "ast_hash": "dbd7b5368137bb2fd5354fe5f6f0e72b",
+    "semantic_hash": "dbd7b5368137bb2fd5354fe5f6f0e72b"
   },
   "assets/js/not-found.js": {
     "mtime": 1794790925.373979,
@@ -58,5 +58,11 @@
     "seen": 1794791044.7296762,
     "ast_hash": "8c3ad483af6d2a78d42e100a8b987e4b",
     "semantic_hash": "8c3ad483af6d2a78d42e100a8b987e4b"
+  },
+  "assets/js/fonts.js": {
+    "mtime": 1794818800.217697,
+    "seen": 1794818827.926605,
+    "ast_hash": "1a41f2c7576046f7749c9aa7777a2c71",
+    "semantic_hash": "1a41f2c7576046f7749c9aa7777a2c71"
   }
 }

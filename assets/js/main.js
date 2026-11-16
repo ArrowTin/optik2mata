@@ -3,6 +3,7 @@ import { DataLoadError, loadProducts } from "./data.js";
 import { waDelivery, waLink } from "./whatsapp.js";
 import { createProductCard } from "./product-card.js";
 import "./ui.js";
+import "./fonts.js";
 
 const businessText = {
   name: CONFIG.business.name,

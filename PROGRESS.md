@@ -5,17 +5,17 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ## Status Saat Ini
 - Task aktif: —
 - Terakhir selesai: T09
-- Terblokir: T10 — audit Lighthouse belum dapat dijalankan.
-- Pertanyaan terbuka untuk pengguna: izin memakai Lighthouse CLI melalui npx (tidak ditambahkan ke proyek).
+- Terblokir: T10 — skor Performance 82, target minimal 90.
+- Pertanyaan terbuka untuk pengguna: pilihan optimasi lanjutan atau audit ulang setelah hosting ditentukan.
 
 ## Log
 
 ### [2026-11-16 08:30] T10 — Performa & aksesibilitas (BLOCKED)
-- **Hasil:** menambahkan skip-link dan target fokus pada 404/styleguide/halaman utama; memastikan gambar logo punya dimensi; menaikkan tinggi chip filter menjadi 48px. Gambar produk/katalog sudah memiliki dimensi dan lazy-loading; peta memakai lazy-loading.
-- **Verifikasi:** sintaks JS valid; pemeriksaan statis memastikan skip-link, target gambar, dan target sentuh. git diff --check bersih. Lighthouse tidak tersedia. Chrome headless gagal pada GPU (GPU process isn’t usable), sehingga screenshot/viewport tidak terverifikasi.
-- **Commit:** 04a6100 — fix(a11y): lengkapi akses keyboard [T10] (sudah dipush ke origin/main).
-- **Catatan/Keputusan:** T10 mensyaratkan skor Lighthouse mobile; task belum dapat ditandai selesai tanpa audit tersebut.
-- **Pertanyaan terbuka:** bolehkah saya menjalankan npx lighthouse tanpa menambahkan dependensi ke proyek?
+- **Hasil:** memperbaiki skip-link/target fokus, dimensi gambar logo, tinggi chip filter 48px, dan pemuatan Google Fonts non-blocking.
+- **Verifikasi:** sintaks JS dan pemeriksaan statis lulus. Lighthouse mobile: Performance 82, Accessibility 100, Best Practices 100, SEO 100; transfer awal 149 KiB, LCP 1,8 dtk, TBT 680 ms. Screenshot viewport tidak tersedia karena Chrome standalone gagal GPU.
+- **Commit:** 04a6100 dan menunggu hash perbaikan font.
+- **Catatan/Keputusan:** pemuatan font non-blocking menurunkan render-blocking dari estimasi 870 ms menjadi 0 ms dan menaikkan Performance dari 68 ke 82. Target Performance minimal 90 belum terpenuhi. Cache/kompresi juga belum dapat dinilai pada server Python lokal.
+- **Pertanyaan terbuka:** lanjut optimasi untuk mencapai Performance 90 pada audit lokal, atau tunggu pengukuran ulang di hosting target?
 - **Berikutnya:** T10 setelah audit lulus; T11 menunggu T10.
 
 ### [2026-11-16 08:14] T09 — SEO teknis (DONE)
