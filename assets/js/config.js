@@ -1,4 +1,5 @@
 export const CONFIG = {
+  siteUrl: "https://example.com", // Ganti dengan domain resmi saat domain ditetapkan.
   business: {
     name: "Optik 2Mata Bengkayang",
     shortName: "2Mata",

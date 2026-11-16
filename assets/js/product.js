@@ -26,12 +26,23 @@ const stateMessage = document.querySelector("[data-product-state-message]");
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
 
+function updateProductMetadata(title, description, id = "") {
+  document.title = title;
+  document.querySelector('meta[name="description"]')?.setAttribute("content", description);
+  const canonical = new URL("produk.html", `${CONFIG.siteUrl}/`);
+  if (id) canonical.searchParams.set("id", id);
+  document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonical.href);
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", title);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", description);
+  document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonical.href);
+}
+
 function showState(title, message) {
   stateTitle.textContent = title;
   stateMessage.textContent = message;
   statePanel.hidden = false;
   detail.hidden = true;
-  document.title = `${title} | ${CONFIG.business.name}`;
+  updateProductMetadata(`${title} | ${CONFIG.business.name}`, message);
 }
 
 function addSpec(list, label, value) {
@@ -61,10 +72,11 @@ try {
 
   detail.hidden = false;
   statePanel.hidden = true;
-  document.title = `${product.name} | ${CONFIG.business.name}`;
+  const productDescription = product.description || `Tanyakan detail dan ketersediaan ${product.name} melalui WhatsApp Optik 2Mata Bengkayang.`;
+  updateProductMetadata(`${product.name} | ${CONFIG.business.name}`, productDescription, product.id);
   detail.querySelector("[data-product-name]").textContent = product.name;
   detail.querySelector("[data-product-category]").textContent = product.category;
-  detail.querySelector("[data-product-description]").textContent = product.description || "Silakan tanyakan detail produk kepada toko.";
+  detail.querySelector("[data-product-description]").textContent = productDescription;
 
   const badge = detail.querySelector("[data-product-badge]");
   if (product.badge) {

@@ -90,7 +90,7 @@
       "file_type": "code",
       "norm_label": "addspec()",
       "source_file": "assets/js/product.js",
-      "source_location": "L37"
+      "source_location": "L48"
     },
     {
       "id": "assets_js_product_setmainphoto",
@@ -101,7 +101,7 @@
       "file_type": "code",
       "norm_label": "setmainphoto()",
       "source_file": "assets/js/product.js",
-      "source_location": "L46"
+      "source_location": "L57"
     },
     {
       "id": "assets_js_product_showstate",
@@ -111,6 +111,17 @@
       "community": 2,
       "file_type": "code",
       "norm_label": "showstate()",
+      "source_file": "assets/js/product.js",
+      "source_location": "L40"
+    },
+    {
+      "id": "assets_js_product_updateproductmetadata",
+      "label": "updateProductMetadata()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "updateproductmetadata()",
       "source_file": "assets/js/product.js",
       "source_location": "L29"
     },
@@ -757,6 +768,18 @@
       "context": "call",
       "source_file": "assets/js/product-card.js",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_product_showstate",
+      "target": "assets_js_product_updateproductmetadata",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "assets/js/product.js",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -1697,7 +1720,7 @@
     },
     {
       "source": "assets_js_product",
-      "target": "assets_js_product_showstate",
+      "target": "assets_js_product_updateproductmetadata",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1708,13 +1731,24 @@
     },
     {
       "source": "assets_js_product",
+      "target": "assets_js_product_showstate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/product.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_product",
       "target": "assets_js_product_addspec",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/product.js",
-      "source_location": "L37",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -1725,7 +1759,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/product.js",
-      "source_location": "L46",
+      "source_location": "L57",
       "weight": 1.0
     },
     {

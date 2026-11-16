@@ -41,6 +41,7 @@
       "assets_js_product_statemessage",
       "assets_js_product_statepanel",
       "assets_js_product_statetitle",
+      "assets_js_product_updateproductmetadata",
       "assets_js_ui",
       "assets_js_ui_backtotop"
     ],
@@ -87,13 +88,13 @@
       "degree": 10
     },
     {
-      "id": "assets_js_whatsapp_walink",
-      "label": "waLink()",
+      "id": "assets_js_product_card_createproductcard",
+      "label": "createProductCard()",
       "degree": 8
     },
     {
-      "id": "assets_js_product_card_createproductcard",
-      "label": "createProductCard()",
+      "id": "assets_js_whatsapp_walink",
+      "label": "waLink()",
       "degree": 8
     },
     {
@@ -127,8 +128,8 @@
       "degree": 3
     },
     {
-      "id": "assets_js_data_fetchrecords",
-      "label": "fetchRecords()",
+      "id": "assets_js_catalog_applyfilters",
+      "label": "applyFilters()",
       "degree": 3
     }
   ],

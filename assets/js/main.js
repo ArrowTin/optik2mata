@@ -15,7 +15,7 @@ const businessText = {
   ratingText: `${CONFIG.business.rating.value} di Google (${CONFIG.business.rating.count} ulasan)`
 };
 
-document.title = CONFIG.business.name;
+document.title = `${CONFIG.business.name} — Kacamata & Lensa di Sebalo`;
 
 for (const [key, value] of Object.entries(businessText)) {
   document.querySelectorAll(`[data-business="${key}"]`).forEach((element) => {
