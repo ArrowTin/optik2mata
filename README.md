@@ -34,6 +34,6 @@ Panduan untuk pemilik ada di [`docs/panduan-pemilik.md`](docs/panduan-pemilik.md
 
 ## Deploy
 
-Situs dapat di-host sebagai file statis di Cloudflare Pages, Netlify, atau hosting web biasa; folder publik adalah root repositori dan tidak ada build command. Sebelum deploy, tetapkan domain, ganti `CONFIG.siteUrl` di `assets/js/config.js` serta URL placeholder di metadata, sitemap, dan robots. Pastikan HTTPS aktif. Ikuti checklist di [`docs/08-qa-deploy-serah-terima.md`](docs/08-qa-deploy-serah-terima.md).
+Demo sementara diarahkan ke `https://arrowtin.github.io/optik2mata/` melalui workflow `.github/workflows/deploy-pages.yml`. Workflow hanya mengemas HTML, aset, dan data publik ke GitHub Pages; tidak ada build command. Pengaturan Pages repo harus mengizinkan sumber GitHub Actions. Untuk situs resmi, ganti `CONFIG.siteUrl` di `assets/js/config.js` serta canonical, metadata, sitemap, dan robots setelah domain dipilih. Ikuti checklist di [`docs/08-qa-deploy-serah-terima.md`](docs/08-qa-deploy-serah-terima.md).
 
-Saat ini `example.com` masih placeholder. Jangan mempromosikan situs sebagai situs resmi sebelum pemilik menyetujui data, domain, foto, dan konten yang digunakan.
+URL GitHub Pages hanya untuk demo. Jangan mempromosikannya sebagai domain resmi sebelum pemilik menyetujui domain, data, foto, dan konten yang digunakan.

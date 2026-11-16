@@ -20,7 +20,7 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 | T12 | Personalisasi data usaha asli + toggle `config.features` | T11 | docs/00; Prompt 8 | DONE |
 | T13 | `README.md` proyek + `docs/panduan-pemilik.md` + `daftar-konfirmasi.md` | T12 | docs/05, 08; Prompt 8 | DONE |
 | T14 | Graph Graphify pertama (bila Graphify terpasang) & QA final sesuai checklist | T13 | AGENTS §8; docs/08; Prompt 9 | DONE |
-| T15 | Deploy demo ke URL sementara + QR code | T14 | docs/08 §2 | TODO |
+| T15 | Deploy demo ke URL sementara + QR code | T14 | docs/08 §2 | IN PROGRESS |
 
 ## Kriteria Lulus Ringkas per Task
 | ID | Lulus bila |

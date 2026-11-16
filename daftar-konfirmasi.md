@@ -11,7 +11,7 @@ Fakta yang belum dikonfirmasi tidak boleh dipublikasikan. Status “Terverifikas
 | 5 | Metode pembayaran yang diterima | Belum diisi | Menunggu konfirmasi |
 | 6 | Logo, tagline, dan akun media sosial | Tagline dan akun sosial belum diisi; logo saat ini placeholder 2Mata | Menunggu konfirmasi / aset |
 | 7 | Keunggulan utama toko | Belum dipilih oleh pemilik | Menunggu konfirmasi |
-| 8 | Domain yang diinginkan | `example.com` hanya placeholder | Menunggu keputusan |
+| 8 | Domain yang diinginkan | URL demo sementara: `https://arrowtin.github.io/optik2mata/`; domain resmi belum dipilih | Menunggu keputusan |
 | 9 | Izin memakai foto atau ulasan pelanggan | Belum ada foto/kutipan pelanggan yang digunakan | Menunggu izin dan aset |
 | 10 | Patokan menuju toko | Belum diisi | Menunggu konfirmasi |
 
