@@ -156,7 +156,7 @@
       "file_type": "code",
       "norm_label": "renderfeaturedproducts()",
       "source_file": "assets/js/main.js",
-      "source_location": "L56"
+      "source_location": "L62"
     },
     {
       "id": "assets_js_catalog_applyfilters",
@@ -247,17 +247,6 @@
       "source_location": "L16"
     },
     {
-      "id": "assets_js_fonts_loadfonts",
-      "label": "loadFonts()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "file_type": "code",
-      "norm_label": "loadfonts()",
-      "source_file": "assets/js/fonts.js",
-      "source_location": "L4"
-    },
-    {
       "id": "assets_js_product_addspec",
       "label": "addSpec()",
       "_callable": true,
@@ -333,6 +322,28 @@
       "norm_label": "showimage()",
       "source_file": "assets/js/ui.js",
       "source_location": "L36"
+    },
+    {
+      "id": "assets_js_carousel_enablepointerdrag",
+      "label": "enablePointerDrag()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "norm_label": "enablepointerdrag()",
+      "source_file": "assets/js/carousel.js",
+      "source_location": "L2"
+    },
+    {
+      "id": "assets_js_fonts_loadfonts",
+      "label": "loadFonts()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "norm_label": "loadfonts()",
+      "source_file": "assets/js/fonts.js",
+      "source_location": "L4"
     },
     {
       "id": "assets_js_data",
@@ -505,26 +516,6 @@
       "source_location": "L1"
     },
     {
-      "id": "assets_js_main",
-      "label": "main.js",
-      "_origin": "ast",
-      "community": 2,
-      "file_type": "code",
-      "norm_label": "main.js",
-      "source_file": "assets/js/main.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "assets_js_main_businesstext",
-      "label": "businessText",
-      "_origin": "ast",
-      "community": 2,
-      "file_type": "code",
-      "norm_label": "businesstext",
-      "source_file": "assets/js/main.js",
-      "source_location": "L9"
-    },
-    {
       "id": "assets_js_not_found",
       "label": "not-found.js",
       "_origin": "ast",
@@ -552,16 +543,6 @@
       "file_type": "code",
       "norm_label": "whatsapp.js",
       "source_file": "assets/js/whatsapp.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "assets_js_fonts",
-      "label": "fonts.js",
-      "_origin": "ast",
-      "community": 3,
-      "file_type": "code",
-      "norm_label": "fonts.js",
-      "source_file": "assets/js/fonts.js",
       "source_location": "L1"
     },
     {
@@ -693,6 +674,56 @@
       "norm_label": "galleryimages",
       "source_file": "assets/js/ui.js",
       "source_location": "L15"
+    },
+    {
+      "id": "assets_js_carousel",
+      "label": "carousel.js",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "norm_label": "carousel.js",
+      "source_file": "assets/js/carousel.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "assets_js_fonts",
+      "label": "fonts.js",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "norm_label": "fonts.js",
+      "source_file": "assets/js/fonts.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "assets_js_main",
+      "label": "main.js",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "norm_label": "main.js",
+      "source_file": "assets/js/main.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "assets_js_main_businesstext",
+      "label": "businessText",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "norm_label": "businesstext",
+      "source_file": "assets/js/main.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "assets_js_main_featuredcarousel",
+      "label": "featuredCarousel",
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "norm_label": "featuredcarousel",
+      "source_file": "assets/js/main.js",
+      "source_location": "L57"
     }
   ],
   "links": [
@@ -849,7 +880,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/main.js",
-      "source_location": "L63",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -861,7 +892,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/main.js",
-      "source_location": "L72",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -1117,6 +1148,18 @@
       "weight": 1.0
     },
     {
+      "source": "assets_js_main",
+      "target": "assets_js_carousel_enablepointerdrag",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "assets/js/main.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "assets_js_not_found",
       "target": "assets_js_whatsapp_walink",
       "relation": "imports",
@@ -1406,7 +1449,7 @@
     },
     {
       "source": "assets_js_main",
-      "target": "assets_js_ui",
+      "target": "assets_js_carousel",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1418,7 +1461,7 @@
     },
     {
       "source": "assets_js_main",
-      "target": "assets_js_fonts",
+      "target": "assets_js_ui",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1426,6 +1469,18 @@
       "context": "import",
       "source_file": "assets/js/main.js",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_main",
+      "target": "assets_js_fonts",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "assets/js/main.js",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -1558,6 +1613,17 @@
       "context": "import",
       "source_file": "assets/js/whatsapp.js",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_carousel",
+      "target": "assets_js_carousel_enablepointerdrag",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/carousel.js",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -1870,24 +1936,35 @@
     },
     {
       "source": "assets_js_main",
-      "target": "assets_js_main_renderfeaturedproducts",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "assets/js/main.js",
-      "source_location": "L56",
-      "weight": 1.0
-    },
-    {
-      "source": "assets_js_main",
       "target": "assets_js_main_businesstext",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/main.js",
-      "source_location": "L9",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_main",
+      "target": "assets_js_main_featuredcarousel",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/main.js",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_main",
+      "target": "assets_js_main_renderfeaturedproducts",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/main.js",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -2187,7 +2264,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "assets/js/main.js",
-      "source_location": "L71",
+      "source_location": "L77",
       "weight": 1.0
     }
   ],

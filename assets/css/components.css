@@ -274,6 +274,32 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.featured-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: var(--space-4);
+  overscroll-behavior-inline: contain;
+  padding-block: var(--space-2);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  touch-action: pan-y;
+}
+
+.featured-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.featured-carousel > .product-card {
+  flex: 0 0 min(78vw, 18rem);
+  scroll-snap-align: start;
+}
+
+.featured-carousel.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
+
 .service-card,
 .product-card {
   min-width: 0;

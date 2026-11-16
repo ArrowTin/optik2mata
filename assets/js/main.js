@@ -3,6 +3,7 @@ import { DataLoadError, loadProducts } from "./data.js";
 import { waDelivery, waLink } from "./whatsapp.js";
 import { createProductCard } from "./product-card.js";
 import { observeReveals } from "./motion.js";
+import { enablePointerDrag } from "./carousel.js";
 import "./ui.js";
 import "./fonts.js";
 
@@ -52,6 +53,11 @@ document.querySelectorAll(".js-wa-delivery").forEach((link) => {
 document.querySelectorAll("[data-feature]").forEach((element) => {
   element.hidden = !CONFIG.features[element.dataset.feature];
 });
+
+const featuredCarousel = document.querySelector("[data-featured-products]");
+if (featuredCarousel && CONFIG.features.enableFeaturedCarousel) {
+  enablePointerDrag(featuredCarousel);
+}
 
 async function renderFeaturedProducts() {
   const grid = document.querySelector("[data-featured-products]");
