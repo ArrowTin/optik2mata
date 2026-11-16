@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T21 (IN PROGRESS)
-- Terakhir selesai: T20
+- Task aktif: T22 (TODO)
+- Terakhir selesai: T21
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
 - Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.
 
 ## Log
+
+### [2026-11-16 23:38] T21 — Hover kartu dan status header (DONE)
+- **Hasil:** hover kartu produk hanya aktif pada perangkat `hover: hover`, dengan toggle `enableProductCardHover`. Header mendapat bayangan saat halaman discroll lewat pseudo-elemen absolut dan toggle `enableHeaderScrollState`, tanpa mengubah dimensi layout.
+- **Verifikasi:** sintaks JS dan `git diff --check` lulus; harness Node menguji header pada posisi scroll masuk/keluar. Pemeriksaan CSS memastikan hover dibatasi media query, toggle diterapkan, dan reduced-motion meniadakan transisi header. Graphify code-only diperbarui. Render browser headless tetap gagal di lingkungan ini.
+- **Commit:** `f994e06` — `style(kartu): batasi hover dan status header [T21]`.
+- **Catatan/Keputusan:** perubahan bayangan header tidak memengaruhi aliran dokumen.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T22
 
 ### [2026-11-16 23:29] T20 — Angka rating (DONE)
 - **Hasil:** rating dan jumlah ulasan Google di hero dihitung dari `CONFIG.business.rating`, diformat `id-ID`, dan memakai toggle `enableRatingCountUp`. Placeholder tidak mengarang angka sebelum JavaScript berjalan; reduced-motion dan toggle mati menampilkan angka final secara statis.

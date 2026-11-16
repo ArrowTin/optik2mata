@@ -36,7 +36,7 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 | T18 | Carousel "katalog pilihan" di beranda bisa diseret (scroll-snap + pointer; sentuh dan keyboard tetap native) | T16 | docs/10 §4.3; docs/03 A | DONE |
 | T19 | Mockup alur belanja beranimasi: simulasi chat WhatsApp berurutan pada "Cara belanja" (label "Contoh") | T16 | docs/10 §4.5; docs/03 A | DONE |
 | T20 | Angka berhitung dari data terkonfirmasi di `config.js` (mis. rating Google Maps), format `id-ID` | T16 | docs/10 §4.4; docs/05 | DONE |
-| T21 | Hover kartu produk (`@media (hover: hover)`) dan status header saat scroll | T16 | docs/10 §4.6 | IN PROGRESS |
+| T21 | Hover kartu produk (`@media (hover: hover)`) dan status header saat scroll | T16 | docs/10 §4.6 | DONE |
 | T22 | QA akhir Fase 2: uji semua toggle, Lighthouse, reduced-motion, 360/1280px; perbarui graph, `README.md`, dan `docs/panduan-pemilik.md` | T17–T21 | docs/06, 08; AGENTS §8, §10 | TODO |
 
 ## Kriteria Lulus Ringkas per Task
@@ -92,3 +92,4 @@ _(kosong — agent menambahkan di sini)_
 | T18 | 2026-11-16 | `2f902a6` | Carousel scroll-snap dengan drag mouse, sentuh, dan fokus keyboard. |
 | T19 | 2026-11-16 | `0bec419` | Mockup chat contoh tampil berurutan dan CTA memakai modul WhatsApp. |
 | T20 | 2026-11-16 | `6176a75` | Rating dan jumlah ulasan dihitung dari config serta memakai format id-ID. |
+| T21 | 2026-11-16 | `f994e06` | Hover kartu khusus perangkat hover; status header tanpa perubahan dimensi. |
