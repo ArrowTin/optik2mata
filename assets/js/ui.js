@@ -1,3 +1,5 @@
+import { observeReveals } from "./motion.js";
+
 const backToTop = document.querySelector("[data-back-to-top]");
 
 if (backToTop) {
@@ -7,30 +9,6 @@ if (backToTop) {
 
   window.addEventListener("scroll", updateVisibility, { passive: true });
   updateVisibility();
-}
-
-// Tampilkan elemen secara halus saat masuk ke viewport.
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-if ("IntersectionObserver" in window && !reduceMotion) {
-  const revealItems = document.querySelectorAll(
-    ".page-section .section-heading, .service-card, .product-card, .process-step, .gallery-card, .review-summary, .faq-list, .location-layout, .closing-cta__inner"
-  );
-
-  if (revealItems.length > 0) {
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.dataset.revealed = "true";
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.12 });
-
-    revealItems.forEach((item) => {
-      item.dataset.reveal = "";
-      revealObserver.observe(item);
-    });
-    document.documentElement.classList.add("has-reveal");
-  }
 }
 
 // Tingkatkan galeri menjadi lightbox tanpa mengganggu konten saat JavaScript mati.

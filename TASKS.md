@@ -2,6 +2,7 @@
 
 Status: `TODO` · `IN PROGRESS` · `DONE` · `BLOCKED`
 Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Referensi prompt rinci: `docs/07-prompt-vibe-coding.md`.
+Fase 1: T00–T15 · Fase 2 (pengembangan lanjutan, UI animasi): T16–T22.
 
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
@@ -22,6 +23,22 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 | T14 | Graph Graphify pertama (bila Graphify terpasang) & QA final sesuai checklist | T13 | AGENTS §8; docs/08; Prompt 9 | DONE |
 | T15 | Deploy demo ke URL sementara + QR code | T14 | docs/08 §2 | BLOCKED |
 
+## Fase 2 — Pengembangan Lanjutan (UI Animasi)
+
+Referensi: `docs/10-panduan-ui-animasi.md` (hanya Jalur B: vanilla, tanpa build step) dan `AGENTS.md` Bagian 7 "Aturan Gerak". Dikerjakan setelah Fase 1 (T14) selesai. T15 tetap `BLOCKED` dan tidak menghalangi Fase 2.
+
+T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. Task di bawah hanya menambah atau merapikan yang belum ada. Setiap task T17–T21 wajib menyertakan toggle di `config.features`.
+
+| ID | Task | Dependensi | Referensi | Status |
+|---|---|---|---|---|
+| T16 | Fondasi gerak: salin `docs/10-panduan-ui-animasi.md`, audit animasi T11, usulkan token gerak (**butuh persetujuan**) lalu tambahkan ke `tokens.css` + `docs/02` §8, buat `motion.css`/`motion.js` bersama (satu observer, stagger `--d`, reduced-motion global) | T14 | docs/10 §1, §4.0–4.1, §7; AGENTS §7 | IN PROGRESS |
+| T17 | Marquee strip: chip layanan/keunggulan berjalan (tanpa merek `[?]`), jeda saat hover, salinan `aria-hidden` | T16 | docs/10 §4.2 | TODO |
+| T18 | Carousel "katalog pilihan" di beranda bisa diseret (scroll-snap + pointer; sentuh dan keyboard tetap native) | T16 | docs/10 §4.3; docs/03 A | TODO |
+| T19 | Mockup alur belanja beranimasi: simulasi chat WhatsApp berurutan pada "Cara belanja" (label "Contoh") | T16 | docs/10 §4.5; docs/03 A | TODO |
+| T20 | Angka berhitung dari data terkonfirmasi di `config.js` (mis. rating Google Maps), format `id-ID` | T16 | docs/10 §4.4; docs/05 | TODO |
+| T21 | Hover kartu produk (`@media (hover: hover)`) dan status header saat scroll | T16 | docs/10 §4.6 | TODO |
+| T22 | QA akhir Fase 2: uji semua toggle, Lighthouse, reduced-motion, 360/1280px; perbarui graph, `README.md`, dan `docs/panduan-pemilik.md` | T17–T21 | docs/06, 08; AGENTS §8, §10 | TODO |
+
 ## Kriteria Lulus Ringkas per Task
 | ID | Lulus bila |
 |---|---|
@@ -41,6 +58,13 @@ Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Re
 | T13 | Pemilik dapat menambah produk hanya dengan panduan 1 halaman |
 | T14 | Checklist `docs/08` lulus; konsistensi token diverifikasi |
 | T15 | URL demo aktif, HTTPS, diuji di Android & iPhone |
+| T16 | Token gerak disetujui dan terdokumentasi; satu observer bersama; animasi T11 tetap jalan; reduced-motion dihormati |
+| T17 | Loop mulus tanpa lompatan; berhenti saat hover; reduced-motion = statis; tanpa overflow horizontal di 360px |
+| T18 | Bisa diseret mouse, digeser sentuh, dan dijelajah keyboard; tidak mengganggu scroll vertikal di HP |
+| T19 | Urutan chat berjalan sekali saat terlihat; konten terbaca tanpa animasi; label "Contoh" ada |
+| T20 | Angka sama persis dengan data terkonfirmasi; statis saat reduced-motion; nilai akhir benar |
+| T21 | Hover tidak aktif di layar sentuh; tidak ada layout shift saat header berubah |
+| T22 | Semua toggle Fase 2 diuji; Lighthouse ≥ target Fase 1; QA 360/1280px lulus; graph dan dokumen pemilik diperbarui |
 
 ## Backlog (temuan di luar lingkup)
 _(kosong — agent menambahkan di sini)_

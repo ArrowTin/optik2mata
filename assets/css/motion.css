@@ -1,0 +1,28 @@
+/* Gaya gerak bersama; isi utama tetap terlihat tanpa JavaScript. */
+.has-reveal [data-reveal] {
+  opacity: 0;
+  transform: translateY(var(--space-3));
+  transition: opacity var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+  transition-delay: var(--d, var(--dur-fast));
+}
+
+.has-reveal [data-reveal][data-revealed="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none;
+    scroll-behavior: auto;
+    transition: none;
+  }
+
+  .has-reveal [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}

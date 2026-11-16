@@ -1,6 +1,24 @@
 {
   "communities": {
     "0": [
+      "assets_js_data",
+      "assets_js_data_clearproductscache",
+      "assets_js_data_data_error_message",
+      "assets_js_data_dataloaderror",
+      "assets_js_data_dataloaderror_constructor",
+      "assets_js_data_fetchrecords",
+      "assets_js_data_loadproducts",
+      "assets_js_data_normalizephoto",
+      "assets_js_data_normalizeproduct",
+      "assets_js_data_parseboolean",
+      "assets_js_data_parsecsv",
+      "assets_js_data_parselist",
+      "assets_js_data_readcache",
+      "assets_js_data_readfield",
+      "assets_js_data_writecache",
+      "assets_js_main_renderfeaturedproducts"
+    ],
+    "1": [
       "assets_js_catalog",
       "assets_js_catalog_applyfilters",
       "assets_js_catalog_categorybuttons",
@@ -17,29 +35,11 @@
       "assets_js_catalog_updateaddress",
       "assets_js_catalog_validcategories"
     ],
-    "1": [
-      "assets_js_data",
-      "assets_js_data_clearproductscache",
-      "assets_js_data_data_error_message",
-      "assets_js_data_dataloaderror",
-      "assets_js_data_dataloaderror_constructor",
-      "assets_js_data_fetchrecords",
-      "assets_js_data_loadproducts",
-      "assets_js_data_normalizephoto",
-      "assets_js_data_normalizeproduct",
-      "assets_js_data_parseboolean",
-      "assets_js_data_parsecsv",
-      "assets_js_data_parselist",
-      "assets_js_data_readcache",
-      "assets_js_data_readfield",
-      "assets_js_data_writecache"
-    ],
     "2": [
       "assets_js_config",
       "assets_js_config_config",
       "assets_js_main",
       "assets_js_main_businesstext",
-      "assets_js_main_renderfeaturedproducts",
       "assets_js_not_found",
       "assets_js_product_card",
       "assets_js_product_card_createproductcard",
@@ -66,6 +66,11 @@
       "assets_js_product_updateproductmetadata"
     ],
     "4": [
+      "assets_js_motion",
+      "assets_js_motion_getrevealobserver",
+      "assets_js_motion_observereveals",
+      "assets_js_motion_reducemotion",
+      "assets_js_motion_revealselector",
       "assets_js_ui",
       "assets_js_ui_backtotop",
       "assets_js_ui_galleryimages",
@@ -73,11 +78,11 @@
     ]
   },
   "cohesion": {
-    "0": 0.14285714285714285,
-    "1": 0.22857142857142856,
-    "2": 0.34065934065934067,
+    "0": 0.20833333333333334,
+    "1": 0.14285714285714285,
+    "2": 0.3717948717948718,
     "3": 0.16666666666666666,
-    "4": 0.5
+    "4": 0.2777777777777778
   },
   "gods": [
     {
@@ -101,6 +106,11 @@
       "degree": 7
     },
     {
+      "id": "assets_js_motion_observereveals",
+      "label": "observeReveals()",
+      "degree": 7
+    },
+    {
       "id": "assets_js_data_normalizeproduct",
       "label": "normalizeProduct()",
       "degree": 6
@@ -116,33 +126,17 @@
       "degree": 5
     },
     {
-      "id": "assets_js_data_fetchrecords",
-      "label": "fetchRecords()",
-      "degree": 3
+      "id": "assets_js_catalog_applyfilters",
+      "label": "applyFilters()",
+      "degree": 4
     },
     {
       "id": "assets_js_main_renderfeaturedproducts",
       "label": "renderFeaturedProducts()",
-      "degree": 3
-    },
-    {
-      "id": "assets_js_catalog_applyfilters",
-      "label": "applyFilters()",
-      "degree": 3
+      "degree": 4
     }
   ],
   "surprises": [
-    {
-      "source": "renderFeaturedProducts()",
-      "target": "loadProducts()",
-      "source_files": [
-        "assets/js/main.js",
-        "assets/js/data.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities"
-    },
     {
       "source": "renderFeaturedProducts()",
       "target": "createProductCard()",
@@ -152,7 +146,7 @@
       ],
       "confidence": "INFERRED",
       "relation": "indirect_call",
-      "why": "inferred connection - not explicitly stated in source"
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
     },
     {
       "source": "applyFilters()",
@@ -166,22 +160,33 @@
       "why": "bridges separate communities"
     },
     {
-      "source": "createProductCard()",
-      "target": "productUrl()",
+      "source": "applyFilters()",
+      "target": "observeReveals()",
       "source_files": [
-        "assets/js/product-card.js",
-        "assets/js/whatsapp.js"
+        "assets/js/catalog.js",
+        "assets/js/motion.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
-      "why": "cross-file semantic connection"
+      "why": "bridges separate communities"
     },
     {
-      "source": "createProductCard()",
-      "target": "waProduct()",
+      "source": "renderFeaturedProducts()",
+      "target": "observeReveals()",
       "source_files": [
-        "assets/js/product-card.js",
-        "assets/js/whatsapp.js"
+        "assets/js/main.js",
+        "assets/js/motion.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "renderFeaturedProducts()",
+      "target": "loadProducts()",
+      "source_files": [
+        "assets/js/main.js",
+        "assets/js/data.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",

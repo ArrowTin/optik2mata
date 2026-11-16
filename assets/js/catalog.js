@@ -1,6 +1,7 @@
 import { CONFIG } from "./config.js";
 import { DataLoadError, loadProducts } from "./data.js";
 import { createProductCard } from "./product-card.js";
+import { observeReveals } from "./motion.js";
 import { waLink } from "./whatsapp.js";
 import "./ui.js";
 import "./fonts.js";
@@ -69,6 +70,7 @@ function applyFilters({ updateUrl = true } = {}) {
   else visible.sort((a, b) => a.order - b.order);
 
   grid.replaceChildren(...visible.map((product) => createProductCard(product, { headingLevel: 2 })));
+  observeReveals(grid);
   count.textContent = `${visible.length} produk ditampilkan`;
   emptyState.hidden = visible.length > 0;
   if (updateUrl) updateAddress();

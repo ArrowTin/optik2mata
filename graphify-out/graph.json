@@ -9,40 +9,18 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "dataloaderror",
       "source_file": "assets/js/data.js",
       "source_location": "L7"
     },
     {
-      "id": "assets_js_catalog_applyfilters",
-      "label": "applyFilters()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "applyfilters()",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L59"
-    },
-    {
-      "id": "assets_js_catalog_updateaddress",
-      "label": "updateAddress()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "updateaddress()",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L50"
-    },
-    {
       "id": "assets_js_data_clearproductscache",
       "label": "clearProductsCache()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "clearproductscache()",
       "source_file": "assets/js/data.js",
@@ -53,7 +31,7 @@
       "label": ".constructor()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": ".constructor()",
       "source_file": "assets/js/data.js",
@@ -64,7 +42,7 @@
       "label": "fetchRecords()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "fetchrecords()",
       "source_file": "assets/js/data.js",
@@ -75,7 +53,7 @@
       "label": "loadProducts()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "loadproducts()",
       "source_file": "assets/js/data.js",
@@ -86,7 +64,7 @@
       "label": "normalizePhoto()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "normalizephoto()",
       "source_file": "assets/js/data.js",
@@ -97,7 +75,7 @@
       "label": "normalizeProduct()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "normalizeproduct()",
       "source_file": "assets/js/data.js",
@@ -108,7 +86,7 @@
       "label": "parseBoolean()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "parseboolean()",
       "source_file": "assets/js/data.js",
@@ -119,7 +97,7 @@
       "label": "parseCsv()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "parsecsv()",
       "source_file": "assets/js/data.js",
@@ -130,7 +108,7 @@
       "label": "parseList()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "parselist()",
       "source_file": "assets/js/data.js",
@@ -141,7 +119,7 @@
       "label": "readCache()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "readcache()",
       "source_file": "assets/js/data.js",
@@ -152,7 +130,7 @@
       "label": "readField()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "readfield()",
       "source_file": "assets/js/data.js",
@@ -163,7 +141,7 @@
       "label": "writeCache()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "writecache()",
       "source_file": "assets/js/data.js",
@@ -174,11 +152,33 @@
       "label": "renderFeaturedProducts()",
       "_callable": true,
       "_origin": "ast",
-      "community": 2,
+      "community": 0,
       "file_type": "code",
       "norm_label": "renderfeaturedproducts()",
       "source_file": "assets/js/main.js",
-      "source_location": "L55"
+      "source_location": "L56"
+    },
+    {
+      "id": "assets_js_catalog_applyfilters",
+      "label": "applyFilters()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "applyfilters()",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L60"
+    },
+    {
+      "id": "assets_js_catalog_updateaddress",
+      "label": "updateAddress()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "updateaddress()",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L51"
     },
     {
       "id": "assets_js_product_card_createproductcard",
@@ -302,6 +302,28 @@
       "source_location": "L30"
     },
     {
+      "id": "assets_js_motion_getrevealobserver",
+      "label": "getRevealObserver()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "norm_label": "getrevealobserver()",
+      "source_file": "assets/js/motion.js",
+      "source_location": "L16"
+    },
+    {
+      "id": "assets_js_motion_observereveals",
+      "label": "observeReveals()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "norm_label": "observereveals()",
+      "source_file": "assets/js/motion.js",
+      "source_location": "L30"
+    },
+    {
       "id": "assets_js_ui_showimage",
       "label": "showImage()",
       "_callable": true,
@@ -310,143 +332,13 @@
       "file_type": "code",
       "norm_label": "showimage()",
       "source_file": "assets/js/ui.js",
-      "source_location": "L58"
-    },
-    {
-      "id": "assets_js_catalog",
-      "label": "catalog.js",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "catalog.js",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "assets_js_catalog_categorybuttons",
-      "label": "categoryButtons",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "categorybuttons",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L34"
-    },
-    {
-      "id": "assets_js_catalog_count",
-      "label": "count",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "count",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L38"
-    },
-    {
-      "id": "assets_js_catalog_emptystate",
-      "label": "emptyState",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "emptystate",
-      "source_file": "assets/js/catalog.js",
       "source_location": "L36"
-    },
-    {
-      "id": "assets_js_catalog_errorstate",
-      "label": "errorState",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "errorstate",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L37"
-    },
-    {
-      "id": "assets_js_catalog_form",
-      "label": "form",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "form",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L31"
-    },
-    {
-      "id": "assets_js_catalog_grid",
-      "label": "grid",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "grid",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L35"
-    },
-    {
-      "id": "assets_js_catalog_params",
-      "label": "params",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "params",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L39"
-    },
-    {
-      "id": "assets_js_catalog_products",
-      "label": "products",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "products",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L46"
-    },
-    {
-      "id": "assets_js_catalog_queryinput",
-      "label": "queryInput",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "queryinput",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L32"
-    },
-    {
-      "id": "assets_js_catalog_sortselect",
-      "label": "sortSelect",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "sortselect",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L33"
-    },
-    {
-      "id": "assets_js_catalog_state",
-      "label": "state",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "state",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L41"
-    },
-    {
-      "id": "assets_js_catalog_validcategories",
-      "label": "validCategories",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "validcategories",
-      "source_file": "assets/js/catalog.js",
-      "source_location": "L40"
     },
     {
       "id": "assets_js_data",
       "label": "data.js",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "data.js",
       "source_file": "assets/js/data.js",
@@ -456,11 +348,141 @@
       "id": "assets_js_data_data_error_message",
       "label": "DATA_ERROR_MESSAGE",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "file_type": "code",
       "norm_label": "data_error_message",
       "source_file": "assets/js/data.js",
       "source_location": "L5"
+    },
+    {
+      "id": "assets_js_catalog",
+      "label": "catalog.js",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "catalog.js",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "assets_js_catalog_categorybuttons",
+      "label": "categoryButtons",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "categorybuttons",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L35"
+    },
+    {
+      "id": "assets_js_catalog_count",
+      "label": "count",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "count",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L39"
+    },
+    {
+      "id": "assets_js_catalog_emptystate",
+      "label": "emptyState",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "emptystate",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L37"
+    },
+    {
+      "id": "assets_js_catalog_errorstate",
+      "label": "errorState",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "errorstate",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L38"
+    },
+    {
+      "id": "assets_js_catalog_form",
+      "label": "form",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "form",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L32"
+    },
+    {
+      "id": "assets_js_catalog_grid",
+      "label": "grid",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "grid",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L36"
+    },
+    {
+      "id": "assets_js_catalog_params",
+      "label": "params",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "params",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L40"
+    },
+    {
+      "id": "assets_js_catalog_products",
+      "label": "products",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "products",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L47"
+    },
+    {
+      "id": "assets_js_catalog_queryinput",
+      "label": "queryInput",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "queryinput",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L33"
+    },
+    {
+      "id": "assets_js_catalog_sortselect",
+      "label": "sortSelect",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "sortselect",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L34"
+    },
+    {
+      "id": "assets_js_catalog_state",
+      "label": "state",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "state",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L42"
+    },
+    {
+      "id": "assets_js_catalog_validcategories",
+      "label": "validCategories",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "validcategories",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L41"
     },
     {
       "id": "assets_js_config",
@@ -500,7 +522,7 @@
       "file_type": "code",
       "norm_label": "businesstext",
       "source_file": "assets/js/main.js",
-      "source_location": "L8"
+      "source_location": "L9"
     },
     {
       "id": "assets_js_not_found",
@@ -613,6 +635,36 @@
       "source_location": "L25"
     },
     {
+      "id": "assets_js_motion",
+      "label": "motion.js",
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "norm_label": "motion.js",
+      "source_file": "assets/js/motion.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "assets_js_motion_reducemotion",
+      "label": "reduceMotion",
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "norm_label": "reducemotion",
+      "source_file": "assets/js/motion.js",
+      "source_location": "L13"
+    },
+    {
+      "id": "assets_js_motion_revealselector",
+      "label": "revealSelector",
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "norm_label": "revealselector",
+      "source_file": "assets/js/motion.js",
+      "source_location": "L1"
+    },
+    {
       "id": "assets_js_ui",
       "label": "ui.js",
       "_origin": "ast",
@@ -630,7 +682,7 @@
       "file_type": "code",
       "norm_label": "backtotop",
       "source_file": "assets/js/ui.js",
-      "source_location": "L1"
+      "source_location": "L3"
     },
     {
       "id": "assets_js_ui_galleryimages",
@@ -640,7 +692,7 @@
       "file_type": "code",
       "norm_label": "galleryimages",
       "source_file": "assets/js/ui.js",
-      "source_location": "L37"
+      "source_location": "L15"
     }
   ],
   "links": [
@@ -653,7 +705,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/catalog.js",
-      "source_location": "L71",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_catalog_applyfilters",
+      "target": "assets_js_motion_observereveals",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -665,7 +729,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/catalog.js",
-      "source_location": "L74",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -785,7 +849,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/main.js",
-      "source_location": "L62",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_main_renderfeaturedproducts",
+      "target": "assets_js_motion_observereveals",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "assets/js/main.js",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_motion_observereveals",
+      "target": "assets_js_motion_getrevealobserver",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "assets/js/motion.js",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -910,7 +998,7 @@
     },
     {
       "source": "assets_js_catalog",
-      "target": "assets_js_whatsapp_walink",
+      "target": "assets_js_motion_observereveals",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -918,6 +1006,18 @@
       "context": "import",
       "source_file": "assets/js/catalog.js",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_catalog",
+      "target": "assets_js_whatsapp_walink",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -1002,6 +1102,18 @@
       "context": "import",
       "source_file": "assets/js/main.js",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_main",
+      "target": "assets_js_motion_observereveals",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "assets/js/main.js",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -1113,6 +1225,18 @@
       "weight": 1.0
     },
     {
+      "source": "assets_js_ui",
+      "target": "assets_js_motion_observereveals",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "assets/js/ui.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "assets_js_whatsapp",
       "target": "assets_js_config_config",
       "relation": "imports",
@@ -1162,7 +1286,7 @@
     },
     {
       "source": "assets_js_catalog",
-      "target": "assets_js_whatsapp",
+      "target": "assets_js_motion",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1174,7 +1298,7 @@
     },
     {
       "source": "assets_js_catalog",
-      "target": "assets_js_ui",
+      "target": "assets_js_whatsapp",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1186,7 +1310,7 @@
     },
     {
       "source": "assets_js_catalog",
-      "target": "assets_js_fonts",
+      "target": "assets_js_ui",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1194,6 +1318,18 @@
       "context": "import",
       "source_file": "assets/js/catalog.js",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_catalog",
+      "target": "assets_js_fonts",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -1258,7 +1394,7 @@
     },
     {
       "source": "assets_js_main",
-      "target": "assets_js_ui",
+      "target": "assets_js_motion",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1270,7 +1406,7 @@
     },
     {
       "source": "assets_js_main",
-      "target": "assets_js_fonts",
+      "target": "assets_js_ui",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1278,6 +1414,18 @@
       "context": "import",
       "source_file": "assets/js/main.js",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_main",
+      "target": "assets_js_fonts",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "assets/js/main.js",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -1389,6 +1537,18 @@
       "weight": 1.0
     },
     {
+      "source": "assets_js_ui",
+      "target": "assets_js_motion",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "assets/js/ui.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "assets_js_whatsapp",
       "target": "assets_js_config",
       "relation": "imports_from",
@@ -1408,7 +1568,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -1419,7 +1579,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -1430,7 +1590,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -1441,7 +1601,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -1452,7 +1612,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -1463,7 +1623,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -1474,7 +1634,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -1485,7 +1645,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -1496,7 +1656,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -1507,7 +1667,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -1518,7 +1678,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -1529,7 +1689,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -1540,7 +1700,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -1551,7 +1711,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/catalog.js",
-      "source_location": "L59",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -1716,7 +1876,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/main.js",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -1727,7 +1887,51 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/main.js",
-      "source_location": "L8",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_motion",
+      "target": "assets_js_motion_revealselector",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/motion.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_motion",
+      "target": "assets_js_motion_reducemotion",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/motion.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_motion",
+      "target": "assets_js_motion_getrevealobserver",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/motion.js",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_motion",
+      "target": "assets_js_motion_observereveals",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/motion.js",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -1853,24 +2057,24 @@
     },
     {
       "source": "assets_js_ui",
-      "target": "assets_js_ui_backtotop",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "assets/js/ui.js",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "assets_js_ui",
       "target": "assets_js_ui_galleryimages",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/ui.js",
-      "source_location": "L37",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_ui",
+      "target": "assets_js_ui_backtotop",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "assets/js/ui.js",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -1881,7 +2085,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/ui.js",
-      "source_location": "L58",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -1983,7 +2187,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "assets/js/main.js",
-      "source_location": "L70",
+      "source_location": "L71",
       "weight": 1.0
     }
   ],

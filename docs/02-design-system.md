@@ -109,7 +109,17 @@ Konsisten dengan token di atas; accordion dengan `<details>` native.
 - Semua gambar punya `alt` deskriptif, `width`/`height`, dan `loading="lazy"` (kecuali hero).
 
 ## 8. Gerak (Motion)
-Halus & hemat: transisi 150–250ms, fade-in saat scroll (opsional), **hormati** `prefers-reduced-motion`.
+Halus & hemat: animasikan hanya `transform` dan `opacity`, gunakan token berikut untuk durasi dan easing, serta hormati `prefers-reduced-motion`.
+
+```css
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 200ms;
+  --dur-base: 600ms;
+}
+```
+
+Gunakan `--dur-fast` untuk umpan balik singkat dan `--dur-base` untuk reveal. Semua reveal berbagi satu `IntersectionObserver`; konten tetap terlihat saat JavaScript atau observer tidak tersedia.
 
 ## 9. Breakpoint
 `≥ 640px` tablet kecil · `≥ 900px` desktop · `≥ 1200px` lebar. Mobile-first (`min-width`).

@@ -2,6 +2,7 @@ import { CONFIG } from "./config.js";
 import { DataLoadError, loadProducts } from "./data.js";
 import { waDelivery, waLink } from "./whatsapp.js";
 import { createProductCard } from "./product-card.js";
+import { observeReveals } from "./motion.js";
 import "./ui.js";
 import "./fonts.js";
 
@@ -68,6 +69,7 @@ async function renderFeaturedProducts() {
       return;
     }
     grid.replaceChildren(...featured.slice(0, 6).map(createProductCard));
+    observeReveals(grid);
   } catch (error) {
     if (errorState) errorState.hidden = false;
     if (error instanceof DataLoadError) console.warn(error.message);

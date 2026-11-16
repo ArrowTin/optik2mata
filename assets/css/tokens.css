@@ -50,4 +50,9 @@
   --radius-pill: 999px;
   --shadow-sm: 0 1px 3px rgb(18 38 58 / 8%);
   --shadow-md: 0 8px 24px rgb(18 38 58 / 10%);
+
+  /* Gerak */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 200ms;
+  --dur-base: 600ms;
 }
