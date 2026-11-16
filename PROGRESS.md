@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-15 23:53] T07 — Detail produk (DONE)
 - **Hasil:** membuat `produk.html` dan `product.js` untuk galeri foto, spesifikasi, harga mengikuti toggle, CTA WhatsApp berisi nama/kode/tautan, produk serupa, serta state ID tidak valid dan kegagalan data. Komponen kartu dipakai ulang.
 - **Verifikasi:** sintaks JS valid; struktur HTML punya satu H1 dan semua target dinamis tersedia; `git diff --check` bersih. Visual lintas viewport belum dapat dikonfirmasi dengan Chrome headless.
-- **Commit:** menunggu hash commit implementasi.
+- **Commit:** `bdd4caf` � `feat(produk): tambah halaman detail produk [T07]` (sudah dipush ke `origin/main`).
 - **Catatan/Keputusan:** informasi harga hanya muncul jika diaktifkan; semua foto menggunakan placeholder produk yang sudah ada.
 - **Pertanyaan terbuka:** —
 - **Berikutnya:** T08
