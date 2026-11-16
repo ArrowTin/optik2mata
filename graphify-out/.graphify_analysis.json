@@ -128,8 +128,8 @@
       "degree": 3
     },
     {
-      "id": "assets_js_catalog_applyfilters",
-      "label": "applyFilters()",
+      "id": "assets_js_main_renderfeaturedproducts",
+      "label": "renderFeaturedProducts()",
       "degree": 3
     }
   ],

@@ -5,10 +5,18 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ## Status Saat Ini
 - Task aktif: —
 - Terakhir selesai: T09
-- Terblokir: —
-- Pertanyaan terbuka untuk pengguna: —
+- Terblokir: T10 — audit Lighthouse belum dapat dijalankan.
+- Pertanyaan terbuka untuk pengguna: izin memakai Lighthouse CLI melalui npx (tidak ditambahkan ke proyek).
 
 ## Log
+
+### [2026-11-16 08:30] T10 — Performa & aksesibilitas (BLOCKED)
+- **Hasil:** menambahkan skip-link dan target fokus pada 404/styleguide/halaman utama; memastikan gambar logo punya dimensi; menaikkan tinggi chip filter menjadi 48px. Gambar produk/katalog sudah memiliki dimensi dan lazy-loading; peta memakai lazy-loading.
+- **Verifikasi:** sintaks JS valid; pemeriksaan statis memastikan skip-link, target gambar, dan target sentuh. git diff --check bersih. Lighthouse tidak tersedia. Chrome headless gagal pada GPU (GPU process isn’t usable), sehingga screenshot/viewport tidak terverifikasi.
+- **Commit:** menunggu hash commit perbaikan parsial.
+- **Catatan/Keputusan:** T10 mensyaratkan skor Lighthouse mobile; task belum dapat ditandai selesai tanpa audit tersebut.
+- **Pertanyaan terbuka:** bolehkah saya menjalankan npx lighthouse tanpa menambahkan dependensi ke proyek?
+- **Berikutnya:** T10 setelah audit lulus; T11 menunggu T10.
 
 ### [2026-11-16 08:14] T09 — SEO teknis (DONE)
 - **Hasil:** menambahkan title/description, canonical, Open Graph, Twitter Card, JSON-LD Optician, robots.txt, sitemap.xml, site.webmanifest, dan gambar OG SVG. Metadata detail produk ikut diperbarui sesuai produk yang dimuat.
