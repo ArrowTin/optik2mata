@@ -69,7 +69,7 @@
     ],
     "7": [
       "assets_js_fonts",
-      "assets_js_fonts_fontstylesheet"
+      "assets_js_fonts_loadfonts"
     ],
     "8": [
       "assets_js_product_showstate",
@@ -129,6 +129,11 @@
       "degree": 5
     },
     {
+      "id": "assets_js_main_renderfeaturedproducts",
+      "label": "renderFeaturedProducts()",
+      "degree": 3
+    },
+    {
       "id": "assets_js_whatsapp_producturl",
       "label": "productUrl()",
       "degree": 3
@@ -137,20 +142,15 @@
       "id": "assets_js_whatsapp_wadelivery",
       "label": "waDelivery()",
       "degree": 3
-    },
-    {
-      "id": "assets_js_data_fetchrecords",
-      "label": "fetchRecords()",
-      "degree": 3
     }
   ],
   "surprises": [
     {
-      "source": "applyFilters()",
-      "target": "createProductCard()",
+      "source": "renderFeaturedProducts()",
+      "target": "loadProducts()",
       "source_files": [
-        "assets/js/catalog.js",
-        "assets/js/product-card.js"
+        "assets/js/main.js",
+        "assets/js/data.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
@@ -168,11 +168,11 @@
       "why": "inferred connection - not explicitly stated in source"
     },
     {
-      "source": "renderFeaturedProducts()",
-      "target": "loadProducts()",
+      "source": "applyFilters()",
+      "target": "createProductCard()",
       "source_files": [
-        "assets/js/main.js",
-        "assets/js/data.js"
+        "assets/js/catalog.js",
+        "assets/js/product-card.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",

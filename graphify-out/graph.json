@@ -269,6 +269,17 @@
       "source_location": "L73"
     },
     {
+      "id": "assets_js_fonts_loadfonts",
+      "label": "loadFonts()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "file_type": "code",
+      "norm_label": "loadfonts()",
+      "source_file": "assets/js/fonts.js",
+      "source_location": "L4"
+    },
+    {
       "id": "assets_js_product_showstate",
       "label": "showState()",
       "_callable": true,
@@ -589,16 +600,6 @@
       "norm_label": "fonts.js",
       "source_file": "assets/js/fonts.js",
       "source_location": "L1"
-    },
-    {
-      "id": "assets_js_fonts_fontstylesheet",
-      "label": "fontStylesheet",
-      "_origin": "ast",
-      "community": 7,
-      "file_type": "code",
-      "norm_label": "fontstylesheet",
-      "source_file": "assets/js/fonts.js",
-      "source_location": "L2"
     },
     {
       "id": "assets_js_ui",
@@ -1687,17 +1688,6 @@
       "weight": 1.0
     },
     {
-      "source": "assets_js_fonts",
-      "target": "assets_js_fonts_fontstylesheet",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "assets/js/fonts.js",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
       "source": "assets_js_main",
       "target": "assets_js_main_renderfeaturedproducts",
       "relation": "contains",
@@ -1927,6 +1917,18 @@
       "context": "argument",
       "source_file": "assets/js/data.js",
       "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "assets_js_fonts",
+      "target": "assets_js_fonts_loadfonts",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "assets/js/fonts.js",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
