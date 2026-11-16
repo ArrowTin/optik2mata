@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T18 (TODO)
-- Terakhir selesai: T17
+- Task aktif: T19 (TODO)
+- Terakhir selesai: T18
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); sumber Pages atau dukungan paket repo privat belum dapat diverifikasi.
 - Pertanyaan terbuka untuk pengguna: aktifkan GitHub Pages dengan source GitHub Actions, atau tentukan hosting lain; jangan ubah visibilitas repo tanpa keputusan pemilik.
 
 ## Log
+
+### [2026-11-16 23:17] T18 — Carousel katalog pilihan (DONE)
+- **Hasil:** katalog pilihan beranda memakai scroll-snap, dapat diseret dengan mouse, sentuh tetap native, dan track dapat difokuskan agar bisa dijelajahi dengan keyboard. Toggle `CONFIG.features.enableFeaturedCarousel` mematikan track dengan aman.
+- **Verifikasi:** sintaks modul JS dan `git diff --check` lulus; harness Node membuktikan drag mouse menggeser track, sentuh tidak ditangkap, klik setelah drag dicegah, dan track memiliki fokus keyboard. Graphify code-only diperbarui. Uji viewport visual belum tersedia akibat kegagalan render browser headless.
+- **Commit:** `2f902a6` — `feat(katalog): tambah carousel produk seret [T18]`.
+- **Catatan/Keputusan:** produk tetap berupa tautan native di dalam area scroll.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T19
 
 ### [2026-11-16 23:05] T17 — Marquee layanan (DONE)
 - **Hasil:** menambahkan strip chip berjalan dari layanan terkonfirmasi (kacamata/frame, lensa, belanja/ambil di toko, dan pesan antar). Duplikasi loop diberi `aria-hidden`, jeda tersedia saat hover, dan fitur dapat dimatikan lewat `CONFIG.features.enableServiceMarquee`.
