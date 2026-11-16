@@ -4,6 +4,7 @@ import { productUrl, waProduct } from "./whatsapp.js";
 export function createProductCard(product, { headingLevel = 3 } = {}) {
   const card = document.createElement("article");
   card.className = "product-card";
+  if (CONFIG.features.enableProductCardHover) card.classList.add("product-card--hover-enabled");
   const imageLink = document.createElement("a");
   imageLink.className = "product-card__media";
   imageLink.href = productUrl(product);

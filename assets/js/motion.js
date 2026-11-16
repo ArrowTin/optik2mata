@@ -77,6 +77,16 @@ function prepareCounters() {
   });
 }
 
+function initHeaderScrollState() {
+  if (!CONFIG.features.enableHeaderScrollState) return;
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+
+  const update = () => header.toggleAttribute("data-scrolled", window.scrollY > 4);
+  window.addEventListener("scroll", update, { passive: true });
+  update();
+}
+
 // Tandai dan daftarkan elemen baru ke pengamat reveal yang sama.
 export function observeReveals(root = document) {
   if (reduceMotion.matches) return;
@@ -110,4 +120,5 @@ export function applyMotionStagger(elements) {
 }
 
 prepareCounters();
+initHeaderScrollState();
 observeReveals();

@@ -60,6 +60,21 @@
   box-shadow: var(--shadow-sm);
 }
 
+.site-header::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: var(--shadow-md);
+  content: "";
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.site-header[data-scrolled]::after {
+  opacity: 1;
+}
+
 .navbar {
   display: flex;
   min-height: 4.5rem;
@@ -410,10 +425,12 @@
   flex-direction: column;
 }
 
-.product-card:hover,
-.service-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+@media (hover: hover) {
+  .service-card:hover,
+  .product-card--hover-enabled:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
 }
 
 .product-card__media {

@@ -31,4 +31,8 @@
     transform: none;
     transition: none;
   }
+
+  .site-header::after {
+    transition: none;
+  }
 }

@@ -26,7 +26,9 @@ export const CONFIG = {
     enableServiceMarquee: true,
     enableFeaturedCarousel: true,
     enableShoppingMockup: true,
-    enableRatingCountUp: true
+    enableRatingCountUp: true,
+    enableProductCardHover: true,
+    enableHeaderScrollState: true
   },
   data: {
     source: "json",
