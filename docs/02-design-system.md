@@ -61,9 +61,15 @@ Muat lewat Google Fonts dengan `display=swap` (hanya bobot yang dipakai).
 :root {
   --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem;
   --space-5: 1.5rem; --space-6: 2rem; --space-7: 3rem; --space-8: 5rem;
-  --radius-sm: 8px; --radius-md: 14px; --radius-lg: 24px; --radius-pill: 999px;
-  --shadow-sm: 0 1px 3px rgba(18,38,58,.08);
-  --shadow-md: 0 8px 24px rgba(18,38,58,.10);
+  --radius-sm: 8px; --radius-md: 16px; --radius-lg: 24px; --radius-pill: 999px;
+  --shadow-sm: 0 2px 8px -2px rgba(18,38,58,.06), 0 1px 2px rgba(18,38,58,.04);
+  --shadow-md: 0 12px 32px -8px rgba(18,38,58,.10), 0 2px 6px rgba(18,38,58,.04);
+  --shadow-lg: 0 24px 48px -12px rgba(18,38,58,.14), 0 4px 12px rgba(18,38,58,.05);
+  --shadow-card: 0 10px 30px -10px rgba(18,38,58,.07), 0 1px 3px rgba(18,38,58,.04);
+  --shadow-card-hover: 0 20px 40px -12px rgba(18,38,58,.13), 0 2px 8px rgba(18,38,58,.05);
+  --shadow-primary: 0 12px 28px -6px rgba(23,107,97,.35);
+  --shadow-wa: 0 12px 28px -6px rgba(37,211,102,.40);
+  --shadow-accent: 0 10px 24px -6px rgba(217,154,61,.35);
   --container: 1120px;
 }
 ```

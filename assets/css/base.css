@@ -12,7 +12,12 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 0% 0%, rgb(23 107 97 / 5%), transparent 40%),
+    radial-gradient(circle at 100% 100%, rgb(217 154 61 / 5%), transparent 40%),
+    radial-gradient(circle at 50% 50%, rgb(23 107 97 / 2%), transparent 60%);
+  background-attachment: fixed;
   color: var(--color-ink);
   font-family: var(--font-body);
   font-size: var(--fs-base);

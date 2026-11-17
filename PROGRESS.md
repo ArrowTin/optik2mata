@@ -3,7 +3,7 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T25 (TODO — Penyesuaian tampilan & kedalaman visual terinspirasi semarewards.com)
+- Task aktif: T25 (IN PROGRESS — Penyesuaian tampilan & kedalaman visual terinspirasi semarewards.com)
 - Terakhir selesai: T24
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); T22 — Lighthouse dan uji viewport/reduced-motion browser tidak dapat dijalankan karena renderer Chrome/Edge/Firefox headless gagal di lingkungan ini.
 - Catatan backlog baru: T25 (Penyegaran tampilan agar lebih hidup & modern) dan T26 (Integrasi gambar produk kacamata open-source berkualitas tinggi).
