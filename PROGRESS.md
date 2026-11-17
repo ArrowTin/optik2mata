@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-17] T23 — Usulan palet hangat (DONE)
 - **Hasil:** mengganti token teal menjadi jade, latar menjadi krem muda, warna lembut menjadi sage, aksen menjadi oker, dan netral menjadi lebih hangat. Tinta gelap dan token WhatsApp dipertahankan. `docs/02-design-system.md` mencatat arah palet dan aturan penggunaan.
 - **Verifikasi:** audit statis memastikan warna CSS selain bayangan hanya didefinisikan di `tokens.css`; semua komponen dan halaman memakai token yang sama. Kontras teks: jade/putih 6,34:1; jade gelap/putih 8,52:1; teks sekunder/putih 5,83:1; teks sekunder/krem 5,49:1; tinta/oker 6,33:1. `graphify . --code-only` dan `git diff --check` dijalankan. Render visual browser tidak tersedia pada sesi ini.
-- **Commit:** `c69adee` — `style(desain): hangatkan palet warna [T23]`.
+- **Commit:** `2d2f01f` — `style(desain): hangatkan palet warna [T23]`.
 - **Catatan/Keputusan:** palet diterapkan setelah persetujuan pengguna. Dependensi T23 dan T24 mengacu pada T21 agar pekerjaan backlog dapat berjalan saat T22 menunggu QA browser.
 - **Pertanyaan terbuka:** QA browser T22 masih memerlukan renderer yang berfungsi.
 - **Berikutnya:** T24 setelah commit T23.

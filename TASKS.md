@@ -77,7 +77,7 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 ## Riwayat Penyelesaian
 | ID | Tanggal | Commit | Catatan |
 |---|---|---|---|
-| T23 | 2026-11-17 | `c69adee` | Palet hangat jade, sage, krem, dan oker diterapkan pada token serta didokumentasikan di design system. |
+| T23 | 2026-11-17 | `2d2f01f` | Palet hangat jade, sage, krem, dan oker diterapkan pada token serta didokumentasikan di design system. |
 | T00 | 2026-11-15 | `371ec0e`, `15882c7` | Setup lokal dan catatan progres dipush ke `origin/main`. |
 | T01 | 2026-11-15 | `33447ac` | Scaffold awal, token visual, konfigurasi, dan aset brand. |
 | T02 | 2026-11-15 | `5ffb695` | Komponen dan styleguide mengikuti design system. |
