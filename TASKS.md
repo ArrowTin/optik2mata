@@ -2,7 +2,7 @@
 
 Status: `TODO` · `IN PROGRESS` · `DONE` · `BLOCKED`
 Aturan: satu task = satu commit + satu push (lihat `AGENTS.md` bagian 4 & 6). Referensi prompt rinci: `docs/07-prompt-vibe-coding.md`.
-Fase 1: T00–T15 · Fase 2 (pengembangan lanjutan, UI animasi): T16–T22.
+Fase 1: T00–T15 · Fase 2 (pengembangan lanjutan, UI animasi): T16–T24.
 
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
@@ -27,7 +27,7 @@ Fase 1: T00–T15 · Fase 2 (pengembangan lanjutan, UI animasi): T16–T22.
 
 Referensi: `docs/10-panduan-ui-animasi.md` (hanya Jalur B: vanilla, tanpa build step) dan `AGENTS.md` Bagian 7 "Aturan Gerak". Dikerjakan setelah Fase 1 (T14) selesai. T15 tetap `BLOCKED` dan tidak menghalangi Fase 2.
 
-T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. Task di bawah hanya menambah atau merapikan yang belum ada. Setiap task T17–T21 wajib menyertakan toggle di `config.features`.
+T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. Task di bawah hanya menambah atau merapikan yang belum ada. Task T17–T21 dan T24 wajib menyertakan toggle di `config.features`.
 
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
@@ -65,9 +65,14 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 | T20 | Angka sama persis dengan data terkonfirmasi; statis saat reduced-motion; nilai akhir benar |
 | T21 | Hover tidak aktif di layar sentuh; tidak ada layout shift saat header berubah |
 | T22 | Semua toggle Fase 2 diuji; Lighthouse ≥ target Fase 1; QA 360/1280px lulus; graph dan dokumen pemilik diperbarui |
+| T23 | Usulan warna ditinjau pada halaman utama dan komponen; seluruh warna tetap memakai token; bila perlu mengubah design system, persetujuan didapat sebelum perubahan token atau docs/02; tidak menyalin aset/konten referensi |
+| T24 | Footer navigasi dan kontak jelas serta tertata di 360/1280px; gerak hanya transform/opacity dengan token yang ada; toggle mati menampilkan footer utuh; reduced-motion tetap nyaman; tidak ada overflow |
 
 ## Backlog (temuan di luar lingkup)
-_(kosong — agent menambahkan di sini)_
+| ID | Task | Dependensi | Referensi | Status |
+|---|---|---|---|---|
+| T23 | Evaluasi dan usulkan penyegaran palet agar lebih hangat, luwes, dan berkarakter; semarewards.com/id hanya inspirasi suasana, bukan untuk menyalin aset atau identitas. Jika usulan mengubah design system, minta persetujuan pengguna sebelum mengubah token atau `docs/02`. | T22 | docs/02; AGENTS §7, §9 | TODO |
+| T24 | Poles footer: tata ulang navigasi dan informasi kontak agar rapi serta elegan, lalu tambahkan gerak halus yang memakai token gerak yang sudah ada, toggle `config.features`, observer bersama, dan dukungan reduced-motion. | T22 | docs/02, §8; docs/10 §4.1, §4.6; AGENTS §7 | TODO |
 
 ## Riwayat Penyelesaian
 | ID | Tanggal | Commit | Catatan |
