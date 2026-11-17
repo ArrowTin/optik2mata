@@ -11,6 +11,8 @@ const revealSelector = [
   ".location-layout",
   ".closing-cta__inner",
   ".shopping-mockup",
+  // Footer memakai pengamat yang sama hanya saat toggle-nya aktif.
+  ...(CONFIG.features.enableFooterMotion ? ["[data-footer-reveal]"] : []),
   "[data-count-up]"
 ].join(", ");
 

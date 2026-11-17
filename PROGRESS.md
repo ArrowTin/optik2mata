@@ -3,7 +3,7 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T24 (TODO; menunggu T23 ter-commit dan ter-push)
+- Task aktif: T24 (IN PROGRESS)
 - Terakhir selesai: T23
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); T22 — Lighthouse dan uji viewport/reduced-motion browser tidak dapat dijalankan karena renderer Chrome/Edge/Firefox headless gagal di lingkungan ini.
 - Pertanyaan terbuka untuk pengguna: sediakan sesi/browser yang bisa merender situs untuk QA 360/1280px, reduced-motion, konsol, dan Lighthouse.

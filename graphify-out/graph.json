@@ -200,7 +200,7 @@
       "file_type": "code",
       "norm_label": "applymotionstagger()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L110"
+      "source_location": "L112"
     },
     {
       "id": "assets_js_motion_observereveals",
@@ -211,7 +211,7 @@
       "file_type": "code",
       "norm_label": "observereveals()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L91"
+      "source_location": "L93"
     },
     {
       "id": "assets_js_ui_showimage",
@@ -354,7 +354,7 @@
       "file_type": "code",
       "norm_label": "animatecounter()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L47"
+      "source_location": "L49"
     },
     {
       "id": "assets_js_motion_animatecounter_update",
@@ -365,7 +365,7 @@
       "file_type": "code",
       "norm_label": "update()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L54"
+      "source_location": "L56"
     },
     {
       "id": "assets_js_motion_countertarget",
@@ -376,7 +376,7 @@
       "file_type": "code",
       "norm_label": "countertarget()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L34"
+      "source_location": "L36"
     },
     {
       "id": "assets_js_motion_formatcounter",
@@ -387,7 +387,7 @@
       "file_type": "code",
       "norm_label": "formatcounter()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L40"
+      "source_location": "L42"
     },
     {
       "id": "assets_js_motion_getrevealobserver",
@@ -398,7 +398,7 @@
       "file_type": "code",
       "norm_label": "getrevealobserver()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L20"
+      "source_location": "L22"
     },
     {
       "id": "assets_js_motion_initheaderscrollstate",
@@ -409,7 +409,7 @@
       "file_type": "code",
       "norm_label": "initheaderscrollstate()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L80"
+      "source_location": "L82"
     },
     {
       "id": "assets_js_motion_preparecounters",
@@ -420,7 +420,7 @@
       "file_type": "code",
       "norm_label": "preparecounters()",
       "source_file": "assets/js/motion.js",
-      "source_location": "L63"
+      "source_location": "L65"
     },
     {
       "id": "assets_js_catalog",
@@ -800,7 +800,7 @@
       "file_type": "code",
       "norm_label": "reducemotion",
       "source_file": "assets/js/motion.js",
-      "source_location": "L17"
+      "source_location": "L19"
     },
     {
       "id": "assets_js_motion_revealselector",
@@ -991,7 +991,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/motion.js",
-      "source_location": "L56",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -1003,7 +1003,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/motion.js",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -1015,7 +1015,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/motion.js",
-      "source_location": "L87",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -1027,7 +1027,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/motion.js",
-      "source_location": "L100",
+      "source_location": "L102",
       "weight": 1.0
     },
     {
@@ -1039,7 +1039,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/motion.js",
-      "source_location": "L93",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -1051,7 +1051,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/motion.js",
-      "source_location": "L66",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -1063,7 +1063,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "assets/js/motion.js",
-      "source_location": "L74",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -2181,7 +2181,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L110",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
@@ -2192,7 +2192,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -2203,7 +2203,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L20",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -2225,7 +2225,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L34",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -2236,7 +2236,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L40",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -2247,7 +2247,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L47",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -2258,7 +2258,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L63",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -2269,7 +2269,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L80",
+      "source_location": "L82",
       "weight": 1.0
     },
     {
@@ -2280,7 +2280,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "assets/js/motion.js",
-      "source_location": "L91",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -2548,7 +2548,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "assets/js/motion.js",
-      "source_location": "L60",
+      "source_location": "L62",
       "weight": 1.0
     }
   ],

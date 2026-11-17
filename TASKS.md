@@ -72,7 +72,7 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
 | T23 | Evaluasi dan usulkan penyegaran palet agar lebih hangat, luwes, dan berkarakter; semarewards.com/id hanya inspirasi suasana, bukan untuk menyalin aset atau identitas. Jika usulan mengubah design system, minta persetujuan pengguna sebelum mengubah token atau `docs/02`. | T21 | docs/02; AGENTS §7, §9 | DONE |
-| T24 | Poles footer: tata ulang navigasi dan informasi kontak agar rapi serta elegan, lalu tambahkan gerak halus yang memakai token gerak yang sudah ada, toggle `config.features`, observer bersama, dan dukungan reduced-motion. | T21 | docs/02, §8; docs/10 §4.1, §4.6; AGENTS §7 | TODO |
+| T24 | Poles footer: tata ulang navigasi dan informasi kontak agar rapi serta elegan, lalu tambahkan gerak halus yang memakai token gerak yang sudah ada, toggle `config.features`, observer bersama, dan dukungan reduced-motion. | T21 | docs/02, §8; docs/10 §4.1, §4.6; AGENTS §7 | IN PROGRESS |
 
 ## Riwayat Penyelesaian
 | ID | Tanggal | Commit | Catatan |

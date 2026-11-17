@@ -23,7 +23,7 @@ Toggle fitur penting:
 - `showDelivery`: tampilkan informasi pesan antar. Jangkauan dan ongkir perlu dikonfirmasi.
 - `showEyeExam`, `showRepair`, `showTurnaroundInfo`, `showPaymentInfo`: tampilkan informasi terkait hanya setelah dikonfirmasi.
 - `hideSoldOut`: sembunyikan produk yang `tersedia` bernilai `false`.
-- `enableServiceMarquee`, `enableFeaturedCarousel`, `enableShoppingMockup`, `enableRatingCountUp`, `enableProductCardHover`, `enableHeaderScrollState`: aktifkan/nonaktifkan efek Fase 2. Semua dapat dimatikan dengan nilai `false`; konten utama tetap tersedia.
+- `enableServiceMarquee`, `enableFeaturedCarousel`, `enableShoppingMockup`, `enableRatingCountUp`, `enableProductCardHover`, `enableHeaderScrollState`, `enableFooterMotion`: aktifkan/nonaktifkan efek Fase 2. Semua dapat dimatikan dengan nilai `false`; konten utama tetap tersedia.
 
 Efek gerak mengikuti pengaturan `prefers-reduced-motion` perangkat. Carousel tetap dapat digunakan dengan scroll sentuh dan keyboard.
 

@@ -28,7 +28,8 @@ export const CONFIG = {
     enableShoppingMockup: true,
     enableRatingCountUp: true,
     enableProductCardHover: true,
-    enableHeaderScrollState: true
+    enableHeaderScrollState: true,
+    enableFooterMotion: true
   },
   data: {
     source: "json",
