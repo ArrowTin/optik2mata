@@ -67,12 +67,16 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 | T22 | Semua toggle Fase 2 diuji; Lighthouse ≥ target Fase 1; QA 360/1280px lulus; graph dan dokumen pemilik diperbarui |
 | T23 | Usulan warna ditinjau pada halaman utama dan komponen; seluruh warna tetap memakai token; bila perlu mengubah design system, persetujuan didapat sebelum perubahan token atau docs/02; tidak menyalin aset/konten referensi |
 | T24 | Footer navigasi dan kontak jelas serta tertata di 360/1280px; gerak hanya transform/opacity dengan token yang ada; toggle mati menampilkan footer utuh; reduced-motion tetap nyaman; tidak ada overflow |
+| T25 | Tampilan web terasa hidup, modern, dan luwes terinspirasi semarewards.com; bento card border glow & radius 24px, ambient radial glow lembut, tombol ber-shadow brand, pill badge interaktif; mobile 360px bebas overflow |
+| T26 | 12 produk memiliki foto kacamata nyata berlisensi open-source/CC0 yang tajam dan estetik; format WebP berbobot ringan (< 60 KB/foto); ditampilkan rapi di katalog dan beranda |
 
 ## Backlog (temuan di luar lingkup)
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
 | T23 | Evaluasi dan usulkan penyegaran palet agar lebih hangat, luwes, dan berkarakter; semarewards.com/id hanya inspirasi suasana, bukan untuk menyalin aset atau identitas. Jika usulan mengubah design system, minta persetujuan pengguna sebelum mengubah token atau `docs/02`. | T21 | docs/02; AGENTS §7, §9 | DONE |
 | T24 | Poles footer: tata ulang navigasi dan informasi kontak agar rapi serta elegan, lalu tambahkan gerak halus yang memakai token gerak yang sudah ada, toggle `config.features`, observer bersama, dan dukungan reduced-motion. | T21 | docs/02, §8; docs/10 §4.1, §4.6; AGENTS §7 | DONE |
+| T25 | Penyesuaian tampilan agar lebih hidup dan luwes: adopsi esensi visual semarewards.com (ambient glow/radial highlight lembut, bento card border glow & radius 24px, pill badge interaktif dengan dot, button shadow bernuansa brand, ritme visual & mikro-animasi fluid). | T23, T24 | docs/02, 10; AGENTS §7 | TODO |
+| T26 | Kurasi dan integrasi gambar sampel produk kacamata open-source (Unsplash/CC0) yang estetik, relevan, dioptimasi WebP, dan dihubungkan ke `products.json` untuk menggantikan placeholder SVG. | T25 | docs/05, 06; AGENTS §7 | TODO |
 
 ## Riwayat Penyelesaian
 | ID | Tanggal | Commit | Catatan |
