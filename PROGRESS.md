@@ -13,7 +13,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 ### [2026-11-17 21:40] T24 — Poles footer dan gerak halus (DONE)
 - **Hasil:** menata ulang footer `index.html` dan `styleguide.html` menjadi tiga blok terstruktur (brand dengan logo dan jam operasional, navigasi vertikal rapi dengan target sentuh ≥ 48px, dan kartu kontak elegan untuk Telepon, Chat WhatsApp, dan Google Maps). Menghubungkan gerak reveal stagger menggunakan observer bersama melalui atribut `data-footer-reveal` dan toggle `CONFIG.features.enableFooterMotion`.
 - **Verifikasi:** uji statis memastikan satu H1 terjaga, semua atribut data usaha (`data-business-*`, `data-current-year`, `.js-wa-link`, `data-business-map`) terisi benar tanpa placeholder bocor, target sentuh minimal 48px terpenuhi, tanpa warna di luar token, toggle `enableFooterMotion` mematikan gerak secara utuh tanpa merusak tata letak, `prefers-reduced-motion` mengabaikan animasi, dan layout responsif bebas overflow di 360px hingga 1280px. `node --check`, script verifikasi Node, `git diff --check`, dan `graphify . --code-only` lulus.
-- **Commit:** `74d2bbe` — `style(footer): tata ulang navigasi dan tambah gerak halus [T24]`.
+- **Commit:** `65c511d` — `style(footer): tata ulang navigasi dan tambah gerak halus [T24]`.
 - **Catatan/Keputusan:** tata letak satu kolom pada mobile (< 640px) memastikan nomor telepon dan kartu kontak tidak terpotong pada layar 360px.
 - **Pertanyaan terbuka:** —
 - **Berikutnya:** Menunggu koreksi atau arahan pengguna.

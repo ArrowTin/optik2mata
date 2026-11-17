@@ -77,7 +77,7 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 ## Riwayat Penyelesaian
 | ID | Tanggal | Commit | Catatan |
 |---|---|---|---|
-| T24 | 2026-11-17 | `74d2bbe` | Footer ditata ulang (brand logo/jadwal, navigasi vertikal, kartu kontak WA/telepon/Maps), gerak reveal stagger via observer bersama & toggle enableFooterMotion, aman 360/1280px dan reduced-motion. |
+| T24 | 2026-11-17 | `65c511d` | Footer ditata ulang (brand logo/jadwal, navigasi vertikal, kartu kontak WA/telepon/Maps), gerak reveal stagger via observer bersama & toggle enableFooterMotion, aman 360/1280px dan reduced-motion. |
 | T23 | 2026-11-17 | `2d2f01f` | Palet hangat jade, sage, krem, dan oker diterapkan pada token serta didokumentasikan di design system. |
 | T00 | 2026-11-15 | `371ec0e`, `15882c7` | Setup lokal dan catatan progres dipush ke `origin/main`. |
 | T01 | 2026-11-15 | `33447ac` | Scaffold awal, token visual, konfigurasi, dan aset brand. |
