@@ -105,6 +105,11 @@
       "degree": 10
     },
     {
+      "id": "assets_js_motion_observereveals",
+      "label": "observeReveals()",
+      "degree": 8
+    },
+    {
       "id": "assets_js_product_card_createproductcard",
       "label": "createProductCard()",
       "degree": 8
@@ -117,11 +122,6 @@
     {
       "id": "assets_js_config_config",
       "label": "CONFIG",
-      "degree": 8
-    },
-    {
-      "id": "assets_js_motion_observereveals",
-      "label": "observeReveals()",
       "degree": 8
     },
     {

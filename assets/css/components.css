@@ -589,24 +589,82 @@
 }
 
 .site-footer {
-  padding-block: var(--space-6);
+  padding-block: var(--space-7) var(--space-6);
   background: var(--color-ink);
   color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
 }
 
 .site-footer a {
   color: var(--color-surface);
+  text-decoration: none;
 }
 
 .site-footer__inner {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-5);
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
 }
 
-.site-footer__brand,
-.site-footer__copyright {
-  grid-column: 1 / -1;
+.site-footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.site-footer__brand-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.site-footer__logo {
+  width: 48px;
+  height: 36px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.site-footer__brand-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-heading);
+  color: var(--color-surface);
+}
+
+.site-footer__tagline {
+  margin: 0;
+  color: var(--color-primary-lt);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  max-width: 44ch;
+}
+
+.site-footer__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.site-footer__meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin: 0;
+  color: var(--color-primary-lt);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+}
+
+.site-footer__meta-icon {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.2rem;
+  color: var(--color-accent);
 }
 
 .site-footer__group {
@@ -614,11 +672,130 @@
 }
 
 .site-footer__title {
-  margin: 0 0 var(--space-2);
+  margin: 0 0 var(--space-3);
   font-family: var(--font-heading);
   font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--color-surface);
+  letter-spacing: 0.02em;
 }
 
+/* Navigasi */
+.site-footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.site-footer__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-block: var(--space-1);
+  color: var(--color-primary-lt);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+
+@media (hover: hover) {
+  .site-footer__link:hover {
+    color: var(--color-accent);
+    transform: translateX(var(--space-1));
+  }
+}
+
+.site-footer__link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Kontak cards */
+.site-footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.site-footer__contact-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 48px;
+  padding: var(--space-2) var(--space-3);
+  background: rgb(255 255 255 / 5%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: var(--radius-md);
+  color: var(--color-surface);
+  text-decoration: none;
+  transition: background var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+
+@media (hover: hover) {
+  .site-footer__contact-card:hover {
+    background: rgb(255 255 255 / 10%);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+  .site-footer__contact-card--wa:hover {
+    border-color: var(--color-wa);
+  }
+}
+
+.site-footer__contact-card:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.site-footer__contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  background: rgb(255 255 255 / 8%);
+  color: var(--color-surface);
+}
+
+.site-footer__contact-icon--wa {
+  background: var(--color-wa);
+  color: var(--color-surface);
+}
+
+.site-footer__contact-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.site-footer__contact-label {
+  font-size: var(--fs-xs);
+  color: var(--color-primary-lt);
+  line-height: 1.2;
+}
+
+.site-footer__contact-value {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  color: var(--color-surface);
+  line-height: 1.3;
+}
+
+.site-footer__contact-desc {
+  font-size: var(--fs-xs);
+  color: var(--color-surface);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Kompatibilitas kelas lama */
 .site-footer__text {
   margin: 0;
   color: var(--color-primary-lt);
@@ -647,8 +824,14 @@
 }
 
 .site-footer__copyright {
+  grid-column: 1 / -1;
   padding-top: var(--space-4);
-  border-top: 1px solid var(--color-muted);
+  border-top: 1px solid rgb(255 255 255 / 12%);
+}
+
+.site-footer__copyright .site-footer__text {
+  font-size: var(--fs-xs);
+  line-height: var(--lh-body);
 }
 
 .btn-wa-floating {
@@ -714,6 +897,11 @@
 
   .site-footer__inner {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6);
+  }
+
+  .site-footer__brand {
+    grid-column: 1 / -1;
   }
 }
 
@@ -756,11 +944,12 @@
   }
 
   .site-footer__inner {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    gap: var(--space-7);
+    align-items: start;
   }
 
-  .site-footer__brand,
-  .site-footer__copyright {
+  .site-footer__brand {
     grid-column: auto;
   }
 

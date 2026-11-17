@@ -396,23 +396,75 @@
       </section>
 
       <footer class="site-footer">
-        <div class="container site-footer__inner" data-footer-reveal>
-          <div class="site-footer__brand">
-            <h2 class="site-footer__title" data-business="name">Nama optik</h2>
-            <p class="site-footer__text"><span data-business="addressShort">Alamat toko</span><br>Buka setiap hari, <span data-business="hours">sesuai jadwal toko</span></p>
+        <div class="container site-footer__inner">
+          <div class="site-footer__brand" data-footer-reveal>
+            <div class="site-footer__brand-header">
+              <img class="site-footer__logo" src="assets/img/brand/logo.svg" alt="" width="48" height="36" loading="lazy">
+              <h2 class="site-footer__brand-title" data-business="name">Optik 2Mata Bengkayang</h2>
+            </div>
+            <p class="site-footer__tagline">Pilihan kacamata dan lensa terpercaya di Bengkayang. Pelayanan ramah, tepat, dan mudah dikonsultasikan via WhatsApp.</p>
+            <div class="site-footer__meta">
+              <p class="site-footer__meta-item">
+                <svg class="icon site-footer__meta-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+                <span data-business="addressShort">Jl. Bengkayang–Sanggau Ledo, Sebalo</span>
+              </p>
+              <p class="site-footer__meta-item">
+                <svg class="icon site-footer__meta-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+                <span>Buka setiap hari, <span data-business="hours">08.00–21.00</span></span>
+              </p>
+            </div>
           </div>
-          <div class="site-footer__group">
+
+          <div class="site-footer__group site-footer__nav" data-footer-reveal>
             <h2 class="site-footer__title">Navigasi</h2>
-            <nav class="site-footer__links" aria-label="Navigasi footer">
-              <a href="index.html">Beranda</a><a href="katalog.html">Katalog</a><a href="#galeri">Galeri</a><a href="#lokasi">Lokasi</a>
+            <nav class="site-footer__nav-list" aria-label="Navigasi footer">
+              <a class="site-footer__link" href="index.html">Beranda</a>
+              <a class="site-footer__link" href="katalog.html">Katalog Kacamata</a>
+              <a class="site-footer__link" href="#layanan">Layanan</a>
+              <a class="site-footer__link" href="#cara-belanja">Cara Belanja</a>
+              <a class="site-footer__link" href="#galeri">Galeri Toko</a>
+              <a class="site-footer__link" href="#lokasi">Lokasi &amp; Jam</a>
             </nav>
           </div>
-          <div class="site-footer__group site-footer__contact">
-            <h2 class="site-footer__title">Hubungi kami</h2>
-            <p class="site-footer__text"><a class="site-footer__phone" data-business-phone-link href="#lokasi"><span data-business="phoneDisplay">Nomor toko</span></a></p>
-            <div class="site-footer__links"><a class="js-wa-link" href="#cara-belanja">WhatsApp</a><a data-business-map href="#lokasi" rel="noopener">Google Maps</a></div>
+
+          <div class="site-footer__group site-footer__contact" data-footer-reveal>
+            <h2 class="site-footer__title">Hubungi Kami</h2>
+            <div class="site-footer__contact-list">
+              <a class="site-footer__contact-card" data-business-phone-link href="#lokasi">
+                <span class="site-footer__contact-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24"><path d="M5 4h14v16H5z"></path><path d="m8 8 8 8m0-8-8 8"></path></svg>
+                </span>
+                <span class="site-footer__contact-content">
+                  <span class="site-footer__contact-label">Telepon Toko</span>
+                  <strong class="site-footer__contact-value" data-business="phoneDisplay">0813-8951-4572</strong>
+                </span>
+              </a>
+
+              <a class="site-footer__contact-card site-footer__contact-card--wa js-wa-link" href="#cara-belanja">
+                <span class="site-footer__contact-icon site-footer__contact-icon--wa" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.2A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.5 9.5c.6 2 2 3.4 4 4"></path></svg>
+                </span>
+                <span class="site-footer__contact-content">
+                  <span class="site-footer__contact-label">Chat WhatsApp</span>
+                  <span class="site-footer__contact-desc">Konsultasi &amp; Tanya Stok</span>
+                </span>
+              </a>
+
+              <a class="site-footer__contact-card" data-business-map href="#lokasi" rel="noopener">
+                <span class="site-footer__contact-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+                </span>
+                <span class="site-footer__contact-content">
+                  <span class="site-footer__contact-label">Google Maps</span>
+                  <span class="site-footer__contact-desc">Petunjuk Rute ke Toko</span>
+                </span>
+              </a>
+            </div>
           </div>
-          <p class="site-footer__text site-footer__copyright">© <span data-current-year>2026</span> <span data-business="name">Optik 2Mata Bengkayang</span></p>
+
+          <div class="site-footer__copyright" data-footer-reveal>
+            <p class="site-footer__text">© <span data-current-year>2026</span> <span data-business="name">Optik 2Mata Bengkayang</span>. Hak cipta dilindungi.</p>
+          </div>
         </div>
       </footer>
     </main>

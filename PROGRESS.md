@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T24 (IN PROGRESS)
-- Terakhir selesai: T23
+- Task aktif: Menunggu koreksi pengguna setelah penyelesaian T24
+- Terakhir selesai: T24
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); T22 — Lighthouse dan uji viewport/reduced-motion browser tidak dapat dijalankan karena renderer Chrome/Edge/Firefox headless gagal di lingkungan ini.
-- Pertanyaan terbuka untuk pengguna: sediakan sesi/browser yang bisa merender situs untuk QA 360/1280px, reduced-motion, konsol, dan Lighthouse.
+- Pertanyaan terbuka untuk pengguna: koreksi atau arahan setelah T24 selesai; dan sediakan sesi/browser yang bisa merender situs untuk QA 360/1280px, reduced-motion, konsol, dan Lighthouse.
 
 ## Log
+
+### [2026-11-17 21:40] T24 — Poles footer dan gerak halus (DONE)
+- **Hasil:** menata ulang footer `index.html` dan `styleguide.html` menjadi tiga blok terstruktur (brand dengan logo dan jam operasional, navigasi vertikal rapi dengan target sentuh ≥ 48px, dan kartu kontak elegan untuk Telepon, Chat WhatsApp, dan Google Maps). Menghubungkan gerak reveal stagger menggunakan observer bersama melalui atribut `data-footer-reveal` dan toggle `CONFIG.features.enableFooterMotion`.
+- **Verifikasi:** uji statis memastikan satu H1 terjaga, semua atribut data usaha (`data-business-*`, `data-current-year`, `.js-wa-link`, `data-business-map`) terisi benar tanpa placeholder bocor, target sentuh minimal 48px terpenuhi, tanpa warna di luar token, toggle `enableFooterMotion` mematikan gerak secara utuh tanpa merusak tata letak, `prefers-reduced-motion` mengabaikan animasi, dan layout responsif bebas overflow di 360px hingga 1280px. `node --check`, script verifikasi Node, `git diff --check`, dan `graphify . --code-only` lulus.
+- **Commit:** `74d2bbe` — `style(footer): tata ulang navigasi dan tambah gerak halus [T24]`.
+- **Catatan/Keputusan:** tata letak satu kolom pada mobile (< 640px) memastikan nomor telepon dan kartu kontak tidak terpotong pada layar 360px.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** Menunggu koreksi atau arahan pengguna.
 
 ### [2026-11-17] T23 — Usulan palet hangat (DONE)
 - **Hasil:** mengganti token teal menjadi jade, latar menjadi krem muda, warna lembut menjadi sage, aksen menjadi oker, dan netral menjadi lebih hangat. Tinta gelap dan token WhatsApp dipertahankan. `docs/02-design-system.md` mencatat arah palet dan aturan penggunaan.
