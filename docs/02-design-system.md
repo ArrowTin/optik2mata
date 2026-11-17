@@ -13,25 +13,25 @@ Sumber kebenaran visual. **Semua komponen wajib memakai token di sini.**
 :root {
   /* Brand */
   --color-ink:        #12263A; /* teks utama, header gelap */
-  --color-primary:    #0E7C86; /* teal: tombol, link, ikon */
-  --color-primary-dk: #0A5C64; /* hover/active */
-  --color-primary-lt: #E3F3F4; /* latar lembut */
-  --color-accent:     #F2A541; /* amber: badge, highlight kecil */
+  --color-primary:    #176B61; /* jade: tombol, link, ikon */
+  --color-primary-dk: #10564F; /* hover/active */
+  --color-primary-lt: #E7F1EA; /* latar lembut bernuansa sage */
+  --color-accent:     #D99A3D; /* oker hangat: badge, highlight kecil */
   --color-wa:         #25D366; /* HANYA untuk tombol WhatsApp */
   --color-wa-dk:      #1DA851;
 
   /* Netral */
-  --color-bg:         #F7FAFA;
+  --color-bg:         #FAF8F3; /* krem sangat muda untuk latar halaman */
   --color-surface:    #FFFFFF;
-  --color-border:     #DCE6E8;
-  --color-muted:      #5B6B79; /* teks sekunder (kontras ≥ 4.5:1 di atas putih) */
+  --color-border:     #E4E1D8;
+  --color-muted:      #58686A; /* teks sekunder (kontras ≥ 4.5:1 di atas putih) */
 
   /* Status */
   --color-success:    #1B8F5A;
   --color-danger:     #C0392B;
 }
 ```
-Aturan: warna aksen amber ≤ 10% area layar. Hijau WA hanya pada tombol WhatsApp.
+Palet mempertahankan tinta biru gelap dan hijau WhatsApp, lalu menghangatkan latar dengan krem, bidang lembut dengan sage, dan aksen dengan oker. Jade menjadi warna utama agar motif dua lingkaran tetap terasa segar dan mudah dikenali. Aturan: warna aksen oker ≤ 10% area layar. Hijau WA hanya pada tombol WhatsApp.
 
 ## 3. Tipografi
 | Peran | Font | Bobot | Fallback |

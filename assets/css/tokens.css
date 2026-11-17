@@ -1,18 +1,18 @@
 :root {
   /* Warna brand */
   --color-ink: #12263A;
-  --color-primary: #0E7C86;
-  --color-primary-dk: #0A5C64;
-  --color-primary-lt: #E3F3F4;
-  --color-accent: #F2A541;
+  --color-primary: #176B61;
+  --color-primary-dk: #10564F;
+  --color-primary-lt: #E7F1EA;
+  --color-accent: #D99A3D;
   --color-wa: #25D366;
   --color-wa-dk: #1DA851;
 
   /* Warna netral */
-  --color-bg: #F7FAFA;
+  --color-bg: #FAF8F3;
   --color-surface: #FFFFFF;
-  --color-border: #DCE6E8;
-  --color-muted: #5B6B79;
+  --color-border: #E4E1D8;
+  --color-muted: #58686A;
 
   /* Warna status */
   --color-success: #1B8F5A;

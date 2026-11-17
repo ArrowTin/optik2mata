@@ -71,12 +71,13 @@ T11 sudah mencakup reveal bertahap, hover, lightbox, dan animasi ornamen hero. T
 ## Backlog (temuan di luar lingkup)
 | ID | Task | Dependensi | Referensi | Status |
 |---|---|---|---|---|
-| T23 | Evaluasi dan usulkan penyegaran palet agar lebih hangat, luwes, dan berkarakter; semarewards.com/id hanya inspirasi suasana, bukan untuk menyalin aset atau identitas. Jika usulan mengubah design system, minta persetujuan pengguna sebelum mengubah token atau `docs/02`. | T22 | docs/02; AGENTS §7, §9 | TODO |
-| T24 | Poles footer: tata ulang navigasi dan informasi kontak agar rapi serta elegan, lalu tambahkan gerak halus yang memakai token gerak yang sudah ada, toggle `config.features`, observer bersama, dan dukungan reduced-motion. | T22 | docs/02, §8; docs/10 §4.1, §4.6; AGENTS §7 | TODO |
+| T23 | Evaluasi dan usulkan penyegaran palet agar lebih hangat, luwes, dan berkarakter; semarewards.com/id hanya inspirasi suasana, bukan untuk menyalin aset atau identitas. Jika usulan mengubah design system, minta persetujuan pengguna sebelum mengubah token atau `docs/02`. | T21 | docs/02; AGENTS §7, §9 | DONE |
+| T24 | Poles footer: tata ulang navigasi dan informasi kontak agar rapi serta elegan, lalu tambahkan gerak halus yang memakai token gerak yang sudah ada, toggle `config.features`, observer bersama, dan dukungan reduced-motion. | T21 | docs/02, §8; docs/10 §4.1, §4.6; AGENTS §7 | TODO |
 
 ## Riwayat Penyelesaian
 | ID | Tanggal | Commit | Catatan |
 |---|---|---|---|
+| T23 | 2026-11-17 | `c69adee` | Palet hangat jade, sage, krem, dan oker diterapkan pada token serta didokumentasikan di design system. |
 | T00 | 2026-11-15 | `371ec0e`, `15882c7` | Setup lokal dan catatan progres dipush ke `origin/main`. |
 | T01 | 2026-11-15 | `33447ac` | Scaffold awal, token visual, konfigurasi, dan aset brand. |
 | T02 | 2026-11-15 | `5ffb695` | Komponen dan styleguide mengikuti design system. |

@@ -3,12 +3,20 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T22 (BLOCKED)
-- Terakhir selesai: T21
+- Task aktif: T24 (TODO; menunggu T23 ter-commit dan ter-push)
+- Terakhir selesai: T23
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); T22 — Lighthouse dan uji viewport/reduced-motion browser tidak dapat dijalankan karena renderer Chrome/Edge/Firefox headless gagal di lingkungan ini.
 - Pertanyaan terbuka untuk pengguna: sediakan sesi/browser yang bisa merender situs untuk QA 360/1280px, reduced-motion, konsol, dan Lighthouse.
 
 ## Log
+
+### [2026-11-17] T23 — Usulan palet hangat (DONE)
+- **Hasil:** mengganti token teal menjadi jade, latar menjadi krem muda, warna lembut menjadi sage, aksen menjadi oker, dan netral menjadi lebih hangat. Tinta gelap dan token WhatsApp dipertahankan. `docs/02-design-system.md` mencatat arah palet dan aturan penggunaan.
+- **Verifikasi:** audit statis memastikan warna CSS selain bayangan hanya didefinisikan di `tokens.css`; semua komponen dan halaman memakai token yang sama. Kontras teks: jade/putih 6,34:1; jade gelap/putih 8,52:1; teks sekunder/putih 5,83:1; teks sekunder/krem 5,49:1; tinta/oker 6,33:1. `graphify . --code-only` dan `git diff --check` dijalankan. Render visual browser tidak tersedia pada sesi ini.
+- **Commit:** `c69adee` — `style(desain): hangatkan palet warna [T23]`.
+- **Catatan/Keputusan:** palet diterapkan setelah persetujuan pengguna. Dependensi T23 dan T24 mengacu pada T21 agar pekerjaan backlog dapat berjalan saat T22 menunggu QA browser.
+- **Pertanyaan terbuka:** QA browser T22 masih memerlukan renderer yang berfungsi.
+- **Berikutnya:** T24 setelah commit T23.
 
 ### [2026-11-17 00:14] T22 — QA akhir Fase 2 (BLOCKED)
 - **Hasil:** memperbarui README proyek dan panduan pemilik dengan enam toggle Fase 2. Graphify code-only dijalankan kembali.
