@@ -21,7 +21,7 @@ Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
   - Tepat satu tag `<h1>` per halaman tetap terpenuhi.
   - Sintaks JS bersih tanpa error (`node --check` lulus).
   - `graphify . --code-only` berhasil diperbarui tanpa backend LLM.
-- **Commit:** `pending` — `fix(beranda): isi foto hero, tombol detail layanan, dan foto galeri nyata`.
+- **Commit:** `b4af274` — `fix(beranda): isi foto hero, tombol detail layanan, dan foto galeri nyata`.
 - **Catatan/Keputusan:** Mengikuti pedoman design system tanpa pustaka eksternal dan tetap mengutamakan aksesibilitas serta performa mobile-first.
 - **Pertanyaan terbuka:** —
 - **Berikutnya:** Menunggu ulasan dan feedback pengguna.
