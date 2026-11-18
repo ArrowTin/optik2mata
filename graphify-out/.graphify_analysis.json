@@ -163,6 +163,17 @@
       "why": "inferred connection - not explicitly stated in source; bridges separate communities"
     },
     {
+      "source": "renderFeaturedProducts()",
+      "target": "loadProducts()",
+      "source_files": [
+        "assets/js/main.js",
+        "assets/js/data.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
       "source": "applyFilters()",
       "target": "observeReveals()",
       "source_files": [
@@ -179,17 +190,6 @@
       "source_files": [
         "assets/js/catalog.js",
         "assets/js/product-card.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities"
-    },
-    {
-      "source": "renderFeaturedProducts()",
-      "target": "loadProducts()",
-      "source_files": [
-        "assets/js/main.js",
-        "assets/js/data.js"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",

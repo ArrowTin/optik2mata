@@ -71,7 +71,7 @@ async function renderFeaturedProducts() {
   const errorState = document.querySelector("[data-product-error]");
 
   try {
-    const products = await loadProducts();
+    const products = await loadProducts({ forceRefresh: true }); // Paksa refresh data
     const featured = products
       .filter((product) => product.featured && (!CONFIG.features.hideSoldOut || product.available))
       .sort((first, second) => first.order - second.order);

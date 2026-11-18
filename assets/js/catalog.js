@@ -104,7 +104,7 @@ window.addEventListener("popstate", () => {
 });
 
 try {
-  products = await loadProducts();
+  products = await loadProducts({ forceRefresh: true });
   applyFilters({ updateUrl: false });
 } catch (error) {
   grid.hidden = true;

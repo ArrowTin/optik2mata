@@ -67,7 +67,7 @@ function setMainPhoto(product, index) {
 
 try {
   if (!productId) throw new Error("missing");
-  const products = await loadProducts();
+  const products = await loadProducts({ forceRefresh: true });
   const product = products.find((item) => item.id === productId);
   if (!product) throw new Error("missing");
 

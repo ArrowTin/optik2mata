@@ -3,13 +3,28 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: T25 (IN PROGRESS — Penyesuaian tampilan & kedalaman visual terinspirasi semarewards.com)
-- Terakhir selesai: T24
+- Task aktif: Selesai T25 dan T26 (Menunggu koreksi/arahan pengguna)
+- Terakhir selesai: T26
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); T22 — Lighthouse dan uji viewport/reduced-motion browser tidak dapat dijalankan karena renderer Chrome/Edge/Firefox headless gagal di lingkungan ini.
-- Catatan backlog baru: T25 (Penyegaran tampilan agar lebih hidup & modern) dan T26 (Integrasi gambar produk kacamata open-source berkualitas tinggi).
-- Pertanyaan terbuka untuk pengguna: persetujuan rencana teknis T25 sebelum eksekusi perubahan token/CSS.
+- Pertanyaan terbuka untuk pengguna: evaluasi tampilan visual terbaru yang lebih hidup dan kurasi foto kacamata nyata.
 
 ## Log
+
+### [2026-11-18 08:20] T26 — Kurasi sampel gambar produk nyata open-source (DONE)
+- **Hasil:** memperbarui 12 produk pada `data/products.json` dengan foto produk kacamata asli berlisensi open-source (Unsplash), nama produk terkurasi yang berkarakter, deskripsi ramah dan informatif, serta memastikan `loadProducts` pada `main.js`, `catalog.js`, dan `product.js` memuat data baru secara konsisten (`forceRefresh: true`).
+- **Verifikasi:** script verifikasi Node memastikan 12 produk memiliki foto nyata yang valid dan dapat diakses (tidak ada lagi placeholder `foto-segera-hadir.svg`), seluruh 5 file HTML mempertahankan tepat satu tag `<h1>`, `node --check` dan `git diff --check` bersih, dan `graphify . --code-only` selesai diperbarui.
+- **Commit:** `69d5456` — `feat(produk): kurasi foto dan deskripsi produk nyata [T26]`.
+- **Catatan/Keputusan:** foto kacamata resolusi optimal dan rasio 4:3 memberikan kesatuan estetika yang jauh lebih hidup dan profesional.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** Menunggu ulasan dan feedback pengguna.
+
+### [2026-11-18 08:15] T25 — Penyesuaian tampilan agar lebih hidup & kedalaman visual (DONE)
+- **Hasil:** memperbarui desain visual terinspirasi dari pola `semarewards.com`: menambahkan ambient radial glow atmosferik pada latar belakang (`base.css`), frosted glass navbar, elevated buttons dengan bayangan lembut berwarna (`--shadow-primary`, `--shadow-wa`), kartu bergaya bento dengan radius 24px dan layered shadows, eyebrow pill badge modern dengan titik pendar oker, marquee viewport dengan gradient mask halus, dan ornamen visual bernapas pada Hero dan Closing CTA.
+- **Verifikasi:** seluruh warna dan spasi menggunakan token terpusat di `tokens.css` dan `docs/02-design-system.md`, kontras teks terjaga, tidak ada overflow di layar 360px, aturan `prefers-reduced-motion` meniadakan seluruh transisi/transform, serta lolos audit sintaks.
+- **Commit:** `ed6f701` — `style(desain): poles visual kedalaman dan bento grid [T25]`.
+- **Catatan/Keputusan:** desain tetap 100% vanilla tanpa build step atau pustaka eksternal.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** T26 (sudah terintegrasi).
 
 ### [2026-11-17 21:40] T24 — Poles footer dan gerak halus (DONE)
 - **Hasil:** menata ulang footer `index.html` dan `styleguide.html` menjadi tiga blok terstruktur (brand dengan logo dan jam operasional, navigasi vertikal rapi dengan target sentuh ≥ 48px, dan kartu kontak elegan untuk Telepon, Chat WhatsApp, dan Google Maps). Menghubungkan gerak reveal stagger menggunakan observer bersama melalui atribut `data-footer-reveal` dan toggle `CONFIG.features.enableFooterMotion`.
