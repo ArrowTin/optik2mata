@@ -1,12 +1,26 @@
+# OS & editor
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+
+# Dependensi & environment
 node_modules/
 .env
 .env.*
 *.log
-.vscode/
-.idea/
-.codex
-# graphify-out/  ← aktifkan bila artefak graph tidak masuk repositori (tanyakan pengguna)
-/graphify-out/.graphify_root
-.agents
+
+# Alat agent lokal
+.agents/
+.codex/
+.opencode/
+
+# Artefak Graphify (lokal)
+/graphify-out/
+
+# Dokumen internal proyek (lokal, tidak dipublikasikan ke GitHub)
+/docs/
+/AGENTS.md
+/TASKS.md
+/PROGRESS.md
+/daftar-konfirmasi.md
