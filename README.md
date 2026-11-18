@@ -88,6 +88,22 @@ Lalu buka `http://localhost:8000`.
 - **Produk:** [`data/products.json`](data/products.json).
 - **Nomor WhatsApp:** tulis pada `phoneIntl` tanpa tanda `+`; tautan dibuat otomatis oleh [`assets/js/whatsapp.js`](assets/js/whatsapp.js).
 
+## Kualitas dan Pengujian
+
+Hasil QA akhir Fase 2 (18 November 2026):
+
+- **Fungsional dan visual:** 77 pemeriksaan otomatis **lulus**, 0 gagal. Mencakup semua toggle `config.features`, `prefers-reduced-motion`, katalog (cari/filter/urut), detail produk, 404, fallback saat JSON gagal dimuat, tautan WhatsApp/telepon, area sentuh ≥ 48px, konsol tanpa error, serta 360px dan 1280px tanpa scroll horizontal.
+- **Lighthouse mobile** (Chrome headless, throttling bawaan Lighthouse):
+
+  | Halaman | Performa | Aksesibilitas | Best Practices | SEO |
+  |---|---|---|---|---|
+  | `index.html` | 70–72 | 100 | 100 | 100 |
+  | `katalog.html` | 89 | 100 | 100 | 100 |
+  | `produk.html` | 93 | 100 | 100 | 100 |
+
+- **Catatan performa beranda:** target Performa ≥ 90 belum tercapai. Penyebabnya beban *Style & Layout* halaman beranda yang panjang (504 elemen, 12 bagian) sehingga TBT sekitar 1,3 s. Mematikan seluruh toggle animasi Fase 2 **tidak** menaikkan skor (71), jadi animasi bukan penyebabnya; biaya ada pada tata letak halaman itu sendiri. Aksesibilitas, Best Practices, SEO, CLS (0,014), dan ukuran transfer awal (204 KiB) sudah di dalam target.
+- **Font variabel:** Plus Jakarta Sans dan Inter dimuat sebagai font variabel, yaitu satu berkas per keluarga (2 permintaan) alih-alih satu berkas per ketebalan (5 permintaan).
+
 ## Deploy
 
 Repositori ini disiapkan untuk GitHub Pages melalui [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml). Workflow hanya mengemas file publik (HTML, `assets/`, dan `data/`) ke folder `dist` tanpa proses build.
