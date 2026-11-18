@@ -1,7 +1,7 @@
 import { CONFIG } from "./config.js";
 import { productUrl, waProduct } from "./whatsapp.js";
 
-export function createProductCard(product, { headingLevel = 3 } = {}) {
+export function createProductCard(product, { headingLevel = 3, priority = false } = {}) {
   const card = document.createElement("article");
   card.className = "product-card";
   if (CONFIG.features.enableProductCardHover) card.classList.add("product-card--hover-enabled");
@@ -13,7 +13,9 @@ export function createProductCard(product, { headingLevel = 3 } = {}) {
   image.alt = `Foto ${product.name}`;
   image.width = 800;
   image.height = 600;
-  image.loading = "lazy";
+  // Dua kartu pertama tampil di layar awal; jangan ditunda agar LCP cepat.
+  image.loading = priority ? "eager" : "lazy";
+  if (priority) image.fetchPriority = "high";
   imageLink.append(image);
   card.append(imageLink);
 

@@ -69,7 +69,7 @@ function applyFilters({ updateUrl = true } = {}) {
   else if (state.sort === "price-desc") visible.sort((a, b) => (b.price ?? -Infinity) - (a.price ?? -Infinity));
   else visible.sort((a, b) => a.order - b.order);
 
-  grid.replaceChildren(...visible.map((product) => createProductCard(product, { headingLevel: 2 })));
+  grid.replaceChildren(...visible.map((product, index) => createProductCard(product, { headingLevel: 2, priority: index < 2 })));
   observeReveals(grid);
   count.textContent = `${visible.length} produk ditampilkan`;
   emptyState.hidden = visible.length > 0;
