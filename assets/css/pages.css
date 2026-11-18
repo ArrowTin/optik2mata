@@ -170,6 +170,8 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   border: 1px solid rgb(23 107 97 / 12%);
@@ -478,6 +480,7 @@
 .closing-cta .btn-outline { border-color: var(--color-surface); color: var(--color-surface); background: rgb(255 255 255 / 10%); }
 .closing-cta .btn-outline:hover { background: var(--color-surface); color: var(--color-primary-dk); }
 
+.service-grid .service-card .btn,
 .shopping-grid .service-card .btn {
   align-self: start;
   margin-top: auto;

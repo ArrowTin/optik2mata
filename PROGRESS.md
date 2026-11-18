@@ -3,12 +3,28 @@
 Entri terbaru di **atas**. Format entri ada di `AGENTS.md` bagian 5.
 
 ## Status Saat Ini
-- Task aktif: Selesai T25 dan T26 (Menunggu koreksi/arahan pengguna)
-- Terakhir selesai: T26
+- Task aktif: Perbaikan hero image, tombol detail layanan, dan foto galeri nyata (DONE)
+- Terakhir selesai: Perbaikan feedback pengguna
 - Terblokir: T15 — GitHub Pages belum menerbitkan URL demo (404); T22 — Lighthouse dan uji viewport/reduced-motion browser tidak dapat dijalankan karena renderer Chrome/Edge/Firefox headless gagal di lingkungan ini.
-- Pertanyaan terbuka untuk pengguna: evaluasi tampilan visual terbaru yang lebih hidup dan kurasi foto kacamata nyata.
+- Pertanyaan terbuka untuk pengguna: evaluasi kelengkapan foto hero, navigasi layanan, dan galeri nyata.
 
 ## Log
+
+### [2026-11-18 08:35] Fix — Lengkapi foto hero, tautan detail layanan, dan foto galeri nyata (DONE)
+- **Hasil:**
+  1. Mengganti `hero__image` placeholder dengan foto kacamata modern berkualitas studio (Unsplash) serta menambahkan aturan `aspect-ratio: 4 / 3; object-fit: cover;` di `pages.css` agar gambar proporsional, tajam, dan bebas distorsi/CLS.
+  2. Menambahkan tautan dan tombol aksi "Lihat Detail" di setiap kartu pada section Layanan (`#layanan`): tautan redirect ke `katalog.html` untuk kacamata & frame, serta tautan langsung konsultasi detail via WhatsApp untuk layanan lensa, pemeriksaan mata, dan servis. Mengatur perataan tombol sejajar rapi ke bawah kartu (`.service-grid .service-card .btn { margin-top: auto; }`).
+  3. Mengisi seluruh 6 kartu pada section Galeri (`#galeri`) dengan foto nyata display etalase, meja konsultasi, penyesuaian kacamata presisi, koleksi frame, aksesori optik, dan suasana toko dari Unsplash lengkap dengan deskripsi alt yang ramah aksesibilitas dan caption yang informatif. Foto galeri terintegrasi langsung dengan modal lightbox pratinjau foto.
+- **Verifikasi:**
+  - Verifikasi otomatis memastikan tidak ada lagi placeholder SVG di hero maupun galeri (`hero__image` dan 6 foto galeri terisi URL foto nyata berstatus HTTP 200).
+  - Kartu layanan memiliki tombol aksi yang jelas dan me-redirect dengan benar.
+  - Tepat satu tag `<h1>` per halaman tetap terpenuhi.
+  - Sintaks JS bersih tanpa error (`node --check` lulus).
+  - `graphify . --code-only` berhasil diperbarui tanpa backend LLM.
+- **Commit:** `pending` — `fix(beranda): isi foto hero, tombol detail layanan, dan foto galeri nyata`.
+- **Catatan/Keputusan:** Mengikuti pedoman design system tanpa pustaka eksternal dan tetap mengutamakan aksesibilitas serta performa mobile-first.
+- **Pertanyaan terbuka:** —
+- **Berikutnya:** Menunggu ulasan dan feedback pengguna.
 
 ### [2026-11-18 08:20] T26 — Kurasi sampel gambar produk nyata open-source (DONE)
 - **Hasil:** memperbarui 12 produk pada `data/products.json` dengan foto produk kacamata asli berlisensi open-source (Unsplash), nama produk terkurasi yang berkarakter, deskripsi ramah dan informatif, serta memastikan `loadProducts` pada `main.js`, `catalog.js`, dan `product.js` memuat data baru secara konsisten (`forceRefresh: true`).

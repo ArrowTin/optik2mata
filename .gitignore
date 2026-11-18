@@ -9,3 +9,4 @@ node_modules/
 .codex
 # graphify-out/  ← aktifkan bila artefak graph tidak masuk repositori (tanyakan pengguna)
 /graphify-out/.graphify_root
+.agents

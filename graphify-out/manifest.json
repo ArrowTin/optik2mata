@@ -30,8 +30,8 @@
     "semantic_hash": "0122c4154e0b634f56164c454a3bd2ea"
   },
   "assets/js/catalog.js": {
-    "mtime": 1794964619.8487968,
-    "seen": 1794964702.3591347,
+    "mtime": 1794964844.7089005,
+    "seen": 1794965647.192705,
     "ast_hash": "4819f126f3afd65d045571a3af6ea1fe",
     "semantic_hash": "4819f126f3afd65d045571a3af6ea1fe"
   },
@@ -42,8 +42,8 @@
     "semantic_hash": "63e18aaffd0cadc3913df6d3def5b8a7"
   },
   "assets/js/product.js": {
-    "mtime": 1794964629.737978,
-    "seen": 1794964702.3630943,
+    "mtime": 1794964845.7323704,
+    "seen": 1794965647.1997166,
     "ast_hash": "6dd51ef78e301d695b8050bbbffecd7d",
     "semantic_hash": "6dd51ef78e301d695b8050bbbffecd7d"
   },
