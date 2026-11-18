@@ -1,6 +1,45 @@
 {
   "communities": {
     "0": [
+      "assets_js_carousel",
+      "assets_js_carousel_enablepointerdrag",
+      "assets_js_config",
+      "assets_js_config_config",
+      "assets_js_main",
+      "assets_js_main_businesstext",
+      "assets_js_main_featuredcarousel",
+      "assets_js_main_shoppingmockup",
+      "assets_js_not_found",
+      "assets_js_product_card",
+      "assets_js_product_card_createproductcard",
+      "assets_js_whatsapp",
+      "assets_js_whatsapp_productabsoluteurl",
+      "assets_js_whatsapp_producturl",
+      "assets_js_whatsapp_wadelivery",
+      "assets_js_whatsapp_waeyeexam",
+      "assets_js_whatsapp_walink",
+      "assets_js_whatsapp_waproduct"
+    ],
+    "1": [
+      "assets_js_main_renderfeaturedproducts",
+      "assets_js_motion",
+      "assets_js_motion_animatecounter",
+      "assets_js_motion_animatecounter_update",
+      "assets_js_motion_applymotionstagger",
+      "assets_js_motion_countertarget",
+      "assets_js_motion_formatcounter",
+      "assets_js_motion_getrevealobserver",
+      "assets_js_motion_initheaderscrollstate",
+      "assets_js_motion_observereveals",
+      "assets_js_motion_preparecounters",
+      "assets_js_motion_reducemotion",
+      "assets_js_motion_revealselector",
+      "assets_js_ui",
+      "assets_js_ui_backtotop",
+      "assets_js_ui_galleryimages",
+      "assets_js_ui_showimage"
+    ],
+    "2": [
       "assets_js_catalog",
       "assets_js_catalog_applyfilters",
       "assets_js_catalog_categorybuttons",
@@ -17,7 +56,7 @@
       "assets_js_catalog_updateaddress",
       "assets_js_catalog_validcategories"
     ],
-    "1": [
+    "3": [
       "assets_js_data",
       "assets_js_data_clearproductscache",
       "assets_js_data_data_error_message",
@@ -34,22 +73,7 @@
       "assets_js_data_readfield",
       "assets_js_data_writecache"
     ],
-    "2": [
-      "assets_js_carousel",
-      "assets_js_carousel_enablepointerdrag",
-      "assets_js_main",
-      "assets_js_main_businesstext",
-      "assets_js_main_featuredcarousel",
-      "assets_js_main_renderfeaturedproducts",
-      "assets_js_main_shoppingmockup",
-      "assets_js_motion_applymotionstagger",
-      "assets_js_motion_observereveals",
-      "assets_js_ui",
-      "assets_js_ui_backtotop",
-      "assets_js_ui_galleryimages",
-      "assets_js_ui_showimage"
-    ],
-    "3": [
+    "4": [
       "assets_js_fonts",
       "assets_js_fonts_loadfonts",
       "assets_js_product",
@@ -63,40 +87,14 @@
       "assets_js_product_statepanel",
       "assets_js_product_statetitle",
       "assets_js_product_updateproductmetadata"
-    ],
-    "4": [
-      "assets_js_config",
-      "assets_js_config_config",
-      "assets_js_not_found",
-      "assets_js_product_card",
-      "assets_js_product_card_createproductcard",
-      "assets_js_whatsapp",
-      "assets_js_whatsapp_producturl",
-      "assets_js_whatsapp_wadelivery",
-      "assets_js_whatsapp_waeyeexam",
-      "assets_js_whatsapp_walink",
-      "assets_js_whatsapp_waproduct"
-    ],
-    "5": [
-      "assets_js_motion",
-      "assets_js_motion_animatecounter",
-      "assets_js_motion_animatecounter_update",
-      "assets_js_motion_countertarget",
-      "assets_js_motion_formatcounter",
-      "assets_js_motion_getrevealobserver",
-      "assets_js_motion_initheaderscrollstate",
-      "assets_js_motion_preparecounters",
-      "assets_js_motion_reducemotion",
-      "assets_js_motion_revealselector"
     ]
   },
   "cohesion": {
-    "0": 0.14285714285714285,
-    "1": 0.22857142857142856,
-    "2": 0.20512820512820512,
-    "3": 0.16666666666666666,
-    "4": 0.38181818181818183,
-    "5": 0.3111111111111111
+    "0": 0.23529411764705882,
+    "1": 0.17647058823529413,
+    "2": 0.14285714285714285,
+    "3": 0.22857142857142856,
+    "4": 0.16666666666666666
   },
   "gods": [
     {
@@ -115,13 +113,13 @@
       "degree": 8
     },
     {
-      "id": "assets_js_whatsapp_walink",
-      "label": "waLink()",
+      "id": "assets_js_config_config",
+      "label": "CONFIG",
       "degree": 8
     },
     {
-      "id": "assets_js_config_config",
-      "label": "CONFIG",
+      "id": "assets_js_whatsapp_walink",
+      "label": "waLink()",
       "degree": 8
     },
     {
