@@ -61,7 +61,7 @@ Tidak ada framework, bundler, database, atau backend.
 ├── assets/
 │   ├── css/              # token, base, komponen, halaman, motion
 │   ├── js/               # config, data, whatsapp, halaman, komponen, motion
-│   └── img/              # logo, favicon, placeholder
+│   └── img/              # logo, favicon, foto produk & galeri (WebP)
 ├── data/
 │   └── products.json
 ├── .github/
@@ -90,18 +90,19 @@ Lalu buka `http://localhost:8000`.
 
 ## Kualitas dan Pengujian
 
-Hasil QA akhir Fase 2 (18 November 2026):
+Hasil QA akhir Fase 2 dan optimasi T27 (18 November 2026):
 
 - **Fungsional dan visual:** 77 pemeriksaan otomatis **lulus**, 0 gagal. Mencakup semua toggle `config.features`, `prefers-reduced-motion`, katalog (cari/filter/urut), detail produk, 404, fallback saat JSON gagal dimuat, tautan WhatsApp/telepon, area sentuh ≥ 48px, konsol tanpa error, serta 360px dan 1280px tanpa scroll horizontal.
-- **Lighthouse mobile** (Chrome headless, throttling bawaan Lighthouse):
+- **Lighthouse mobile** (Chrome headless, throttling bawaan Lighthouse, 3–5 run per halaman):
 
   | Halaman | Performa | Aksesibilitas | Best Practices | SEO |
   |---|---|---|---|---|
-  | `index.html` | 70–72 | 100 | 100 | 100 |
-  | `katalog.html` | 89 | 100 | 100 | 100 |
-  | `produk.html` | 93 | 100 | 100 | 100 |
+  | `index.html` | 76–78 | 100 | 100 | 100 |
+  | `katalog.html` | 86–96 | 100 | 100 | 100 |
+  | `produk.html` | 99 | 100 | 100 | 100 |
 
-- **Catatan performa beranda:** target Performa ≥ 90 belum tercapai. Penyebabnya beban *Style & Layout* halaman beranda yang panjang (504 elemen, 12 bagian) sehingga TBT sekitar 1,3 s. Mematikan seluruh toggle animasi Fase 2 **tidak** menaikkan skor (71), jadi animasi bukan penyebabnya; biaya ada pada tata letak halaman itu sendiri. Aksesibilitas, Best Practices, SEO, CLS (0,014), dan ukuran transfer awal (204 KiB) sudah di dalam target.
+- **Catatan performa beranda:** target Performa ≥ 90 belum tercapai. Beban *Style & Layout* beranda (504 elemen, 12 bagian) membuat TBT sekitar 0,8–1,0 s. Mematikan seluruh toggle animasi Fase 2 tidak menaikkan skor, jadi animasi bukan penyebabnya; biaya ada pada tata letak halaman itu sendiri. Mencapai ≥ 90 memerlukan pengurangan bagian/konten beranda (perlu persetujuan pemilik).
+- **Hasil optimasi T27:** seluruh foto produk dan galeri kini berupa **WebP lokal** (18 berkas, total 590 KiB) sehingga tidak ada permintaan ke Unsplash; gambar hero di-`preload` dengan `fetchpriority="high"`; dua kartu katalog pertama dimuat `eager` agar LCP tidak tertunda; stylesheet font diterapkan lebih awal. Transfer awal beranda 219 KiB, katalog 456 KiB, produk 188 KiB — semuanya di bawah 1 MB. CLS 0,045 (beranda) dan 0,001 (katalog/produk).
 - **Font variabel:** Plus Jakarta Sans dan Inter dimuat sebagai font variabel, yaitu satu berkas per keluarga (2 permintaan) alih-alih satu berkas per ketebalan (5 permintaan).
 
 ## Deploy
